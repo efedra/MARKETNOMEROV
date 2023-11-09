@@ -8,6 +8,11 @@
   font-family: Helvetica;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 %main-blue-bg {
   background: rgba(66, 98, 255, 1);
 }
@@ -518,12 +523,12 @@
 }
 
 .services-card__heading {
-  @include adaptiv-font(25,17);
+  @include adaptiv-font(25, 17);
   margin-bottom: 2vh;
 }
 
 .services-card__text {
-  @include adaptiv-font(20,11);
+  @include adaptiv-font(20, 11);
   margin-bottom: 3vh;
 }
 
@@ -545,7 +550,7 @@
 
 .number-daysone {
   font-family: Days;
-  @include adaptiv-font(57,15);
+  @include adaptiv-font(57, 15);
 }
 
 .statistics__gap {
@@ -556,7 +561,7 @@
 
 .statistics__text {
   font-family: Days;
-  @include adaptiv-font(14,7);
+  @include adaptiv-font(14, 7);
   color: rgba(0, 0, 0, 0.6);
   line-height: 21.4px;
 }
@@ -719,7 +724,7 @@
 
 .logo-footer {
   font-family: Days;
-  @include adaptiv-font(27,14);
+  @include adaptiv-font(27, 14);
 }
 
 .footer__nav {
@@ -727,7 +732,7 @@
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  @include adaptiv-font(17,10);
+  @include adaptiv-font(17, 10);
   color: rgba(5, 0, 57, 1);
   font-weight: 600;
 }
@@ -737,7 +742,7 @@
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  @include adaptiv-font(17,10);
+  @include adaptiv-font(17, 10);
   color: rgba(5, 0, 57, 1);
 }
 
@@ -793,7 +798,7 @@
   border-radius: 14px;
   border: 1px solid rgba(193, 193, 193, 1);
   text-align: center;
-  @include adaptiv-font(25,12);
+  @include adaptiv-font(25, 12);
 }
 
 .search-number {
@@ -1098,6 +1103,11 @@ input[type="range"]::-webkit-slider-runnable-track {
   max-width: 13%;
 }
 
-.input-code__number{
-  @include adaptiv-font(26,12);
+.input-code__number {
+  @include adaptiv-font(26, 12);
 }
+
+.pointer {
+  cursor: pointer;
+}
+

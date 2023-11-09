@@ -6,6 +6,11 @@
   font-family: Helvetica;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .add-review, .reviews__first, .connect, .basket-mini, .hr_blue, .subheading_blue, .buy-number, .basket {
   background: rgb(66, 98, 255);
 }
@@ -1069,6 +1074,10 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .input-code__number {
   font-size: calc(12px + 14 * ((100vw - 320px) / 960));
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

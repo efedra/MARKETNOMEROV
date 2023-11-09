@@ -57,20 +57,10 @@
 .modal-buy-number__window {
   background: white;
   position: relative;
-  width: 41vw;
-  height: 41vw;
   max-width: 100%;
   padding: 2.5vw;
   display: flex;
   flex-direction: column;
-}
-
-.modal-buy-number__window_select {
-  height: 45vw;
-}
-
-.modal-buy-number__window_review {
-  height: 34.5vw;
 }
 
 .grid-input {
@@ -97,14 +87,14 @@
 
 .grid-input__elem::placeholder {
   color: rgb(128, 128, 128);
-  font-size: 14px;
+  font-size: calc(8px + 6 * ((100vw - 320px) / 960));
   font-family: Roboto;
 }
 
 .modal-buy-number__heading {
   margin-bottom: 3vh;
   font-weight: 600;
-  font-size: 25px;
+  font-size: calc(10px + 15 * ((100vw - 320px) / 960));
   font-family: Roboto;
 }
 

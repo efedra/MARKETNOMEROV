@@ -19,8 +19,8 @@ $blue: rgba(66, 98, 255, 1);
 .modal-buy-number__window {
   background: white;
   position: relative;
-  width: 41vw;
-  height: 41vw;
+  //width: 41vw;
+  //height: 41vw;
   max-width: 100%;
   padding: 2.5vw;
   display: flex;
@@ -28,11 +28,11 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .modal-buy-number__window_select {
-  height: 45vw;
+  //height: 45vw;
 }
 
 .modal-buy-number__window_review {
-  height: 34.5vw;
+  //height: 34.5vw;
 }
 
 .grid-input {
@@ -59,14 +59,14 @@ $blue: rgba(66, 98, 255, 1);
 
 .grid-input__elem::placeholder {
   color: $gray;
-  font-size: 14px;
+  @include adaptiv-font(14,8);
   font-family: Roboto;
 }
 
 .modal-buy-number__heading {
   margin-bottom: 3vh;
   font-weight: 600;
-  font-size: 25px;
+  @include adaptiv-font(25,10);
   font-family: Roboto;
 }
 
