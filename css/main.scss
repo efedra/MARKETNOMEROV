@@ -98,6 +98,7 @@
 .heading_orange {
   color: rgba(232, 89, 10, 1);
   font-family: Days;
+  white-space: nowrap;
 }
 
 .subtext {
@@ -165,11 +166,12 @@
     width: 100%;
   }
 
-  figcaption {
-    position: absolute;
-    top: 5.5vw;
-    left: 6vw;
-  }
+}
+
+.figcaption {
+  position: absolute;
+  top: 5.5vw;
+  left: 6vw;
 }
 
 .subheading_blue {
@@ -293,13 +295,14 @@
   margin-bottom: 2.5vh;
   display: flex;
   justify-content: space-between;
+  @include adaptiv-font(35, 12);
 }
 
 .goods_nav {
   font-family: Roboto;
   display: flex;
   gap: 2vw;
-  font-size: 15px;
+  @include adaptiv-font(15, 10);
   font-weight: 600;
   margin-bottom: 10vh;
 }
@@ -344,7 +347,7 @@
 }
 
 .basket-mini {
-  font-size: 12px;
+  @include adaptiv-font(12, 7);
   @extend %main-blue-bg;
   @extend %main-blue-border;
   color: white;
@@ -484,6 +487,10 @@
   width: 90%;
 }
 
+.uslugi-top {
+  top: 2vw;
+}
+
 .uslugi__body {
   padding: 0 2.8vw;
   display: flex;
@@ -496,6 +503,9 @@
   background: rgba(245, 245, 247, 1);
   border-radius: 34px;
   width: min-content;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .services-card__top {
@@ -508,12 +518,12 @@
 }
 
 .services-card__heading {
-  font-size: 25px;
+  @include adaptiv-font(25,17);
   margin-bottom: 2vh;
 }
 
 .services-card__text {
-  font-size: 20px;
+  @include adaptiv-font(20,11);
   margin-bottom: 3vh;
 }
 
@@ -535,7 +545,7 @@
 
 .number-daysone {
   font-family: Days;
-  font-size: 57px;
+  @include adaptiv-font(57,15);
 }
 
 .statistics__gap {
@@ -546,7 +556,7 @@
 
 .statistics__text {
   font-family: Days;
-  font-size: 14px;
+  @include adaptiv-font(14,7);
   color: rgba(0, 0, 0, 0.6);
   line-height: 21.4px;
 }
@@ -709,7 +719,7 @@
 
 .logo-footer {
   font-family: Days;
-  font-size: 27px;
+  @include adaptiv-font(27,14);
 }
 
 .footer__nav {
@@ -717,7 +727,7 @@
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  font-size: 17px;
+  @include adaptiv-font(17,10);
   color: rgba(5, 0, 57, 1);
   font-weight: 600;
 }
@@ -727,7 +737,7 @@
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  font-size: 17px;
+  @include adaptiv-font(17,10);
   color: rgba(5, 0, 57, 1);
 }
 

@@ -93,6 +93,7 @@
 .heading_orange {
   color: rgb(232, 89, 10);
   font-family: Days;
+  white-space: nowrap;
 }
 
 .subtext {
@@ -157,7 +158,8 @@
 .steps__heading img {
   width: 100%;
 }
-.steps__heading figcaption {
+
+.figcaption {
   position: absolute;
   top: 5.5vw;
   left: 6vw;
@@ -281,13 +283,14 @@
   margin-bottom: 2.5vh;
   display: flex;
   justify-content: space-between;
+  font-size: calc(12px + 23 * ((100vw - 320px) / 960));
 }
 
 .goods_nav {
   font-family: Roboto;
   display: flex;
   gap: 2vw;
-  font-size: 15px;
+  font-size: calc(10px + 5 * ((100vw - 320px) / 960));
   font-weight: 600;
   margin-bottom: 10vh;
 }
@@ -331,7 +334,7 @@
 }
 
 .basket-mini {
-  font-size: 12px;
+  font-size: calc(7px + 5 * ((100vw - 320px) / 960));
   color: white;
   width: 8vw;
   border-radius: 34px;
@@ -465,6 +468,10 @@
   width: 90%;
 }
 
+.uslugi-top {
+  top: 2vw;
+}
+
 .uslugi__body {
   padding: 0 2.8vw;
   display: flex;
@@ -477,6 +484,9 @@
   background: rgb(245, 245, 247);
   border-radius: 34px;
   width: min-content;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .services-card__top {
@@ -489,12 +499,12 @@
 }
 
 .services-card__heading {
-  font-size: 25px;
+  font-size: calc(17px + 8 * ((100vw - 320px) / 960));
   margin-bottom: 2vh;
 }
 
 .services-card__text {
-  font-size: 20px;
+  font-size: calc(11px + 9 * ((100vw - 320px) / 960));
   margin-bottom: 3vh;
 }
 
@@ -516,7 +526,7 @@
 
 .number-daysone {
   font-family: Days;
-  font-size: 57px;
+  font-size: calc(15px + 42 * ((100vw - 320px) / 960));
 }
 
 .statistics__gap {
@@ -527,7 +537,7 @@
 
 .statistics__text {
   font-family: Days;
-  font-size: 14px;
+  font-size: calc(7px + 7 * ((100vw - 320px) / 960));
   color: rgba(0, 0, 0, 0.6);
   line-height: 21.4px;
 }
@@ -684,7 +694,7 @@
 
 .logo-footer {
   font-family: Days;
-  font-size: 27px;
+  font-size: calc(14px + 13 * ((100vw - 320px) / 960));
 }
 
 .footer__nav {
@@ -692,7 +702,7 @@
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  font-size: 17px;
+  font-size: calc(10px + 7 * ((100vw - 320px) / 960));
   color: rgb(5, 0, 57);
   font-weight: 600;
 }
@@ -702,7 +712,7 @@
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  font-size: 17px;
+  font-size: calc(10px + 7 * ((100vw - 320px) / 960));
   color: rgb(5, 0, 57);
 }
 
