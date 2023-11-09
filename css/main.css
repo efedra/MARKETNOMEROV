@@ -768,7 +768,7 @@
   border-radius: 14px;
   border: 1px solid rgb(193, 193, 193);
   text-align: center;
-  font-size: 25px;
+  font-size: calc(12px + 13 * ((100vw - 320px) / 960));
 }
 
 .search-number {
@@ -813,6 +813,7 @@
   color: rgb(157, 157, 157);
   margin-bottom: 3vh;
   font-size: calc(10px + 4 * ((100vw - 320px) / 960));
+  cursor: pointer;
 }
 
 .operator {
@@ -1064,6 +1065,10 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .img-adaptive-opearator {
   max-width: 13%;
+}
+
+.input-code__number {
+  font-size: calc(12px + 14 * ((100vw - 320px) / 960));
 }
 
 /*# sourceMappingURL=main.css.map */

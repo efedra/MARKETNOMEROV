@@ -793,7 +793,7 @@
   border-radius: 14px;
   border: 1px solid rgba(193, 193, 193, 1);
   text-align: center;
-  font-size: 25px;
+  @include adaptiv-font(25,12);
 }
 
 .search-number {
@@ -837,7 +837,8 @@
   text-decoration: underline;
   color: rgba(157, 157, 157, 1);
   margin-bottom: 3vh;
-  @include adaptiv-font(14, 10)
+  @include adaptiv-font(14, 10);
+  cursor: pointer;
 }
 
 .operator {
@@ -1095,4 +1096,8 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 .img-adaptive-opearator {
   max-width: 13%;
+}
+
+.input-code__number{
+  @include adaptiv-font(26,12);
 }
