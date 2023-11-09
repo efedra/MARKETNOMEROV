@@ -14,23 +14,77 @@
 .tarif_subtext {
   color: rgba(5, 0, 56, 0.72);
   font-size: calc(7px + 10 * ((100vw - 320px) / 960));
+  font-weight: 600;
 }
 
 .orange-number_zero-pading {
   padding: 0;
 }
 
+.tarif__subtext_margin {
+  margin-bottom: 4vh;
+}
+
 .tarif-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1%;
+  height: 36vh;
 }
 
 .tarif-grid__element {
-  background: url("../assets/tarif.png");
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  border: 2px solid black;
+  border-radius: 34px;
+  padding: 5% 6%;
+  gap: 4%;
+}
+.tarif-grid__element img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.tarif-grid__lenta {
+  display: flex;
+  gap: 4%;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.tag {
+  border: 1px solid black;
+  border-radius: 32px;
+  padding: 2%;
+  font-size: calc(2px + 9 * ((100vw - 320px) / 960));
+}
+
+.tarif-grid__head {
+  font-size: calc(16px + 6 * ((100vw - 320px) / 960));
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+
+.tarif-grid__head_white {
+  color: white;
+}
+
+.tag_white {
+  color: white;
+  border: 1px solid white;
+}
+
+.tarif-grid__element_white {
+  background-image: linear-gradient(to bottom, rgba(245, 245, 247, 0), rgb(66, 98, 255));
 }
 
 /*# sourceMappingURL=tarif.css.map */
