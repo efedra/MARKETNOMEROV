@@ -1037,7 +1037,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 .number_color {
   color: rgba(98, 108, 119, 1);
-  @include adaptiv-font(19, 8);
+  @include adaptiv-font(15, 6);
 }
 
 .phone {

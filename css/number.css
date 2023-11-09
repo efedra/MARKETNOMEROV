@@ -19,4 +19,139 @@
   margin: 0 auto;
 }
 
+.beatiful-number__main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.head-days {
+  font-family: Days;
+  font-size: calc(10px + 35 * ((100vw - 320px) / 960));
+  color: white;
+}
+
+.button-catalog {
+  background: rgb(232, 89, 10);
+  color: white;
+  border-radius: 34px;
+  border: none;
+  display: flex;
+  gap: 10px;
+  font-size: calc(3px + 9 * ((100vw - 320px) / 960));
+  padding: 1% 2%;
+  width: fit-content;
+}
+
+.margin__head {
+  margin-bottom: 2%;
+}
+
+.beatiful-number__range {
+  display: grid;
+  margin-top: auto;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  gap: 4%;
+  height: 20%;
+}
+
+.noUi-connect {
+  background: rgb(232, 89, 10);
+}
+
+.noUi-target {
+  background: rgb(224, 224, 224);
+  border-radius: 0;
+  border: none;
+}
+
+.noUi-horizontal {
+  height: 3px;
+}
+
+.noUi-connects {
+  border-radius: 0;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 12px;
+  height: 12px;
+  right: -8px;
+  top: -5px;
+  border: 2px solid rgb(232, 89, 10);
+  border-radius: 50%;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+  display: none;
+}
+
+.name-range {
+  color: white;
+  font-family: Roboto;
+  font-size: calc(6px + 6 * ((100vw - 320px) / 960));
+}
+
+.slider-range__pips {
+  display: flex;
+  justify-content: space-between;
+}
+
+.beatiful-number__block {
+  display: flex;
+  flex-direction: column;
+  gap: 20%;
+}
+
+.align-self {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.beatiful-number__button_sale {
+  background: none;
+  border-radius: 32px;
+  color: white;
+  font-size: calc(4px + 9 * ((100vw - 320px) / 960));
+  border: 1px solid white;
+  padding: 7% 13%;
+  cursor: pointer;
+}
+
+.beatiful-number__button_flex {
+  margin: auto 0;
+}
+
+.beatiful-number__filter_mini {
+  margin: 0 2.8vw 10vh;
+}
+
+.banner-number__margin {
+  margin-bottom: 15vh;
+}
+
+.main-padding {
+  padding: 0 2.8vw;
+}
+
+.all-count-number {
+  margin-left: auto;
+  color: rgb(157, 157, 157);
+  font-size: calc(6px + 12 * ((100vw - 320px) / 960));
+  display: flex;
+  justify-content: end;
+  margin-bottom: 3.5vh;
+}
+
+.table_beatiful-number {
+  margin-bottom: 5vh;
+}
+
 /*# sourceMappingURL=number.css.map */

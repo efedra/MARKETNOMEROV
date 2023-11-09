@@ -1010,7 +1010,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .number_color {
   color: rgb(98, 108, 119);
-  font-size: calc(8px + 11 * ((100vw - 320px) / 960));
+  font-size: calc(6px + 9 * ((100vw - 320px) / 960));
 }
 
 .phone {

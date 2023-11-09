@@ -1,0 +1,36 @@
+.container {
+  padding: 0 2.8vw;
+}
+
+.t01 {
+  position: relative;
+}
+
+.tarif__subtext {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tarif_subtext {
+  color: rgba(5, 0, 56, 0.72);
+  font-size: calc(7px + 10 * ((100vw - 320px) / 960));
+}
+
+.orange-number_zero-pading {
+  padding: 0;
+}
+
+.tarif-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%;
+}
+
+.tarif-grid__element {
+  background: url("../assets/tarif.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/*# sourceMappingURL=tarif.css.map */
