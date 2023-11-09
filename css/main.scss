@@ -102,7 +102,7 @@
 
 .subtext {
   color: rgba(5, 0, 56, 0.72);
-  @include adaptiv-font(18,5)
+  @include adaptiv-font(18, 5)
 }
 
 .banner__subtext {
@@ -123,7 +123,7 @@
   color: white;
   font-family: Inter;
   padding: 2vh 2vw;
-  @include adaptiv-font(19,6);
+  @include adaptiv-font(19, 6);
   font-weight: 300;
   cursor: pointer;
 }
@@ -134,13 +134,13 @@
   background: none;
   border: 1px solid rgba(155, 153, 175, 1);
   padding: 2vh 2vw;
-  @include adaptiv-font(19,6);
+  @include adaptiv-font(19, 6);
 }
 
 .text-tips {
   color: rgba(5, 0, 56, 0.4);
   font-size: 15px;
-  @include adaptiv-font(15,3)
+  @include adaptiv-font(15, 3)
 }
 
 .banner__img {
@@ -158,7 +158,7 @@
 
 .steps__heading {
   position: relative;
-  @include adaptiv-font(30,17);
+  @include adaptiv-font(30, 17);
   font-weight: bold;
 
   img {
@@ -167,8 +167,8 @@
 
   figcaption {
     position: absolute;
-    top: 67px;
-    left: 72px;
+    top: 5.5vw;
+    left: 6vw;
   }
 }
 
@@ -690,7 +690,7 @@
   cursor: pointer;
   color: white;
   padding: 2vh 2vw;
-  @include adaptiv-font(19,6);
+  @include adaptiv-font(19, 6);
   margin-bottom: 12vh;
 }
 
@@ -791,12 +791,12 @@
   border-radius: 14px;
   padding: 2.43vh 1.5vw 2.36vh;
   width: 26%;
-  @include adaptiv-font(18,5);
+  @include adaptiv-font(18, 5);
   height: 4vw;
 }
 
 .search-number::placeholder {
-  @include adaptiv-font(18,5);
+  @include adaptiv-font(18, 5);
   color: rgba(157, 157, 157, 1);
 }
 
@@ -827,7 +827,7 @@
   text-decoration: underline;
   color: rgba(157, 157, 157, 1);
   margin-bottom: 3vh;
-  @include adaptiv-font(14,1)
+  @include adaptiv-font(14, 10)
 }
 
 .operator {
@@ -848,7 +848,6 @@
 }
 
 
-
 .range-slider {
   width: 100%;
   position: relative;
@@ -863,7 +862,7 @@
   z-index: 1;
 }
 
-.range-dot1{
+.range-dot1 {
   position: absolute;
   height: 5px;
   width: 5px;
@@ -872,7 +871,8 @@
   left: 19.5vw;
   border-radius: 50%;
 }
-.range-dot2{
+
+.range-dot2 {
   position: absolute;
   height: 5px;
   width: 5px;
@@ -881,7 +881,8 @@
   left: 32.2vw;
   border-radius: 50%;
 }
-.range-dot3{
+
+.range-dot3 {
   position: absolute;
   height: 5px;
   width: 5px;
@@ -890,7 +891,8 @@
   left: 45vw;
   border-radius: 50%;
 }
-.range-dot4{
+
+.range-dot4 {
   position: absolute;
   height: 5px;
   width: 5px;
@@ -899,7 +901,8 @@
   left: 58.5vw;
   border-radius: 50%;
 }
-.range-dot5{
+
+.range-dot5 {
   position: absolute;
   height: 5px;
   width: 5px;
@@ -908,6 +911,7 @@
   right: 15.7vw;
   border-radius: 50%;
 }
+
 input[type="range"] {
   -webkit-appearance: none;
   width: 100%;
@@ -947,21 +951,21 @@ input[type="range"]::-webkit-slider-runnable-track {
   border: none;
 }
 
-.beatiful-number__range-number{
+.beatiful-number__range-number {
   display: flex;
   justify-content: space-between;
   margin-bottom: 4vh;
-  @include adaptiv-font(19,4);
+  @include adaptiv-font(19, 4);
   font-family: Arial;
 }
 
-.select-options{
+.select-options {
   display: flex;
   gap: 2vw;
   margin-bottom: 6vh;
 }
 
-.select-options__elem{
+.select-options__elem {
   width: 100%;
   padding: 2vh 2vw;
   background: white;
@@ -970,25 +974,26 @@ input[type="range"]::-webkit-slider-runnable-track {
   text-align: center;
 }
 
-.search{
+.search {
   background: rgba(240, 78, 1, 1);
   color: white;
   border-radius: 34px;
   border: none;
-  font-size: 21px;
+  @include adaptiv-font(21, 12);
   display: flex;
   gap: 1vw;
   align-items: center;
   padding: 3vh 4vw;
 }
-.beatiful-number__button{
+
+.beatiful-number__button {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5vh;
   align-items: flex-end;
 }
 
-.hide-filter{
+.hide-filter {
   background: none;
   display: flex;
   gap: 1vw;
@@ -1000,63 +1005,66 @@ input[type="range"]::-webkit-slider-runnable-track {
   padding: 1vh 1vw;
 }
 
-.table{
+.table {
   display: grid;
   grid-template-columns: 30% 20% 30% 20%;
   padding: 0 2vw;
   margin-bottom: 4vh;
+  grid-template-rows: 3vw;
+  align-items: center;
 }
 
-.table__name{
-  @include adaptiv-font(18,0);
+.table__name {
+  @include adaptiv-font(18, 7);
   color: rgba(98, 108, 119, 1);
 }
 
-.number_color{
+.number_color {
   color: rgba(98, 108, 119, 1);
-  @include adaptiv-font(19,6);
+  @include adaptiv-font(19, 8);
 }
 
-.phone{
-  @include adaptiv-font(16,0);
+.phone {
+  @include adaptiv-font(16, 7);
 }
 
-.phone-price{
+.phone-price {
   color: rgba(98, 108, 119, 1);
-  @include adaptiv-font(18,0);
+  @include adaptiv-font(18, 5);
 }
 
-.select-buttons{
+.select-buttons {
   background: rgb(236, 237, 241);
   border-radius: 34px;
   color: rgba(98, 108, 119, 1);
-  @include adaptiv-font(19,6);
+  @include adaptiv-font(19, 6);
   padding: 2vh 2vw;
   border: none;
 }
 
-.phone-operator{
-  padding-left: 10%;
+.phone-operator {
+  //padding-left: 10%;
 }
 
-.table-body{
+.table-body {
   display: flex;
   flex-direction: column;
 }
 
-.table__elem{
+.table__elem {
   display: flex;
 }
 
-.rt-min{
+.rt-min {
   width: 63%;
+  min-width: 39px;
 }
 
-.rt-big{
+.rt-big {
   width: 14%;
 }
 
-.more-numbers{
+.more-numbers {
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -1070,7 +1078,11 @@ input[type="range"]::-webkit-slider-runnable-track {
   cursor: pointer;
 }
 
-.img-adaptive{
+.img-adaptive {
   width: 100%;
   height: auto;
+}
+
+.img-adaptive-opearator {
+  max-width: 13%;
 }
