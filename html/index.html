@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+<!--МОДАЛКИ-->
+<section class="modal-buy-number" id="modal-buy-number">
+    <div class="modal-buy-number__window">
+        <div class="close-container">
+            <svg class="close" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 15L8 8M8 8L15 1M8 8L15 15M8 8L1 1" stroke="#222222" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="modal-buy-number__heading"></div>
+        <div class="grid-input">
+            <input class="grid-input__elem" placeholder="Имя">
+            <input class="grid-input__elem" placeholder="Фамилия">
+            <input class="grid-input__elem" placeholder="Email адрес">
+            <input class="grid-input__elem" placeholder="Номер">
+            <input class="grid-input__elem" placeholder="Цена">
+            <input class="grid-input__elem" placeholder="Оператор">
+        </div>
+        <div class="privacy-policy">
+            <input type="checkbox" id="privacy-policy" name="privacy-policy">
+            <label for="privacy-policy">Соглашаюсь с <span class="orange">правилами</span> и <span class="orange">политикой </span><br>
+                <span class="orange">конфиденциальности сайта</span></label>
+        </div>
+        <button class="send">Отправить</button>
+    </div>
+</section>
+<section class="modal-buy-number" id="modal-select-number">
+    <div class="modal-buy-number__window modal-buy-number__window_select">
+        <div class="close-container">
+            <svg class="close" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 15L8 8M8 8L15 1M8 8L15 15M8 8L1 1" stroke="#222222" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="modal-buy-number__heading">Выбрать номер</div>
+        <div class="grid-input">
+            <input class="grid-input__elem" placeholder="Имя">
+            <input class="grid-input__elem" placeholder="Фамилия">
+            <input class="grid-input__elem" placeholder="Email адрес">
+            <input class="grid-input__elem" placeholder="Номер">
+            <input class="grid-input__elem" placeholder="Цена">
+            <input class="grid-input__elem" placeholder="Оператор">
+            <input class="grid-input__elem" placeholder="Тариф">
+        </div>
+        <div class="privacy-policy">
+            <input type="checkbox" id="privacy-policy-select" name="privacy-policy">
+            <label for="privacy-policy">Соглашаюсь с <span class="orange">правилами</span> и <span class="orange">политикой </span><br>
+                <span class="orange">конфиденциальности сайта</span></label>
+        </div>
+        <button class="send send_orange">Отправить заявку</button>
+    </div>
+</section>
+<section class="modal-buy-number" id="modal-review">
+    <div class="modal-buy-number__window modal-buy-number__window_review">
+        <div class="close-container">
+            <svg class="close" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 15L8 8M8 8L15 1M8 8L15 15M8 8L1 1" stroke="#222222" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="modal-buy-number__heading">Оставить отзыв</div>
+        <div class="grid-input">
+            <input class="grid-input__elem" placeholder="Имя">
+            <input class="grid-input__elem" placeholder="Фамилия">
+            <input class="grid-input__elem" placeholder="Email адрес">
+            <input class="grid-input__elem grid-input__elem_comment" placeholder="Комментарий">
+        </div>
+        <button class="send">Отправить</button>
+    </div>
+</section>
+<!--ХЕДЕР-->
+<header class="header">
+    <img class="header__logo" src="../assets/logo.svg">
+    <nav class="header__nav">
+        <div>
+            Красивые номера
+        </div>
+        <div>
+            Тарифы
+        </div>
+        <div>
+            Магазин
+        </div>
+        <div>
+            Услуги
+        </div>
+        <div>
+            О компании
+        </div>
+    </nav>
+    <div class="header__contacts">
+        <img src="../assets/telega.svg">
+        <img src="../assets/whats.svg">
+    </div>
+    <div class="header__buttons">
+        <button class="recall">
+            Обратный звонок
+        </button>
+        <button class="basket">
+            <span>Корзина</span>
+            <img src="../assets/Cart.svg">
+
+        </button>
+    </div>
+</header>
+<section class="banner">
+    <div class="banner__text">
+        <h1 class="heading banner_heading">Красивые номера на <span class="heading_orange">MARKETNOMEROV</span></h1>
+        <div class="banner__subtext subtext">
+            На нашем сайте вы можете не только купить красивый номер, но и продать свой действующий номер.
+        </div>
+        <div class="banner__button">
+            <button class="buy-number">Купить красивый номер</button>
+            <button class="sale-number subtext">Продать красивый номер →</button>
+        </div>
+        <p class="text-tips">Подключим выгодный тариф на вашем действующем номере</p>
+    </div>
+    <div class="banner__img">
+        <img class="img-adaptive" src="../assets/banner.png">
+        <img src="../assets/circle.png">
+    </div>
+</section>
+<section class="steps">
+    <figure class="steps__heading">
+        <img src="../assets/grid.svg" alt="сетка">
+        <figcaption><span class="subheading_blue">3 шага</span>для получения <br> &nbsp;красивого номера</figcaption>
+    </figure>
+
+    <div class="steps__details">
+        <div class="steps__description">
+            <div class="columns columns_1">
+                <div class="orange-number">01</div>
+                <div class="columns__flex">
+                    <img src="../assets/icon-blank.svg">
+                    <div>
+                        <div class="columns__header"><b>Выберете номер</b></div>
+                        <p class="columns__text">Вы можете выбрать красивый номер на нашем сайте или оставить заявку, на
+                            подбор номера.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns columns_2">
+                <div class="orange-number">02</div>
+                <div class="columns__flex">
+                    <img src="../assets/icon-correct.svg">
+                    <div>
+                        <div class="columns__header"><b>Оформите заказ</b></div>
+                        <p class="columns__text">Оформите заказ через корзину или
+                            нашего менеджера. Мы свяжемся с вами в течение 1 часа для подтверждения заказа.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns columns_3">
+                <div class="orange-number">03</div>
+                <div class="columns__flex">
+                    <img src="../assets/icon-contact.svg">
+                    <div>
+                        <div class="columns__header"><b>Получите SIM-карту</b></div>
+                        <p class="columns__text">Заберите вашу SIM-карту у курьера или в пункте самовывоза.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="beatiful-number">
+    <h2 class="beatiful-number__heading">Красивые номера</h2>
+    <div class="beatiful-number__filter">
+        <div class="beatiful-number__subheading">
+            <b>Поиск номеров</b>
+            <button class="clear">
+                <div>
+                    Очистить
+                </div>
+                <svg style="padding: 3%" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.752548 11.7021L5.99411 6.46056M5.99411 6.46056L11.2357 1.21899M5.99411 6.46056L11.2357 11.7021M5.99411 6.46056L0.752548 1.21899"
+                          stroke="#9D9D9D" stroke-width="1.48254" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="input-number">
+            <div class="input-code">
+                <div>9**</div>
+                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.14318 1.12271C1.45832 0.791087 1.95148 0.76094 2.29899 1.03227L2.39855 1.12271L10.0559 9.17992L17.7133 1.12271C18.0284 0.791087 18.5216 0.76094 18.8691 1.03227L18.9687 1.12271C19.2838 1.45433 19.3125 1.97326 19.0546 2.33894L18.9687 2.4437L10.6836 11.1618C10.3685 11.4935 9.8753 11.5236 9.52779 11.2523L9.42823 11.1618L1.14318 2.4437C0.796513 2.07892 0.796513 1.48749 1.14318 1.12271Z"
+                          fill="#F14F02"/>
+                </svg>
+            </div>
+            <input class="input-one-numb" maxlength="1">
+            <input class="input-one-numb" maxlength="1">
+            <input class="input-one-numb" maxlength="1">
+            −
+            <input class="input-one-numb" maxlength="1">
+            <input class="input-one-numb" maxlength="1">
+            −
+            <input class="input-one-numb" maxlength="1">
+            <input class="input-one-numb" maxlength="1">
+            <input class="search-number" placeholder="Поиск номера">
+            <input class="input-xz">
+        </div>
+        <div class="link-underline">Как выбрать красивый номер</div>
+        <div class="operator">
+            <div class="operator__card">
+                <img src="../assets/tele2.png">
+            </div>
+            <div class="operator__card">
+                <img src="../assets/beeline.png">
+            </div>
+            <div class="operator__card">
+                <img src="../assets/mts.png">
+            </div>
+            <div class="operator__card">
+                <img class="rt-min" src="../assets/rt.png">
+            </div>
+        </div>
+
+        <div class="beatiful-number__range-number">
+            <div>Бесплатные</div>
+            <div>250</div>
+            <div>1000</div>
+            <div>5500</div>
+            <div>16000</div>
+            <div>21000</div>
+            <div>26000</div>
+        </div>
+        <div class="range-slider">
+            <div class="range-fill"></div>
+            <div class="range-dot1"></div>
+            <div class="range-dot2"></div>
+            <div class="range-dot3"></div>
+            <div class="range-dot4"></div>
+            <div class="range-dot5"></div>
+            <input
+                    type="range"
+                    class="min-price"
+                    value="100"
+                    min="0"
+                    max="26000"
+                    step="10"
+            />
+            <input
+                    type="range"
+                    class="max-price"
+                    value="10550"
+                    min="0"
+                    max="26000"
+                    step="10"
+            />
+        </div>
+        <div class="select-options">
+            <div class="select-options__elem">Выберите регион</div>
+            <div class="select-options__elem">Выберите по скидке</div>
+        </div>
+        <div class="beatiful-number__button">
+            <button class="search">
+                <svg width="15" height="15" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.6435 20.4518L16.6073 15.4155H16.553C18.1054 13.5852 18.8899 11.2255 18.7423 8.83005C18.5948 6.43462 17.5267 4.18902 15.7617 2.56297C13.9964 0.936919 11.6709 0.0563988 9.27145 0.105593C6.87198 0.154788 4.58449 1.12989 2.88746 2.82692C1.19044 4.52395 0.215336 6.81144 0.16614 9.21091C0.116946 11.6104 0.997467 13.9359 2.62351 15.7011C4.24956 17.4663 6.49517 18.5342 8.8906 18.6818C11.286 18.8293 13.6457 18.0448 15.476 16.4924C15.476 16.4924 15.476 16.5313 15.476 16.5467L20.5124 21.5831C20.5844 21.6557 20.6701 21.7133 20.7644 21.7527C20.8589 21.7921 20.9602 21.8123 21.0625 21.8123C21.1647 21.8123 21.266 21.7921 21.3605 21.7527C21.4548 21.7133 21.5405 21.6557 21.6125 21.5831C21.692 21.5127 21.7562 21.4268 21.8011 21.3307C21.8459 21.2346 21.8705 21.1302 21.8734 21.0241C21.8765 20.9181 21.8575 20.8125 21.8179 20.7141C21.7784 20.6157 21.719 20.5264 21.6435 20.4518ZM9.47115 17.1278C7.9387 17.1278 6.44067 16.6734 5.16648 15.822C3.89229 14.9706 2.89918 13.7605 2.31275 12.3447C1.72631 10.9289 1.57286 9.37102 1.87183 7.86802C2.1708 6.36502 2.90874 4.98442 3.99235 3.90081C5.07596 2.81721 6.45656 2.07926 7.95956 1.78028C9.46256 1.48132 11.0205 1.63477 12.4363 2.22121C13.8521 2.80765 15.0622 3.80075 15.9136 5.07495C16.765 6.34914 17.2194 7.84717 17.2194 9.37962C17.2194 10.3971 17.019 11.4047 16.6296 12.3447C16.2402 13.2848 15.6695 14.1389 14.9499 14.8585C14.2305 15.5779 13.3763 16.1486 12.4363 16.538C11.4962 16.9274 10.4887 17.1278 9.47115 17.1278Z"
+                          fill="white"/>
+                </svg>
+                <div>Искать</div>
+            </button>
+            <button class="hide-filter">
+                <svg width="18" height="10" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.4464 11.01C18.131 11.3419 17.6375 11.3721 17.2897 11.1005L17.1901 11.01L9.52682 2.94662L1.86357 11.01C1.54818 11.3419 1.05465 11.3721 0.706867 11.1005L0.607229 11.01C0.29184 10.6781 0.263166 10.1588 0.521214 9.79285L0.607229 9.688L8.89865 0.963175C9.21404 0.631299 9.70757 0.601129 10.0554 0.872663L10.155 0.963175L18.4464 9.688C18.7933 10.0531 18.7933 10.645 18.4464 11.01Z"
+                          fill="#9D9D9D"/>
+                </svg>
+
+                <div>Скрыть фильтры</div>
+            </button>
+        </div>
+
+        <div class="table">
+            <div class="table__name">Номер</div>
+            <div class="table__name">Стоимость</div>
+            <div class="table__name">Оператор</div>
+        </div>
+        <div class="table">
+            <div class="phone"><span class="number_color">+7</span> (988) 390 04 47</div>
+            <div class="phone-price">1 000 ₽</div>
+            <div class="phone-operator">
+                <img src="../assets/tele2.png">
+            </div>
+            <div>
+                <button class="select-buttons">Выбрать</button>
+            </div>
+        </div>
+        <div class="table">
+            <div class="phone"><span class="number_color">+7</span> (988) 390 04 47</div>
+            <div class="phone-price">1 000 ₽</div>
+            <div class="phone-operator">
+                <img src="../assets/mts.png">
+            </div>
+            <div>
+                <button class="select-buttons">Выбрать</button>
+            </div>
+        </div>
+        <div class="table">
+            <div class="phone"><span class="number_color">+7</span> (988) 390 04 47</div>
+            <div class="phone-price">1 000 ₽</div>
+            <div class="phone-operator">
+                <img src="../assets/beeline.png">
+            </div>
+            <div>
+                <button class="select-buttons">Выбрать</button>
+            </div>
+        </div>
+        <div class="table">
+            <div class="phone"><span class="number_color">+7</span> (988) 390 04 47</div>
+            <div class="phone-price">1 000 ₽</div>
+            <div class="phone-operator">
+                <img class="rt-big" src="../assets/rt.png">
+            </div>
+            <div>
+                <button class="select-buttons">Выбрать</button>
+            </div>
+        </div>
+        <div class="table">
+            <div class="phone"><span class="number_color">+7</span> (988) 390 04 47</div>
+            <div class="phone-price">1 000 ₽</div>
+            <div class="phone-operator">
+                <img src="../assets/tele2.png">
+            </div>
+            <div>
+                <button class="select-buttons">Выбрать</button>
+            </div>
+        </div>
+    </div>
+</section>
+<button class="more-numbers">Еще номера →</button>
+<section class="goods">
+    <h2 class="heading2 goods__heading">Товары
+        <div class="arrows">
+            <div class="arrows__left">
+                <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.00043 0.841806L0.792363 4.04987L4.00043 7.25793" stroke="#4262FF"
+                          stroke-width="0.855484"/>
+                </svg>
+            </div>
+            <div class="arrows__right">
+                <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.438293 7.25817L3.64636 4.05011L0.438293 0.842041" stroke="white"
+                          stroke-width="0.855484"/>
+                </svg>
+            </div>
+        </div>
+    </h2>
+    <hr class="goods__underline hr_blue">
+    <nav class="goods_nav">
+        <div>ЛИДЕРЫ ПРОДАЖ</div>
+        <div>ТОВАР ДНЯ</div>
+        <div>СКИДКИ</div>
+    </nav>
+    <div class="goods__slider">
+        <div class="slide">
+            <img src="../assets/iphone.png">
+            <div class="goods__name">
+                <div><b>Заголовок</b></div>
+                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                          stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда
+                нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+                никакого.</p>
+            <div class="goods__price">
+                <div class="price">1500 Р</div>
+                <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black" stroke-width="1.00391"
+                          stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391" stroke-miterlimit="10"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <button class="basket-mini"> В корзину</button>
+        </div>
+        <div class="slide">
+            <img src="../assets/iphone.png">
+            <div class="goods__name">
+                <div><b>Заголовок</b></div>
+                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                          stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда
+                нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+                никакого.</p>
+            <div class="goods__price">
+                <div class="price">1500 Р</div>
+                <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black" stroke-width="1.00391"
+                          stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391" stroke-miterlimit="10"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <button class="basket-mini"> В корзину</button>
+        </div>
+        <div class="slide">
+            <img src="../assets/iphone.png">
+            <div class="goods__name">
+                <div><b>Заголовок</b></div>
+                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                          stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда
+                нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+                никакого.</p>
+            <div class="goods__price">
+                <div class="price">1500 Р</div>
+                <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black" stroke-width="1.00391"
+                          stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391" stroke-miterlimit="10"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <button class="basket-mini"> В корзину</button>
+        </div>
+    </div>
+    <button class="more-goods more-goods__margin">
+        Еще товары →
+    </button>
+</section>
+<section class="close-tarif">
+    <h2 class="heading2 goods__heading">Закрытые тарифы
+        <div class="arrows">
+            <div class="arrows__left">
+                <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.00043 0.841806L0.792363 4.04987L4.00043 7.25793" stroke="#4262FF"
+                          stroke-width="0.855484"/>
+                </svg>
+            </div>
+            <div class="arrows__right">
+                <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.438293 7.25817L3.64636 4.05011L0.438293 0.842041" stroke="white"
+                          stroke-width="0.855484"/>
+                </svg>
+            </div>
+        </div>
+    </h2>
+    <hr class="goods__underline hr_blue">
+    <nav class="goods_nav">
+        <div>БАЗОВЫЙ</div>
+        <div>НА МАКСИМУМ</div>
+        <div>БЕЗЛИМИТ</div>
+    </nav>
+    <div class="slider-tarif">
+        <div class="slider-tarif__slide slide-tarif">
+            <div class="slide-tarif__up">
+                <div class="slide-tarif__img">
+                    <img src="../assets/Frame%20224219.svg">
+                    <img src="../assets/Frame%20224220.svg">
+                </div>
+            </div>
+            <div class="slide-tarif__down">
+                <div class="slide-tarif__price">
+                    <div class="tarif-ruble">Р</div>
+                    <div class="tarif-price">290</div>
+                    <div class="tarif-month">/мес</div>
+                </div>
+                <ul class="tarif__list">
+                    <li>Безлимит Билайн;</li>
+                    <li>500 минут на все сети России;</li>
+                    <li> 10 гб интернет;</li>
+                    <li> 100 SMS по России;</li>
+                </ul>
+                <button class="connect">
+                    Подключить
+                </button>
+            </div>
+        </div>
+        <div class="slider-tarif__slide slide-tarif">
+            <div class="slide-tarif__up">
+                <div class="slide-tarif__img">
+                    <img src="../assets/Frame%20224219.svg">
+                    <img src="../assets/Frame%20224220.svg">
+                </div>
+            </div>
+            <div class="slide-tarif__down">
+                <div class="slide-tarif__price">
+                    <div class="tarif-ruble">Р</div>
+                    <div class="tarif-price">290</div>
+                    <div class="tarif-month">/мес</div>
+                </div>
+                <ul class="tarif__list">
+                    <li>Безлимит Билайн;</li>
+                    <li>500 минут на все сети России;</li>
+                    <li> 10 гб интернет;</li>
+                    <li> 100 SMS по России;</li>
+                </ul>
+                <button class="connect">
+                    Подключить
+                </button>
+            </div>
+        </div>
+        <div class="slider-tarif__slide slide-tarif">
+            <div class="slide-tarif__up">
+                <div class="slide-tarif__img">
+                    <img src="../assets/Frame%20224219.svg">
+                    <img src="../assets/Frame%20224220.svg">
+                </div>
+            </div>
+            <div class="slide-tarif__down">
+                <div class="slide-tarif__price">
+                    <div class="tarif-ruble">Р</div>
+                    <div class="tarif-price">290</div>
+                    <div class="tarif-month">/мес</div>
+                </div>
+                <ul class="tarif__list">
+                    <li>Безлимит Билайн;</li>
+                    <li>500 минут на все сети России;</li>
+                    <li> 10 гб интернет;</li>
+                    <li> 100 SMS по России;</li>
+                </ul>
+                <button class="connect">
+                    Подключить
+                </button>
+            </div>
+        </div>
+    </div>
+    <button class="more-goods more-goods__margin">
+        Еще тарифы →
+    </button>
+</section>
+<section class="uslugi">
+    <figure class="steps__heading">
+        <img src="../assets/grid.svg" alt="сетка">
+        <figcaption class="uslugi__heading-width">
+            <h2 class="heading2 goods__heading">Услуги
+                <div class="arrows">
+                    <div class="arrows__left">
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.00043 0.841806L0.792363 4.04987L4.00043 7.25793" stroke="#4262FF"
+                                  stroke-width="0.855484"/>
+                        </svg>
+                    </div>
+                    <div class="arrows__right">
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.438293 7.25817L3.64636 4.05011L0.438293 0.842041" stroke="white"
+                                  stroke-width="0.855484"/>
+                        </svg>
+                    </div>
+                </div>
+            </h2>
+            <hr class="goods__underline hr_blue hr_uslugi">
+            <nav class="goods_nav">
+                <div>РЕМОНТ</div>
+                <div>УСТАНОВКА И НАСТРОЙКИ</div>
+                <div>ДРУГОЕ</div>
+            </nav>
+        </figcaption>
+    </figure>
+    <div class="uslugi__body">
+        <div class="services-card">
+            <img class="services-card__top" src="../assets/serv1.png">
+            <div class="services-card__bottom">
+                <div class="services-card__heading">Заголовок</div>
+                <div class="services-card__text">Рыбатекст используется дизайнерами</div>
+                <button class="connect">
+                    Подробнее
+                </button>
+            </div>
+        </div>
+        <div class="services-card">
+            <img class="services-card__top" src="../assets/serv2.png">
+            <div class="services-card__bottom">
+                <div class="services-card__heading">Заголовок</div>
+                <div class="services-card__text">Рыбатекст используется дизайнерами</div>
+                <button class="connect">
+                    Подробнее
+                </button>
+            </div>
+        </div>
+        <div class="services-card">
+            <img class="services-card__top" src="../assets/serv3.png">
+            <div class="services-card__bottom">
+                <div class="services-card__heading">Заголовок</div>
+                <div class="services-card__text">Рыбатекст используется дизайнерами</div>
+                <button class="connect">
+                    Подробнее
+                </button>
+            </div>
+        </div>
+    </div>
+    <button class="more-goods more-goods__margin">
+        Еще услуги →
+    </button>
+    <section class="statistics">
+        <div class="statistics__grid">
+            <div>
+                <span class="number-daysone">1176</span>
+                <div class="statistics__text">партнеров работают <br>в команде с нами</div>
+            </div>
+            <div>
+                <span class="number-daysone">с 2010 г.</span>
+                <div class="statistics__text">работаем на рынке <br>телекоммуникаций</div>
+            </div>
+            <div>
+                <span class="number-daysone heading_orange">100 000+</span>
+                <div class="statistics__text">проданных SIM-карт</div>
+            </div>
+            <div>
+                <span class="number-daysone">60</span>
+                <div class="statistics__text">представительств <br> в регионах РФ и СНГ</div>
+            </div>
+        </div>
+        <div class="statistics__gap">
+            <div>
+                <span class="number-daysone">О КОМПАНИИ</span>
+                <div class="statistics__text">Рыбатекст используется дизайнерами, <br> проектировщиками и фронтендерами
+                </div>
+            </div>
+            <div class="read-more">
+                <div class="statistics__text read-more_blue">Читать <br>еще</div>
+                <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.708984 5.60911C0.708984 5.40736 0.796633 5.21388 0.952649 5.07123C1.10866 4.92858 1.32027 4.84844 1.54091 4.84844H11.1796L7.60729 1.58363C7.45107 1.4408 7.36331 1.24708 7.36331 1.04508C7.36331 0.843082 7.45107 0.649358 7.60729 0.506524C7.7635 0.363691 7.97537 0.283447 8.19629 0.283447C8.4172 0.283447 8.62907 0.363691 8.78529 0.506524L13.7768 5.07055C13.8543 5.14121 13.9158 5.22515 13.9577 5.31757C13.9996 5.40998 14.0212 5.50905 14.0212 5.60911C14.0212 5.70916 13.9996 5.80823 13.9577 5.90065C13.9158 5.99306 13.8543 6.077 13.7768 6.14766L8.78529 10.7117C8.62907 10.8545 8.4172 10.9348 8.19629 10.9348C7.97537 10.9348 7.7635 10.8545 7.60729 10.7117C7.45107 10.5689 7.36331 10.3751 7.36331 10.1731C7.36331 9.97114 7.45107 9.77741 7.60729 9.63458L11.1796 6.36978H1.54091C1.32027 6.36978 1.10866 6.28964 0.952649 6.14698C0.796633 6.00433 0.708984 5.81085 0.708984 5.60911Z"
+                          fill="#3461FF"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+</section>
+<!--ОТЗЫВЫ-->
+<section class="reviews">
+    <h2 class="heading2 goods__heading">Отзывы</h2>
+    <div class="arrows arrows__reviews">
+        <div class="arrows__left">
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.00043 0.841806L0.792363 4.04987L4.00043 7.25793" stroke="#4262FF"
+                      stroke-width="0.855484"/>
+            </svg>
+        </div>
+        <div class="arrows__right">
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.438293 7.25817L3.64636 4.05011L0.438293 0.842041" stroke="white"
+                      stroke-width="0.855484"/>
+            </svg>
+        </div>
+    </div>
+    <div class="reviews__body reviews__margin">
+        <div class="reviews__left">
+            <div class="user">
+                <img class="user__photo" src="../assets/user.png">
+                <div class="user__info">
+                    <div class="user__name"> Василий Васильев</div>
+                    <div class="user__nickname">@thisiskp_</div>
+                </div>
+            </div>
+            <div class="reviews__first">
+                Активировал без проволочек, симки стандартно-универсальные, подходят к любому аппарату, всё здорово.
+                Тарифный план вообще порадовал, подобрали для работы самое то, так как часто приходится перезванивать
+                заказчикам.
+            </div>
+        </div>
+        <div class="reviews__right">
+            Активировал без проволочек, симки стандартно-универсальные, подходят к любому аппарату, всё здорово.
+            Тарифный план вообще порадовал, подобрали для работы самое то, так как часто приходится перезванивать
+            заказчикам.
+        </div>
+    </div>
+    <button class="add-review">
+        Оставить отзыв
+    </button>
+</section>
+<!--ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ -->
+<section class="often-questions o">
+    <div class="often-questions__right">
+        <div class="often-questions__elem">
+            <div>Почему дешевле, чем напрямую у оператора связи?</div>
+            <img src="../assets/plus_orange.svg">
+        </div>
+        <div class="often-questions__elem">
+            <div>Какие документы необходимы для оформления <br>тарифа и номера?</div>
+            <img src="../assets/plus_orange.svg">
+        </div>
+        <div class="often-questions__elem">
+            <div>Почему дешевле, чем напрямую у оператора связи?</div>
+            <img src="../assets/plus_orange.svg">
+        </div>
+    </div>
+    <div class="often-questions__left">
+        <div class="newsletter">Подпишитесь <br>на нашу рассылку</div>
+        <p class="newsletter-italic"><i>Чтобы не пропустить новости <br> о скидках и акциях</i></p>
+        <div class="newsletter__form">
+            <input class="input-email" placeholder="Ваш Email"/>
+            <button class="send-button">Отправить</button>
+        </div>
+    </div>
+</section>
+<!--ФУТЕР-->
+<footer class="footer">
+    <div class="footer__top">
+        <div class="logo-footer">MARKETNOMEROV.RU</div>
+        <ul class="footer__nav">
+            <li>Красивые номера</li>
+            <li>Тарифы</li>
+            <li>Как подключить</li>
+        </ul>
+        <div class="footer__add">
+            <div>О компании</div>
+            <div>Отзывы</div>
+        </div>
+        <div class="inn">
+            ИНН 7733871435, КПП 773301001, ОГРН <br>1147746179570, ОКПО 29039632. Действует <br> с 24.02.2014
+        </div>
+    </div>
+</footer>
+<div class="footer__bottom">
+    <div class="footer__text">© marketnomerov.ru, 2010 — 2023</div>
+    <div class="footer__text">Политика конфиденциальности</div>
+    <div class="footer__text">Договор оферты</div>
+</div>
+
+
+<script src="../js/range.js"></script>
+<script src="../js/modal.js"></script>
+</body>
+</html>
