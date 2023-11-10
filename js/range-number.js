@@ -47,3 +47,4 @@ rangeSlider2.noUiSlider.on("update", function (values, handle) {
 
     value.innerHTML =result;
 });
+

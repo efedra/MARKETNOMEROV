@@ -19,21 +19,12 @@ $blue: rgba(66, 98, 255, 1);
 .modal-buy-number__window {
   background: white;
   position: relative;
-  //width: 41vw;
-  //height: 41vw;
   max-width: 100%;
   padding: 2.5vw;
   display: flex;
   flex-direction: column;
 }
 
-.modal-buy-number__window_select {
-  //height: 45vw;
-}
-
-.modal-buy-number__window_review {
-  //height: 34.5vw;
-}
 
 .grid-input {
   display: grid;
@@ -87,18 +78,18 @@ $blue: rgba(66, 98, 255, 1);
   margin-bottom: 4vh;
 }
 
-input[type="checkbox"] {
+.input-modal {
   position: absolute;
   opacity: 0;
 }
 
-input[type="checkbox"] + label {
+.input-modal + label {
   position: relative;
   padding-left: 2.5vw;
   cursor: pointer;
 }
 
-input[type="checkbox"] + label:before {
+.input-modal + label:before {
   content: '';
   position: absolute;
   left: 0;
@@ -109,7 +100,7 @@ input[type="checkbox"] + label:before {
   border: 1px solid rgba(66, 98, 255, 1);
 }
 
-input[type="checkbox"]:checked + label:before {
+.input-modal:checked + label:before {
   background-color: rgba(66, 98, 255, 1);
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M9.29 16.29L4.71 11.71a1 1 0 011.42-1.42l3.59 3.58L18.59 6.3a1 1 0 011.42 1.42l-10 10a1 1 0 01-1.42 0z"/></svg>');
   background-size: cover;
