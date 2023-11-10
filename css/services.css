@@ -22,7 +22,6 @@
   background: url("../assets/banner-services.png") no-repeat;
   background-size: cover;
   padding: 3% 6%;
-  height: 44vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -30,6 +29,7 @@
 
 .img-join {
   width: 45%;
+  margin-bottom: 7%;
 }
 
 .banner-services__text {
@@ -70,6 +70,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 30%;
+}
+
+.container_zero-padding {
+  padding: 0;
 }
 
 /*# sourceMappingURL=services.css.map */
