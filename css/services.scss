@@ -1,0 +1,92 @@
+@import "adaptive-min";
+
+.t02_uslugi {
+  width: 100%;
+  height: 19vh;
+}
+
+
+.services-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  //grid-template-rows: repeat(2,1fr);
+}
+
+.services-card_uslugi{
+  width: 95%;
+  height: 95%;
+  margin: 0 auto;
+}
+
+.container__margin{
+  margin-bottom: 4vh;
+}
+
+.banner-services{
+  background: url("../assets/banner-services.png") no-repeat;
+  background-size: cover;
+
+  padding: 3% 6%;
+  height: 44vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-join{
+  width: 45%;
+}
+
+.banner-services__text{
+  color: rgba(254, 97, 11, 1);
+  font-family: Days;
+  @include adaptiv-font-min(26,13);
+}
+
+//.services-gallery{
+//  background: url('../assets/wallpaper.png') no-repeat;
+//  background-size: 100%;
+//  display: flex;
+//  position: relative;
+//}
+
+.services-gallery__elem{
+  //margin: 0 auto;
+  //max-height: 600px;
+  //padding: 6% 0;
+}
+
+.arrows_orange{
+  position: absolute;
+  top: 50%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 2%;
+  max-height: 83px;
+}
+
+.arrows__left_orange, .arrows__right_orange{
+  max-width: 8%;
+}
+
+.services-gallery__margin{
+  margin-bottom: 25vh;
+}
+
+.wallpaper{
+  width: 100%;
+}
+
+.services-gallery{
+  position: relative;
+}
+
+.services-gallery__elem{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
