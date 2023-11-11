@@ -128,39 +128,39 @@
 }
 
 .adress-elem__head {
-  position: relative;
-  padding: 2vw 0vw 1vw 8vw;
   display: flex;
-  min-height: 10.5vw;
-  margin-top: -9px;
+  gap: 3%;
+  height: 45%;
+  max-height: 85px;
 }
 
 .adress-elem__head_orange {
-  margin-top: 0;
-  padding: 5vw 0vw 4vw 7vw;
+  height: 11.5vw;
+  max-height: 123px;
+  gap: 4%;
 }
 
 .address-elem__number {
-  position: absolute;
-  top: 0;
-  left: 0;
   font-family: Days;
-  line-height: 42px;
   font-size: min(20px + 37 * ((100vw - 320px) / 960), 57px);
-}
-
-.address-elem__number_orange {
-  color: rgb(240, 78, 1);
+  margin-top: -6%;
 }
 
 .address-elem__name {
   font-size: min(4px + 17 * ((100vw - 320px) / 960), 21px);
   font-weight: 600;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.address-elem__name_orange {
+.address-elem__text_orange {
   color: rgb(240, 78, 1);
+}
+
+.adress-elem_orange {
+  border-top: 9px solid transparent;
 }
 
 .address-info {
@@ -175,6 +175,10 @@
 
 .addres-info_weight {
   font-weight: 600;
+}
+
+.often-questions_zero-padding {
+  padding: 0;
 }
 
 /*# sourceMappingURL=company.css.map */
