@@ -1,6 +1,6 @@
 @import "fonts.css";
 @import "adaptive";
-
+@import "adaptive-min";
 * {
   padding: 0;
   margin: 0;
@@ -550,7 +550,7 @@ a {
 
 .number-daysone {
   font-family: Days;
-  @include adaptiv-font(57, 15);
+  @include adaptiv-font-min(57, 15);
 }
 
 .statistics__gap {

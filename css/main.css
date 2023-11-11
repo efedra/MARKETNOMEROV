@@ -531,7 +531,7 @@ a {
 
 .number-daysone {
   font-family: Days;
-  font-size: calc(15px + 42 * ((100vw - 320px) / 960));
+  font-size: min(15px + 42 * ((100vw - 320px) / 960), 57px);
 }
 
 .statistics__gap {
