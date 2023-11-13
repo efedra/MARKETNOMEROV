@@ -60,17 +60,37 @@ $('.arrows-reviews__right').click(function(){
 });
 
 
-// $('.banner-slider').slick({
+// $('.beatiful-number__body').slick({
 //     slidesToShow: 1,
 //     slidesToScroll: 1,
 //     infinite: true,
 // });
 //
 // $('.arrow-beatiful-number-left').click(function(){
-//     $('.banner-slider').slick('slickPrev');
+//     $('.beatiful-number__body').slick('slickPrev');
 // });
 //
 // // При клике на стрелку вправо
 // $('.arrow-beatiful-number-right').click(function(){
-//     $('.banner-slider').slick('slickNext');
+//     $('.beatiful-number__body').slick('slickNext');
 // });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var splide = new Splide('.splide', {
+        type: 'loop',
+        perPage: 1,
+        arrows: false,
+        drag: false,
+    }).mount();
+
+    var prevButton = document.querySelector('.arrow-beatiful-number-left');
+    var nextButton = document.querySelector('.arrow-beatiful-number-right');
+
+    prevButton.addEventListener('click', function() {
+        splide.go('-1'); // Переход на предыдущий слайд
+    });
+
+    nextButton.addEventListener('click', function() {
+        splide.go('+1'); // Переход на следующий слайд
+    });
+});

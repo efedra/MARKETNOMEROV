@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Красивые номера</title>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/modal.css">
     <link rel="stylesheet" href="../css/tips.css">
@@ -111,38 +114,64 @@
 </header>
 <div class="container">
     <section class="banner-number banner-number__margin">
-        <div class="beatiful-number__body">
-            <div class="banner-slider">
-                <img class="img-adaptive" src="../assets/banner-number.png">
-            </div>
-            <div class="beatiful-number__main">
+        <div class="beatiful-number__body splide">
+            <div class="splide__track">
                 <div class="arrow-beatiful-number-left">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="19.8825" cy="19.8825" r="19.4683" stroke="white" stroke-width="0.828437"/>
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="19.8825" cy="19.8825" r="19.4683" stroke="white"
+                                stroke-width="0.828437"/>
                         <path d="M20.9181 16.1544L17.1901 19.8824L20.9181 23.6104" stroke="white"
                               stroke-width="0.994125"/>
                     </svg>
                 </div>
                 <div class="arrow-beatiful-number-right">
-                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20.6475" cy="19.8824" r="19.4683" transform="rotate(180 20.6475 19.8824)"
+                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20.6475" cy="19.8824" r="19.4683"
+                                transform="rotate(180 20.6475 19.8824)"
                                 stroke="white" stroke-width="0.828437"/>
                         <path d="M19.6119 23.6107L23.3399 19.8828L19.6119 16.1548" stroke="white"
                               stroke-width="0.994125"/>
                     </svg>
 
                 </div>
-                <h1 class="head-days margin__head">ТОП ТОВАРЫ <br> НА MARKETNOMEROV.RU</h1>
-                <button class="button-catalog">
-                    <div>
-                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.0959473 0.43335H10.4521V1.58403H0.0959473V0.43335ZM0.0959473 2.73472H10.4521V3.8854H0.0959473V2.73472ZM0.0959473 5.03609H10.4521V6.18677H0.0959473V5.03609Z"
-                                  fill="white"/>
-                        </svg>
+                <div class="splide__list">
+                    <div class="banner-number__slide splide__slide">
+                        <img class="img-adaptive" src="../assets/banner-number.png">
+                        <div class="beatiful-number__main">
+                            <h1 class="head-days margin__head">ТОП ТОВАРЫ <br> НА MARKETNOMEROV.RU</h1>
+                            <button class="button-catalog">
+                                <div>
+                                    <svg width="11" height="7" viewBox="0 0 11 7" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.0959473 0.43335H10.4521V1.58403H0.0959473V0.43335ZM0.0959473 2.73472H10.4521V3.8854H0.0959473V2.73472ZM0.0959473 5.03609H10.4521V6.18677H0.0959473V5.03609Z"
+                                              fill="white"/>
+                                    </svg>
 
+                                </div>
+                                <div>Смотреть каталог</div>
+                            </button>
+                        </div>
                     </div>
-                    <div>Смотреть каталог</div>
-                </button>
+                    <div class="banner-number__slide splide__slide">
+                        <img class="img-adaptive" src="../assets/banner-number.png">
+                        <div class="beatiful-number__main">
+                            <h1 class="head-days margin__head">ТОП ТОВАРЫ <br> НА MARKETNOMEROV.RU</h1>
+                            <button class="button-catalog">
+                                <div>
+                                    <svg width="11" height="7" viewBox="0 0 11 7" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.0959473 0.43335H10.4521V1.58403H0.0959473V0.43335ZM0.0959473 2.73472H10.4521V3.8854H0.0959473V2.73472ZM0.0959473 5.03609H10.4521V6.18677H0.0959473V5.03609Z"
+                                              fill="white"/>
+                                    </svg>
+
+                                </div>
+                                <div>Смотреть каталог</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <div class="beatiful-number__range">
                     <div class="beatiful-number__block">
                         <div class="name-range">Желаемая сумма рассрочки</div>
@@ -172,7 +201,6 @@
                         </button>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -415,6 +443,9 @@
 <script src="../js/range-number.js"></script>
 <script src="../js/tips.js"></script>
 <script src="../js/modal.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
 <script
         src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="

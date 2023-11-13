@@ -58,6 +58,10 @@
   grid-template-columns: 2fr 2fr 1fr 1fr;
   gap: 4%;
   height: 20%;
+  position: absolute;
+  bottom: 1%;
+  left: 3%;
+  width: 95%;
 }
 
 .noUi-connect {
@@ -158,12 +162,38 @@
   position: absolute;
   top: 50%;
   left: 0;
+  z-index: 2;
+  max-width: 41px;
+  max-height: 41px;
+  width: 3.1vw;
+  height: 3.1vw;
+}
+.arrow-beatiful-number-left svg {
+  width: 100%;
+  height: auto;
 }
 
 .arrow-beatiful-number-right {
   position: absolute;
   top: 50%;
   right: 0;
+  z-index: 2;
+  max-width: 41px;
+  max-height: 41px;
+  width: 3.1vw;
+  height: 3.1vw;
+}
+.arrow-beatiful-number-right svg {
+  width: 100%;
+  height: auto;
+}
+
+.splide__arrow {
+  display: none;
+}
+
+.splide__pagination {
+  display: none;
 }
 
 /*# sourceMappingURL=number.css.map */
