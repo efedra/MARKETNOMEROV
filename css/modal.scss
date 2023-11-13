@@ -51,14 +51,14 @@ $blue: rgba(66, 98, 255, 1);
 
 .grid-input__elem::placeholder {
   color: $gray;
-  @include adaptiv-font(14, 8);
+  @include adaptiv-font-min(14, 8);
   font-family: Roboto;
 }
 
 .modal-buy-number__heading {
   margin-bottom: 3vh;
   font-weight: 600;
-  @include adaptiv-font(25, 10);
+  @include adaptiv-font-min(25, 10);
   font-family: Roboto;
 }
 

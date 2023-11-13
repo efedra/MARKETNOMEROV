@@ -41,7 +41,7 @@ a {
 .header__nav {
   display: flex;
   font-size: 16px;
-  @include adaptiv-font(16, 4);
+  @include adaptiv-font-min(16, 4);
   gap: 1.5vw;
   flex-grow: 1;
 }
@@ -59,7 +59,7 @@ a {
 .recall {
   background: none;
   padding: 1.2vh 1.2vw;
-  @include adaptiv-font(19, 1);
+  @include adaptiv-font-min(19, 1);
   @extend %main-blue-border;
   border-radius: 34px;
   cursor: pointer;
@@ -67,7 +67,7 @@ a {
 
 .basket {
   @extend %main-blue-bg;
-  @include adaptiv-font(19, 1);
+  @include adaptiv-font-min(19, 1);
   color: white;
   padding: 1.2vh 3.2vw;
   box-shadow: 0px 1.9950840473175049px 3.9901680946350098px 0px rgba(165, 165, 165, 0.25);
@@ -93,7 +93,7 @@ a {
 }
 
 .heading {
-  @include adaptiv-font(46, 14);
+  @include adaptiv-font-min(46, 14);
   font-family: Inter;
 }
 
@@ -109,7 +109,7 @@ a {
 
 .subtext {
   color: rgba(5, 0, 56, 0.72);
-  @include adaptiv-font(18, 5)
+  @include adaptiv-font-min(18, 5)
 }
 
 .banner__subtext {
@@ -130,7 +130,7 @@ a {
   color: white;
   font-family: Inter;
   padding: 2vh 2vw;
-  @include adaptiv-font(19, 6);
+  @include adaptiv-font-min(19, 6);
   font-weight: 300;
   cursor: pointer;
 }
@@ -141,13 +141,13 @@ a {
   background: none;
   border: 1px solid rgba(155, 153, 175, 1);
   padding: 2vh 2vw;
-  @include adaptiv-font(19, 6);
+  @include adaptiv-font-min(19, 6);
 }
 
 .text-tips {
   color: rgba(5, 0, 56, 0.4);
   font-size: 15px;
-  @include adaptiv-font(15, 3)
+  @include adaptiv-font-min(15, 3)
 }
 
 .banner__img {
@@ -165,7 +165,7 @@ a {
 
 .steps__heading {
   position: relative;
-  @include adaptiv-font(30, 17);
+  @include adaptiv-font-min(30, 17);
   font-weight: bold;
 
   img {
@@ -302,14 +302,14 @@ a {
   margin-bottom: 2.5vh;
   display: flex;
   justify-content: space-between;
-  @include adaptiv-font(35, 12);
+  @include adaptiv-font-min(35, 12);
 }
 
 .goods_nav {
   font-family: Roboto;
   display: flex;
   gap: 2vw;
-  @include adaptiv-font(15, 10);
+  @include adaptiv-font-min(15, 10);
   font-weight: 600;
   margin-bottom: 10vh;
 }
@@ -354,7 +354,7 @@ a {
 }
 
 .basket-mini {
-  @include adaptiv-font(12, 7);
+  @include adaptiv-font-min(12, 7);
   @extend %main-blue-bg;
   @extend %main-blue-border;
   color: white;
@@ -526,12 +526,12 @@ a {
 }
 
 .services-card__heading {
-  @include adaptiv-font(25, 17);
+  @include adaptiv-font-min(25, 17);
   margin-bottom: 2vh;
 }
 
 .services-card__text {
-  @include adaptiv-font(20, 11);
+  @include adaptiv-font-min(20, 11);
   margin-bottom: 3vh;
 }
 
@@ -564,7 +564,7 @@ a {
 
 .statistics__text {
   font-family: Days;
-  @include adaptiv-font(14, 7);
+  @include adaptiv-font-min(14, 7);
   color: rgba(0, 0, 0, 0.6);
   line-height: 21.4px;
 }
@@ -708,7 +708,7 @@ a {
   cursor: pointer;
   color: white;
   padding: 2vh 2vw;
-  @include adaptiv-font(19, 6);
+  @include adaptiv-font-min(19, 6);
   margin-bottom: 12vh;
 }
 
@@ -727,7 +727,7 @@ a {
 
 .logo-footer {
   font-family: Days;
-  @include adaptiv-font(27, 14);
+  @include adaptiv-font-min(27, 14);
 }
 
 .footer__nav {

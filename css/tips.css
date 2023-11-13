@@ -8,12 +8,12 @@
 }
 
 .tips__head {
-  font-size: calc(10px + 6 * ((100vw - 320px) / 960));
+  font-size: min(10px + 6 * ((100vw - 320px) / 960), 16px);
   font-weight: 600;
 }
 
 .tips__body {
-  font-size: calc(10px + 6 * ((100vw - 320px) / 960));
+  font-size: min(10px + 6 * ((100vw - 320px) / 960), 16px);
   color: rgb(98, 108, 119);
 }
 

@@ -92,14 +92,14 @@
 
 .grid-input__elem::placeholder {
   color: rgb(128, 128, 128);
-  font-size: calc(8px + 6 * ((100vw - 320px) / 960));
+  font-size: min(8px + 6 * ((100vw - 320px) / 960), 14px);
   font-family: Roboto;
 }
 
 .modal-buy-number__heading {
   margin-bottom: 3vh;
   font-weight: 600;
-  font-size: calc(10px + 15 * ((100vw - 320px) / 960));
+  font-size: min(10px + 15 * ((100vw - 320px) / 960), 25px);
   font-family: Roboto;
 }
 

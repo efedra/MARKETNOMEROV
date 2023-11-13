@@ -32,7 +32,7 @@
 
 .head-days {
   font-family: Days;
-  font-size: calc(10px + 35 * ((100vw - 320px) / 960));
+  font-size: min(10px + 35 * ((100vw - 320px) / 960), 45px);
   color: white;
 }
 
@@ -43,7 +43,7 @@
   border: none;
   display: flex;
   gap: 10px;
-  font-size: calc(3px + 9 * ((100vw - 320px) / 960));
+  font-size: min(3px + 9 * ((100vw - 320px) / 960), 12px);
   padding: 1% 2%;
   width: fit-content;
 }
@@ -94,7 +94,7 @@
 .name-range {
   color: white;
   font-family: Roboto;
-  font-size: calc(6px + 6 * ((100vw - 320px) / 960));
+  font-size: min(6px + 6 * ((100vw - 320px) / 960), 12px);
 }
 
 .slider-range__pips {
@@ -119,7 +119,7 @@
   background: none;
   border-radius: 32px;
   color: white;
-  font-size: calc(4px + 9 * ((100vw - 320px) / 960));
+  font-size: min(4px + 9 * ((100vw - 320px) / 960), 13px);
   border: 1px solid white;
   padding: 7% 13%;
   cursor: pointer;
@@ -144,7 +144,7 @@
 .all-count-number {
   margin-left: auto;
   color: rgb(157, 157, 157);
-  font-size: calc(6px + 12 * ((100vw - 320px) / 960));
+  font-size: min(6px + 12 * ((100vw - 320px) / 960), 18px);
   display: flex;
   justify-content: end;
   margin-bottom: 3.5vh;

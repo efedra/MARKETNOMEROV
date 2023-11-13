@@ -13,7 +13,7 @@
 
 .tarif_subtext {
   color: rgba(5, 0, 56, 0.72);
-  font-size: calc(7px + 10 * ((100vw - 320px) / 960));
+  font-size: min(7px + 10 * ((100vw - 320px) / 960), 17px);
   font-weight: 600;
 }
 
@@ -64,11 +64,11 @@
   border: 1px solid black;
   border-radius: 32px;
   padding: 2% 3%;
-  font-size: calc(2px + 9 * ((100vw - 320px) / 960));
+  font-size: min(2px + 9 * ((100vw - 320px) / 960), 11px);
 }
 
 .tarif-grid__head {
-  font-size: calc(16px + 6 * ((100vw - 320px) / 960));
+  font-size: min(16px + 6 * ((100vw - 320px) / 960), 22px);
   font-weight: 600;
   position: relative;
   z-index: 2;
@@ -117,11 +117,11 @@
 
 .tarif-filter__head {
   font-weight: 600;
-  font-size: calc(7px + 7 * ((100vw - 320px) / 960));
+  font-size: min(7px + 7 * ((100vw - 320px) / 960), 14px);
 }
 
 .tarif-filter__body {
-  font-size: calc(5px + 7 * ((100vw - 320px) / 960));
+  font-size: min(5px + 7 * ((100vw - 320px) / 960), 12px);
   color: rgb(75, 71, 111);
 }
 
@@ -157,7 +157,7 @@
 .t02-main__elem_active {
   background: white;
   border-radius: 32px;
-  font-size: calc(7px + 6 * ((100vw - 320px) / 960));
+  font-size: min(7px + 6 * ((100vw - 320px) / 960), 13px);
   display: flex;
   justify-content: center;
   font-weight: 600;
@@ -167,7 +167,7 @@
 }
 
 .t02-main__elem {
-  font-size: calc(7px + 6 * ((100vw - 320px) / 960));
+  font-size: min(7px + 6 * ((100vw - 320px) / 960), 13px);
   display: flex;
   justify-content: center;
   font-weight: 600;
