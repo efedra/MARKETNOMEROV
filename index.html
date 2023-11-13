@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная</title>
+    <link rel="stylesheet" href="../css/nouislider.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/modal.css">
@@ -336,22 +337,26 @@
                 <div class="range-dot3"></div>
                 <div class="range-dot4"></div>
                 <div class="range-dot5"></div>
-                <input
-                        type="range"
-                        class="min-price"
-                        value="100"
-                        min="0"
-                        max="26000"
-                        step="10"
-                />
-                <input
-                        type="range"
-                        class="max-price"
-                        value="10550"
-                        min="0"
-                        max="26000"
-                        step="10"
-                />
+                <div class="range-main">
+<!--                    <div class="slider-handle1"></div>-->
+<!--                    <div class="slider-handle2"></div>-->
+                </div>
+<!--                <input-->
+<!--                        type="range"-->
+<!--                        class="min-price"-->
+<!--                        value="100"-->
+<!--                        min="0"-->
+<!--                        max="26000"-->
+<!--                        step="10"-->
+<!--                />-->
+<!--                <input-->
+<!--                        type="range"-->
+<!--                        class="max-price"-->
+<!--                        value="10550"-->
+<!--                        min="0"-->
+<!--                        max="26000"-->
+<!--                        step="10"-->
+<!--                />-->
             </div>
             <div class="select-options">
                 <div class="select-options__elem">Выберите регион</div>
@@ -1060,7 +1065,7 @@
     <div class="footer__text">Политика конфиденциальности</div>
     <div class="footer__text">Договор оферты</div>
 </div>
-<script src="js/range.js"></script>
+
 <script src="js/modal.js"></script>
 <script src="js/tips.js"></script>
 <script
@@ -1069,5 +1074,7 @@
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/slider.js"></script>
+<script src="../js/nouislider.min.js"></script>
+<script src="../js/range-main.js"></script>
 </body>
 </html>

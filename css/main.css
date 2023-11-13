@@ -307,12 +307,12 @@ a {
   margin-bottom: 8vh;
 }
 
-.slide {
+.slick-track .slide {
   display: flex;
   flex-direction: column;
   gap: 3vh;
 }
-.slide img {
+.slick-track .slide img {
   border-radius: 31px;
   border: 3px solid rgb(66, 98, 255);
 }
@@ -856,8 +856,8 @@ a {
 
 .range-dot1 {
   position: absolute;
-  height: 5px;
-  width: 5px;
+  height: 11px;
+  width: 11px;
   z-index: 2;
   background: white;
   left: 19.5vw;
@@ -866,8 +866,8 @@ a {
 
 .range-dot2 {
   position: absolute;
-  height: 5px;
-  width: 5px;
+  height: 11px;
+  width: 11px;
   z-index: 2;
   background: white;
   left: 32.2vw;
@@ -876,8 +876,8 @@ a {
 
 .range-dot3 {
   position: absolute;
-  height: 5px;
-  width: 5px;
+  height: 11px;
+  width: 11px;
   z-index: 2;
   background: white;
   left: 45vw;
@@ -886,8 +886,8 @@ a {
 
 .range-dot4 {
   position: absolute;
-  height: 5px;
-  width: 5px;
+  height: 11px;
+  width: 11px;
   z-index: 2;
   background: white;
   left: 58.5vw;
@@ -896,8 +896,8 @@ a {
 
 .range-dot5 {
   position: absolute;
-  height: 5px;
-  width: 5px;
+  height: 11px;
+  width: 11px;
   z-index: 2;
   background: white;
   right: 15.7vw;
@@ -1106,6 +1106,31 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .reviews__slide {
   display: grid !important;
+}
+
+.range-slider .noUi-horizontal {
+  height: 11px;
+}
+
+.noUi-base {
+  height: 11px;
+}
+
+.noUi-connects {
+  height: 11px;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+  display: none;
+}
+
+.range-slider .noUi-horizontal .noUi-handle {
+  max-width: 50px;
+  max-height: 50px;
+  height: 3.8vw;
+  width: 3.8vw;
+  top: clamp(-18px, -1.5vw, -1px);
+  border: none;
 }
 
 /*# sourceMappingURL=main.css.map */
