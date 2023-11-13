@@ -154,4 +154,16 @@
   margin-bottom: 5vh;
 }
 
+.arrow-beatiful-number-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.arrow-beatiful-number-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
 /*# sourceMappingURL=number.css.map */

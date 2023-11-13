@@ -1,0 +1,18 @@
+.scroll-beatiful-number::-webkit-scrollbar {
+  width: 1vw;
+}
+
+.scroll-beatiful-number::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-beatiful-number::-webkit-scrollbar-thumb {
+  background-color: rgba(241, 79, 2, 1);
+  border-radius: 6px /* округлось бегунка */
+}
+
+.scroll-beatiful-number{
+  padding: 1vw 0;
+  max-height: 380px;
+  overflow-y: auto;
+}

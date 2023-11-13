@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Красивые номера</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/modal.css">
     <link rel="stylesheet" href="../css/tips.css">
@@ -64,7 +65,7 @@
 </div>
 <header class="header header-number__margin">
     <a class="header__logo" href="../index.html">
-        <img  src="../assets/logo.svg">
+        <img src="../assets/logo.svg">
     </a>
     <nav class="header__nav">
         <div class="pointer">
@@ -110,9 +111,28 @@
 </header>
 <div class="container">
     <section class="banner-number banner-number__margin">
-        <figure class="beatiful-number__body">
-            <img class="img-adaptive" src="../assets/banner-number.png">
-            <figcaption class="beatiful-number__main">
+        <div class="beatiful-number__body">
+            <div class="banner-slider">
+                <img class="img-adaptive" src="../assets/banner-number.png">
+                <img class="img-adaptive" src="../assets/banner-number.png">
+            </div>
+            <div class="beatiful-number__main">
+                <div class="arrow-beatiful-number-left">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="19.8825" cy="19.8825" r="19.4683" stroke="white" stroke-width="0.828437"/>
+                        <path d="M20.9181 16.1544L17.1901 19.8824L20.9181 23.6104" stroke="white"
+                              stroke-width="0.994125"/>
+                    </svg>
+                </div>
+                <div class="arrow-beatiful-number-right">
+                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20.6475" cy="19.8824" r="19.4683" transform="rotate(180 20.6475 19.8824)"
+                                stroke="white" stroke-width="0.828437"/>
+                        <path d="M19.6119 23.6107L23.3399 19.8828L19.6119 16.1548" stroke="white"
+                              stroke-width="0.994125"/>
+                    </svg>
+
+                </div>
                 <h1 class="head-days margin__head">ТОП ТОВАРЫ <br> НА MARKETNOMEROV.RU</h1>
                 <button class="button-catalog">
                     <div>
@@ -154,8 +174,8 @@
                     </div>
                 </div>
 
-            </figcaption>
-        </figure>
+            </div>
+        </div>
     </section>
     <h1 class="heading banner_heading header-number__margin main-padding">Выберите красивый номер <br>
         на <span class="heading_orange">MARKETNOMEROV</span></h1>
@@ -396,5 +416,11 @@
 <script src="../js/range-number.js"></script>
 <script src="../js/tips.js"></script>
 <script src="../js/modal.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="../js/slider.js"></script>
 </body>
 </html>

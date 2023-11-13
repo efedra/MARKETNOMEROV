@@ -160,3 +160,15 @@ $blue: rgba(66, 98, 255, 1);
 .table_beatiful-number{
   margin-bottom: 5vh;
 }
+
+.arrow-beatiful-number-left{
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.arrow-beatiful-number-right{
+  position: absolute;
+  top: 50%;
+  right: 0;
+}

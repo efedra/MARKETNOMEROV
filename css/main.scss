@@ -1,6 +1,7 @@
 @import "fonts.css";
 @import "adaptive";
 @import "adaptive-min";
+
 * {
   padding: 0;
   margin: 0;
@@ -256,6 +257,7 @@ a {
   border: 1px solid rgba(240, 78, 1, 1);
   border-radius: 34px;
   padding: 6vh 2vw 0;
+  padding-bottom: 2vh;
 }
 
 .beatiful-number__subheading {
@@ -398,6 +400,7 @@ a {
   border-radius: 34px;
   display: block;
   padding: 2vh 2vw;
+  cursor: pointer;
 }
 
 .more-goods__margin {
@@ -1111,3 +1114,28 @@ input[type="range"]::-webkit-slider-runnable-track {
   cursor: pointer;
 }
 
+.table_title {
+  margin-bottom: 2vh;
+}
+
+.slider-tarif__slide {
+  width: 100%;
+  max-width: 377px;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.slick-track {
+  display: flex;
+  gap: 2vw;
+}
+
+.goods__slider .slick-initialized .slick-slide {
+  display: flex;
+}
+
+.reviews__slide {
+  display: grid !important;
+}

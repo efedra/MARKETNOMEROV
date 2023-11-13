@@ -5,3 +5,4 @@ $maxWidth: 1280;
   $maxWidth: $maxWidth - 320;
   font-size: min(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}), #{$pcSize}px);
 }
+

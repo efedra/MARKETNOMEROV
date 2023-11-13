@@ -1,0 +1,20 @@
+.scroll-beatiful-number::-webkit-scrollbar {
+  width: 1vw;
+}
+
+.scroll-beatiful-number::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-beatiful-number::-webkit-scrollbar-thumb {
+  background-color: rgb(241, 79, 2);
+  border-radius: 6px;
+}
+
+.scroll-beatiful-number {
+  padding: 1vw 0;
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+/*# sourceMappingURL=scrollbar.css.map */

@@ -129,7 +129,7 @@
   border: 1px solid rgb(215, 217, 220);
   font-family: Arial;
   font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
-  padding: 2.5vw 4.3vw;
+  padding: min(2.5vw, 36px) min(2.5vw, 63px);
   height: fit-content;
   white-space: nowrap;
   cursor: pointer;

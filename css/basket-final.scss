@@ -70,32 +70,36 @@
 
 .radio-delivery {
   display: flex;
+  //max-height: 97px;
+  //max-width: 253px;
+  //width: 100%;
 
   input[type="radio"] {
     display: none;
   }
 
 
-  input[type="radio"]:checked + label{
+  input[type="radio"]:checked + label {
     border: 1px solid rgba(240, 78, 1, 1);
     cursor: default;
   }
 }
-.radio-delivery__label{
+
+.radio-delivery__label {
   border-radius: 32px;
   border: 1px solid rgba(215, 217, 220, 1);
   font-family: Arial;
-  @include adaptiv-font-min(20,10);
-  padding: 2.5vw 4.3vw;
+  @include adaptiv-font-min(20, 10);
+  padding: min(2.5vw,36px) min(2.5vw,63px);
   height: fit-content;
   white-space: nowrap;
   cursor: pointer;
   max-height: 97px;
 }
 
-.radio-delivery__label_card{
+.radio-delivery__label_card {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
   column-gap: 0.5vw;
@@ -103,37 +107,37 @@
   height: auto;
 }
 
-.card{
+.card {
   border: 1px solid rgba(122, 144, 255, 1);
   border-radius: 6px;
   width: 47%;
   max-width: 500px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding: 3vw;
   gap: 3vw;
 }
 
-.card__tips{
+.card__tips {
   font-family: Roboto;
   color: rgba(128, 128, 128, 1);
-  @include adaptiv-font-min(14,4);
+  @include adaptiv-font-min(14, 4);
 }
 
-.grid-input__elem_card{
+.grid-input__elem_card {
   width: 100%;
 }
 
-.card-full-width{
+.card-full-width {
   grid-column: 1 / span 2;
 }
 
-.private_card{
-  @include adaptiv-font-min(14,4);
+.private_card {
+  @include adaptiv-font-min(14, 4);
 }
 
-.card-help{
+.card-help {
   font-family: Roboto;
-  @include adaptiv-font-min(12,4);
+  @include adaptiv-font-min(12, 4);
   color: rgba(54, 50, 59, 1);
 }
