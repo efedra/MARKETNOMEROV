@@ -58,6 +58,8 @@
 
 .arrows__left_orange, .arrows__right_orange{
   max-width: 8%;
+  z-index: 2;
+  position: relative;
 }
 
 .services-gallery__margin{
@@ -70,16 +72,33 @@
 
 .services-gallery{
   position: relative;
+  background: url("../assets/wallpaper.png") center no-repeat;
+  background-size: 100%;
 }
 
 .services-gallery__elem{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 30%;
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%, -50%);
+  //width: 30% !important;
+  height: 84%;
+  width: 100vw;
+  max-width: 1280px;
+  padding: 0 min(34vw,435px);
 }
 
 .container_zero-padding{
   padding: 0;
 }
+
+.splide__list{
+  align-items: center;
+}
+
+.splide__track{
+  position: relative;
+  height: 60vw;
+  max-height: 840px;
+}
+

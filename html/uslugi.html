@@ -193,12 +193,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </section>
 </div>
 <div class="container container_zero-padding">
-    <figure class="services-gallery services-gallery__margin">
-        <img class="wallpaper" src="../assets/wallpaper.png">
-        <img class="services-gallery__elem" src="../assets/services-gallery1.png">
+    <figure class="services-gallery services-gallery__margin splide">
+<!--        <img class="wallpaper" src="../assets/wallpaper.png">-->
+        <div class="splide__track">
+            <div class="splide__list">
+                <img class="services-gallery__elem splide__slide" src="../assets/services-gallery1.png">
+                <img class="services-gallery__elem splide__slide" src="../assets/services-gallery1.png">
+            </div>
+        </div>
         <div class="arrows_orange">
-            <img class=" arrow-beatiful-number-left arrows__left_orange pointer" src="../assets/arrow-orange-left.svg">
-            <img class=" arrow-beatiful-number-right arrows__right_orange pointer" src="../assets/arrow-orange-right.svg">
+            <img class="arrows__left_orange pointer" src="../assets/arrow-orange-left.svg">
+            <img class="arrows__right_orange pointer" src="../assets/arrow-orange-right.svg">
         </div>
     </figure>
 </div>
