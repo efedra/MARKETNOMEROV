@@ -176,8 +176,8 @@ a {
 
 .figcaption {
   position: absolute;
-  top: 5.5vw;
-  left: 6vw;
+  top: min(5.5vw,72px);
+  left: min(13vw, 163px);
 }
 
 .subheading_blue {
@@ -496,7 +496,8 @@ a {
 }
 
 .uslugi-top {
-  top: 2vw;
+  top: min(2vw,26px);
+  left: min(3vw,39px);
 }
 
 .uslugi__body {
@@ -872,6 +873,7 @@ a {
   position: relative;
   border-radius: 5px;
   margin: 0 auto 12vh;
+  max-width: 1117px;
 }
 
 .range-fill {
@@ -1162,7 +1164,6 @@ input[type="range"]::-webkit-slider-runnable-track {
   height: 3.8vw;
   width: 3.8vw;
   top: clamp(-18px, -1.5vw ,-1px);
-  border: none;
 }
 
 
