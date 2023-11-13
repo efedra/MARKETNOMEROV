@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var nextButton = document.querySelector('.arrow-beatiful-number-right');
 
     prevButton.addEventListener('click', function() {
+        console.log('sssssssss')
         splide.go('-1'); // Переход на предыдущий слайд
     });
 
