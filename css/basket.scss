@@ -1,0 +1,183 @@
+@import "fonts.scss";
+@import "adaptive";
+@import "adaptive-min";
+
+.steps-basket {
+  padding: 0 5.8vw;
+  height: 4.9vw;
+  display: flex;
+  justify-content: space-between;
+  max-height: 64px;
+  align-items: center;
+  box-shadow: 0px 6.579166412353516px 19.737499237060547px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+.steps-basket__elem {
+  display: flex;
+  gap: 1.5vw;
+  height: 100%;
+  align-items: center;
+}
+
+.steps-basket__number {
+  font-family: Roboto;
+  @include adaptiv-font-min(19, 9);
+  border-radius: 8px;
+  padding: 0.5vw 1vw;
+  background: rgba(236, 236, 236, 1);
+}
+
+.steps-basket__number_active {
+  background: rgba(240, 78, 1, 1);
+  color: white;
+}
+
+.steps-basket__head {
+  font-family: Roboto;
+  @include adaptiv-font-min(16, 6);
+}
+
+.steps-basket__hr {
+  max-width: 66px;
+  width: 5.1vw;
+}
+
+.basket-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 3vw;
+}
+
+.modal-basket__picture_oform {
+  max-height: 238px;
+  max-width: 220px;
+  height: 18.5vw;
+}
+
+.modal-basket__desc_oform {
+
+}
+
+.modal-basket__desc-head_oform {
+  @include adaptiv-font-min(25, 14);
+}
+
+.modal-basket__desc-text_oform {
+  @include adaptiv-font-min(21, 6);
+  line-height: 30px;
+}
+
+.modal-basket__icons_oform {
+  max-height: 33px;
+
+
+  svg {
+    width: 36%;
+    height: auto;
+  }
+}
+
+.modal-basket__price_oform {
+  @include adaptiv-font-min(25, 10);
+}
+
+.oform-order {
+  border-radius: 7px;
+  border: 1px solid rgba(78, 108, 255, 1);
+  padding: 2vw 2vw 4vw;
+}
+
+.oform-order__head {
+  font-family: Arial;
+  @include adaptiv-font-min(19, 9);
+
+}
+
+.goods-main__input_oform {
+  input {
+    width: 100%;
+  }
+}
+
+.oform-order__count {
+  display: flex;
+  justify-content: space-between;
+}
+
+.oform-order__count-sht {
+  @include adaptiv-font-min(13, 3);
+  color: rgba(90, 94, 98, 1);
+}
+
+.oform-order__price {
+  @include adaptiv-font-min(13, 3);
+}
+
+.promik {
+  display: flex;
+  gap: 1vw;
+}
+
+.promik__text {
+  font-family: Arial;
+  @include adaptiv-font-min(12, 2);
+  border-bottom: 2px solid black;
+}
+
+.result {
+  font-family: Arial;
+  display: flex;
+  justify-content: space-between;
+  @include adaptiv-font-min(24, 14);
+
+  div {
+    font-family: Arial;
+  }
+}
+
+.modal-basket__button_oform {
+  @include adaptiv-font-min(17, 7);
+}
+
+.private {
+  display: flex;
+  gap: 2vw;
+}
+
+.private__text {
+  @include adaptiv-font-min(13, 3);
+  color: rgba(134, 138, 142, 1);
+  padding-left: 2.5vw;
+  cursor: pointer;
+  display: block;
+  height: 1.3vw;
+}
+
+.private__content {
+  position: relative;
+
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  .private__text::before {
+    cursor: pointer;
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: -1%;
+    width: 1.3vw;
+    height: 1.3vw;
+    max-height: 16px;
+    max-width: 16px;
+    border-radius: 6px;
+    border: 1px solid black;
+  }
+
+  input[type='checkbox']:checked + label:before{
+    background: url("../assets/black-check.svg") no-repeat center;
+    background-size: 115%;
+  }
+}
+

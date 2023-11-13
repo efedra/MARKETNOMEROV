@@ -4,38 +4,67 @@ let buttonSale = document.querySelector('.sale-number')
 let closeModal = document.querySelectorAll('.close')
 let buttonSelect = document.querySelector('.more-numbers')
 let buttonComment = document.querySelector('.add-review')
+let buttonCart = document.querySelector('.basket')
 
 //Модалки
 let modalBuy = document.getElementById('modal-buy-number')
 let modalSelect = document.getElementById('modal-select-number')
 let modalComment = document.getElementById('modal-review')
+let modalCart = document.querySelector('.modal-basket')
 
-buttonBuy.addEventListener('click', () => {
-    document.querySelector('.modal-buy-number__heading').innerHTML = 'Купить номер';
-    openModal(modalBuy);
-})
-buttonSale.addEventListener('click', () => {
-    document.querySelector('.modal-buy-number__heading').innerHTML = 'Продать номер';
-    openModal(modalBuy);
-})
-buttonSelect.addEventListener('click', () => {
-    openModal(modalSelect)
-})
-buttonComment.addEventListener('click', () => {
-    openModal(modalComment)
-})
+if (buttonBuy) {
+    buttonBuy.addEventListener('click', () => {
+        document.querySelector('.modal-buy-number__heading').innerHTML = 'Купить номер';
+        openModal(modalBuy);
+    })
+}
 
+if (buttonSale) {
+    buttonSale.addEventListener('click', () => {
+        document.querySelector('.modal-buy-number__heading').innerHTML = 'Продать номер';
+        openModal(modalBuy);
+    })
+}
+
+if (buttonSelect) {
+    buttonSelect.addEventListener('click', () => {
+        openModal(modalSelect)
+    })
+}
+
+if (buttonComment) {
+    buttonComment.addEventListener('click', () => {
+        openModal(modalComment)
+    })
+}
+
+if (buttonCart) {
+    buttonCart.addEventListener('click',()=>{
+        openModal(modalCart);
+    })
+}
 
 function openModal(modal) {
     document.body.style.overflowY = 'hidden'
     modal.style.display = 'flex'
 }
 
+
 closeModal.forEach(el => {
     el.addEventListener('click', () => {
-        modalBuy.style.display = 'none'
-        modalSelect.style.display = 'none'
-        modalComment.style.display = 'none'
+        if(modalBuy){
+            modalBuy.style.display = 'none'
+        }
+        if(modalSelect){
+            modalSelect.style.display = 'none'
+        }
+        if(modalComment){
+            modalComment.style.display = 'none'
+        }
+        if(modalCart){
+            modalCart.style.display = 'none'
+        }
+
 
         document.body.style.overflowY = 'auto'
     })

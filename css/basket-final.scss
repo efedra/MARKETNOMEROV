@@ -1,0 +1,139 @@
+@import "fonts.scss";
+@import "adaptive";
+@import "adaptive-min";
+
+
+.first-step {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 13vw;
+}
+
+.header-step {
+  @include adaptiv-font-min(30, 15);
+  font-weight: 600;
+  line-height: 4vw;
+}
+
+.text-step {
+  @include adaptiv-font-min(15, 5);
+  color: rgba(35, 35, 33, 1);
+  font-family: "Open Sans";
+}
+
+.input-oform {
+  width: 47.9%;
+  border-radius: 7px;
+  border: 1px solid;
+  height: 4vw;
+  max-height: 44px;
+  padding-left: 6%;
+  @include adaptiv-font-min(16, 6);
+  font-family: Inter;
+}
+
+.input-oform::placeholder {
+  color: rgba(121, 118, 124, 1);
+}
+
+.adress-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2vw;
+}
+
+.input-3th {
+  grid-column: 1 / span 2;
+}
+
+.input-oform_adress {
+  width: 100%;
+}
+
+.tips-step {
+  font-family: Inter;
+  color: rgba(54, 50, 59, 1);
+  @include adaptiv-font-min(12, 2);
+  line-height: 2vw;
+}
+
+.how-delivery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3vw;
+}
+
+.how-delivery__inputs {
+  display: flex;
+  gap: 2vw;
+}
+
+.radio-delivery {
+  display: flex;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+
+  input[type="radio"]:checked + label{
+    border: 1px solid rgba(240, 78, 1, 1);
+    cursor: default;
+  }
+}
+.radio-delivery__label{
+  border-radius: 32px;
+  border: 1px solid rgba(215, 217, 220, 1);
+  font-family: Arial;
+  @include adaptiv-font-min(20,10);
+  padding: 2.5vw 4.3vw;
+  height: fit-content;
+  white-space: nowrap;
+  cursor: pointer;
+  max-height: 97px;
+}
+
+.radio-delivery__label_card{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  justify-items: center;
+  column-gap: 0.5vw;
+  max-height: 97px;
+  height: auto;
+}
+
+.card{
+  border: 1px solid rgba(122, 144, 255, 1);
+  border-radius: 6px;
+  width: 47%;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 3vw;
+  gap: 3vw;
+}
+
+.card__tips{
+  font-family: Roboto;
+  color: rgba(128, 128, 128, 1);
+  @include adaptiv-font-min(14,4);
+}
+
+.grid-input__elem_card{
+  width: 100%;
+}
+
+.card-full-width{
+  grid-column: 1 / span 2;
+}
+
+.private_card{
+  @include adaptiv-font-min(14,4);
+}
+
+.card-help{
+  font-family: Roboto;
+  @include adaptiv-font-min(12,4);
+  color: rgba(54, 50, 59, 1);
+}

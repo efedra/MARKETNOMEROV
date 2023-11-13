@@ -1,0 +1,216 @@
+@font-face {
+  font-family: Helvetica;
+  font-weight: 400;
+  src: url("../fonts/helvetica/helvetica_regular.otf");
+}
+@font-face {
+  font-family: Helvetica;
+  font-weight: 700;
+  src: url("../fonts/helvetica/helvetica_bold.otf");
+}
+@font-face {
+  font-family: Helvetica;
+  font-weight: 300;
+  src: url("../fonts/helvetica/helvetica_light.otf");
+}
+@font-face {
+  font-family: Days;
+  font-weight: 400;
+  src: url("../fonts/DaysOne-Regular.ttf");
+}
+@font-face {
+  font-family: Inter;
+  font-weight: 700;
+  src: url("../fonts/Inter/Inter-Bold.otf");
+}
+@font-face {
+  font-family: Inter;
+  font-weight: 300;
+  src: url("../fonts/Inter/Inter-Light.otf");
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  src: url("../fonts/Roboto.ttf");
+}
+@font-face {
+  font-family: Lato;
+  font-weight: 400;
+  src: url("../fonts/lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: Lato;
+  font-weight: 900;
+  src: url("../fonts/lato/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  src: url("../fonts/OpenSans.ttf");
+}
+.steps-basket {
+  padding: 0 5.8vw;
+  height: 4.9vw;
+  display: flex;
+  justify-content: space-between;
+  max-height: 64px;
+  align-items: center;
+  box-shadow: 0px 6.5791664124px 19.7374992371px 0px rgba(0, 0, 0, 0.05);
+}
+
+.steps-basket__elem {
+  display: flex;
+  gap: 1.5vw;
+  height: 100%;
+  align-items: center;
+}
+
+.steps-basket__number {
+  font-family: Roboto;
+  font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
+  border-radius: 8px;
+  padding: 0.5vw 1vw;
+  background: rgb(236, 236, 236);
+}
+
+.steps-basket__number_active {
+  background: rgb(240, 78, 1);
+  color: white;
+}
+
+.steps-basket__head {
+  font-family: Roboto;
+  font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
+}
+
+.steps-basket__hr {
+  max-width: 66px;
+  width: 5.1vw;
+}
+
+.basket-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 3vw;
+}
+
+.modal-basket__picture_oform {
+  max-height: 238px;
+  max-width: 220px;
+  height: 18.5vw;
+}
+
+.modal-basket__desc-head_oform {
+  font-size: min(14px + 11 * ((100vw - 320px) / 960), 25px);
+}
+
+.modal-basket__desc-text_oform {
+  font-size: min(6px + 15 * ((100vw - 320px) / 960), 21px);
+  line-height: 30px;
+}
+
+.modal-basket__icons_oform {
+  max-height: 33px;
+}
+.modal-basket__icons_oform svg {
+  width: 36%;
+  height: auto;
+}
+
+.modal-basket__price_oform {
+  font-size: min(10px + 15 * ((100vw - 320px) / 960), 25px);
+}
+
+.oform-order {
+  border-radius: 7px;
+  border: 1px solid rgb(78, 108, 255);
+  padding: 2vw 2vw 4vw;
+}
+
+.oform-order__head {
+  font-family: Arial;
+  font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
+}
+
+.goods-main__input_oform input {
+  width: 100%;
+}
+
+.oform-order__count {
+  display: flex;
+  justify-content: space-between;
+}
+
+.oform-order__count-sht {
+  font-size: min(3px + 10 * ((100vw - 320px) / 960), 13px);
+  color: rgb(90, 94, 98);
+}
+
+.oform-order__price {
+  font-size: min(3px + 10 * ((100vw - 320px) / 960), 13px);
+}
+
+.promik {
+  display: flex;
+  gap: 1vw;
+}
+
+.promik__text {
+  font-family: Arial;
+  font-size: min(2px + 10 * ((100vw - 320px) / 960), 12px);
+  border-bottom: 2px solid black;
+}
+
+.result {
+  font-family: Arial;
+  display: flex;
+  justify-content: space-between;
+  font-size: min(14px + 10 * ((100vw - 320px) / 960), 24px);
+}
+.result div {
+  font-family: Arial;
+}
+
+.modal-basket__button_oform {
+  font-size: min(7px + 10 * ((100vw - 320px) / 960), 17px);
+}
+
+.private {
+  display: flex;
+  gap: 2vw;
+}
+
+.private__text {
+  font-size: min(3px + 10 * ((100vw - 320px) / 960), 13px);
+  color: rgb(134, 138, 142);
+  padding-left: 2.5vw;
+  cursor: pointer;
+  display: block;
+  height: 1.3vw;
+}
+
+.private__content {
+  position: relative;
+}
+.private__content input[type=checkbox] {
+  display: none;
+}
+.private__content .private__text::before {
+  cursor: pointer;
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: -1%;
+  width: 1.3vw;
+  height: 1.3vw;
+  max-height: 16px;
+  max-width: 16px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.private__content input[type=checkbox]:checked + label:before {
+  background: url("../assets/black-check.svg") no-repeat center;
+  background-size: 115%;
+}
+
+/*# sourceMappingURL=basket.css.map */
