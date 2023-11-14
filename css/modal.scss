@@ -157,7 +157,6 @@ label {
 .modal-basket__window {
   background: white;
   position: relative;
-  //height: 24vw;
   max-width: 499px;
   display: flex;
   flex-direction: column;
@@ -245,20 +244,31 @@ label {
   align-items: center;
 }
 
-.modal-basket__price{
+.modal-basket__price {
   color: rgba(78, 108, 255, 1);
-  @include adaptiv-font-min(15,5);
+  @include adaptiv-font-min(15, 5);
   font-weight: 600;
 }
 
-.modal-basket__button{
+.modal-basket__button {
   width: 100%;
   border-radius: 34px;
   background: $orange;
   color: white;
   border: none;
-  @include adaptiv-font-min(13,3);
+  @include adaptiv-font-min(13, 3);
   max-height: 46px;
   height: 3.5vw;
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .input-modal + label:before {
+    width: min(3.8vw,16px);
+    height: min(3.8vw,16px);
+    border-radius: 5px;
+  }
+  .input-modal + label {
+    padding-left: min(6.5vw,25px);
+  }
 }

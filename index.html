@@ -89,6 +89,34 @@
         <button class="send">Отправить</button>
     </div>
 </section>
+<section class="modal-mobile-nav">
+    <div class="mobile-nav__close">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_b_277_19327)">
+                <rect width="10" height="10" rx="5" fill="#F04E01"/>
+            </g>
+            <path d="M6.24957 3.75L3.74957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="round"/>
+            <path d="M3.74957 3.75L6.24957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="round"/>
+            <defs>
+                <filter id="filter0_b_277_19327" x="-15" y="-15" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.5"/>
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_277_19327"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_277_19327" result="shape"/>
+                </filter>
+            </defs>
+        </svg>
+
+
+    </div>
+    <div class="mobile-nav__ul">
+        <a href="./html/number.html"><div class="mobile-nav__li">Красивые номера</div></a>
+        <a href="./html/tarif.html"><div class="mobile-nav__li">Тарифы</div></a>
+        <a href="./html/goods.html"><div class="mobile-nav__li">магазин</div></a>
+        <a href="./html/uslugi.html"><div class="mobile-nav__li">Услуги</div></a>
+        <a href="./html/company.html"><div class="mobile-nav__li">О компании</div></a>
+    </div>
+</section>
 <div class="modal-basket">
     <img class="triangle" src="../assets/white-triangle.svg"/>
     <div class="modal-basket__window">
@@ -1074,11 +1102,11 @@
                 <img src="assets/plus_orange.svg">
             </div>
             <div class="often-questions__elem">
-                <div>Какие документы необходимы для оформления <br>тарифа и номера?</div>
+                <div>Какие документы необходимы для оформления тарифа и номера?</div>
                 <img src="assets/plus_orange.svg">
             </div>
             <div class="often-questions__elem">
-                <div>Почему дешевле, чем напрямую у оператора связи?</div>
+                <div>Как оплачивать услуги связи?</div>
                 <img src="assets/plus_orange.svg">
             </div>
         </div>
@@ -1096,6 +1124,7 @@
 <footer class="footer">
     <div class="footer__top">
         <div class="logo-footer">MARKETNOMEROV.RU</div>
+        <div class="logo-footer_mobile">MARKET <br>NOMEROV.RU</div>
         <ul class="footer__nav">
             <li>Красивые номера</li>
             <li>Тарифы</li>
@@ -1106,7 +1135,7 @@
             <div>Отзывы</div>
         </div>
         <div class="inn">
-            ИНН 7733871435, КПП 773301001, ОГРН <br>1147746179570, ОКПО 29039632. Действует <br> с 24.02.2014
+            ИНН 7733871435, КПП 773301001, ОГРН 1147746179570, ОКПО 29039632. Действует с 24.02.2014
         </div>
     </div>
 </footer>
@@ -1124,8 +1153,9 @@
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/slider.js"></script>
-<script src="../js/nouislider.min.js"></script>
-<script src="../js/range-main.js"></script>
-<script src="../js/list.js"></script>
+<script src="./js/nouislider.min.js"></script>
+<script src="./js/range-main.js"></script>
+<script src="./js/list.js"></script>
+<script src="./js/mobile-nav.js"></script>
 </body>
 </html>

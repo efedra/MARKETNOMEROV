@@ -429,6 +429,107 @@
   .reviews__margin {
     margin-bottom: 10vw;
   }
+  .add-review {
+    font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
+    padding: 2vw 4vw;
+    margin-bottom: 10vw;
+  }
+  .often-questions {
+    grid-template-columns: 1fr;
+    margin-bottom: 3vw;
+    gap: 8vw;
+  }
+  .often-questions__elem {
+    border: none;
+    padding: 4.6vw 1.5vw;
+  }
+  .often-questions__elem div {
+    font-size: min(12px + 12 * ((100vw - 320px) / 960), 24px);
+    line-height: 5.5vw;
+    width: 72%;
+  }
+  .often-questions__right {
+    border-top: 1px solid rgb(170, 170, 170);
+    border-bottom: 1px solid rgb(170, 170, 170);
+  }
+  .often-questions__elem:last-child {
+    border: none;
+  }
+  .newsletter {
+    font-size: min(19px + 10 * ((100vw - 320px) / 960), 29px);
+  }
+  .often-questions__left {
+    margin-left: unset;
+    gap: 4vw;
+    width: 100%;
+  }
+  .newsletter-italic {
+    font-size: min(11px + 10 * ((100vw - 320px) / 960), 21px);
+  }
+  .send-button {
+    font-size: min(11px + 10 * ((100vw - 320px) / 960), 21px);
+    padding: min(4.2vw, 15px) 5.9vw;
+  }
+  .input-email {
+    width: 100%;
+  }
+  .newsletter__form {
+    gap: 2vw;
+  }
+  .footer {
+    padding: 8vw 9vw;
+  }
+  .footer__top {
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3vw;
+    justify-items: center;
+    row-gap: 5.5vw;
+  }
+  .footer__nav {
+    font-size: min(8px + 10 * ((100vw - 320px) / 960), 18px);
+  }
+  .footer__add {
+    font-size: min(8px + 10 * ((100vw - 320px) / 960), 18px);
+  }
+  .inn {
+    font-size: min(5px + 10 * ((100vw - 320px) / 960), 15px);
+  }
+  .logo-footer_mobile {
+    display: block;
+    font-family: Days;
+    font-size: min(13px + 10 * ((100vw - 320px) / 960), 23px);
+  }
+  .logo-footer {
+    display: none;
+  }
+  .footer__text {
+    font-size: min(7px + 10 * ((100vw - 320px) / 960), 17px);
+    width: 27%;
+  }
+  .footer__bottom {
+    align-items: center;
+  }
+  .modal-mobile-nav {
+    display: none;
+    position: fixed;
+    height: 46vw;
+    width: 100vw;
+    z-index: 5;
+    background: white;
+    padding: 2vw;
+  }
+  .mobile-nav__close svg {
+    width: min(35px, 5vw);
+    height: auto;
+    cursor: pointer;
+  }
+  .mobile-nav__li {
+    font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    color: rgb(5, 0, 56);
+    padding: 1.5vw 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

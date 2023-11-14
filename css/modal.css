@@ -298,4 +298,15 @@ label {
   cursor: pointer;
 }
 
+@media (max-width: 800px) {
+  .input-modal + label:before {
+    width: min(3.8vw, 16px);
+    height: min(3.8vw, 16px);
+    border-radius: 5px;
+  }
+  .input-modal + label {
+    padding-left: min(6.5vw, 25px);
+  }
+}
+
 /*# sourceMappingURL=modal.css.map */

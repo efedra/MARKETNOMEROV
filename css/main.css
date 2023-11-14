@@ -728,6 +728,7 @@ a {
   font-family: Roboto;
   font-size: 16px;
   color: rgb(153, 153, 153);
+  width: 90%;
 }
 
 .footer__bottom {
@@ -1212,6 +1213,18 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .statistics-company {
   padding: 0 2.8vw;
+}
+
+.often-questions__elem div {
+  width: 90%;
+}
+
+.logo-footer_mobile {
+  display: none;
+}
+
+.modal-mobile-nav {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
