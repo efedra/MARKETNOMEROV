@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="css/scrollbar.css">
     <link rel="stylesheet" href="css/number.css">
     <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/company.css">
 
+    <link rel="stylesheet" href="./css/mobile/main.css">
 </head>
 <body>
 <!--МОДАЛКИ-->
@@ -137,54 +139,62 @@
     </div>
 </div>
 <!--ХЕДЕР-->
-<header class="header">
-    <img class="header__logo" src="assets/logo.svg">
-    <nav class="header__nav">
-        <div class="pointer">
-            <a href="./html/number.html">
-                Красивые номера
-            </a>
-        </div>
-        <div class="pointer">
-            <a href="./html/tarif.html">
-                Тарифы
-            </a>
-        </div>
-        <div class="pointer">
-            <a href="./html/goods.html">
-                Магазин
-            </a>
-        </div>
-        <div class="pointer">
-            <a href="./html/uslugi.html">
-                Услуги
-            </a>
-        </div>
-        <div class="pointer">
-            <a href="./html/company.html">
-                О компании
-            </a>
-        </div>
-    </nav>
-    <div class="header__contacts">
-        <img src="assets/telega.svg">
-        <img src="assets/whats.svg">
-    </div>
-    <div class="header__buttons">
-        <button class="recall">
-            Обратный звонок
-        </button>
-        <button class="basket">
-            <span>Корзина</span>
-            <img src="assets/Cart.svg">
-
-        </button>
-    </div>
-</header>
 <div class="container container_zero-padding">
+    <header class="header">
+        <img class="header__logo" src="assets/logo.svg">
+        <nav class="header__nav">
+            <div class="pointer">
+                <a href="./html/number.html">
+                    Красивые номера
+                </a>
+            </div>
+            <div class="pointer">
+                <a href="./html/tarif.html">
+                    Тарифы
+                </a>
+            </div>
+            <div class="pointer">
+                <a href="./html/goods.html">
+                    Магазин
+                </a>
+            </div>
+            <div class="pointer">
+                <a href="./html/uslugi.html">
+                    Услуги
+                </a>
+            </div>
+            <div class="pointer">
+                <a href="./html/company.html">
+                    О компании
+                </a>
+            </div>
+        </nav>
+        <div class="header__contacts">
+            <img src="assets/telega.svg">
+            <img src="assets/whats.svg">
+        </div>
+        <div class="header__buttons">
+            <button class="recall">
+                Обратный звонок
+            </button>
+            <button class="basket">
+                <span>Корзина</span>
+                <img src="assets/Cart.svg">
+
+            </button>
+        </div>
+        <div class="mobile-nav">
+            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.900146" width="17" height="17" rx="8.5" fill="#4262FF"/>
+                <path d="M12.3746 9.7751H9.39956H6.42456M12.3746 7.2251H9.39956H6.42456" stroke="white"
+                      stroke-width="0.6375" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </header>
     <section class="banner">
         <div class="banner__text">
-            <h1 class="heading banner_heading">Красивые номера на <span class="heading_orange">MARKETNOMEROV</span></h1>
+            <h1 class="heading banner_heading">Красивые номера на <br><span class="heading_orange">MARKETNOMEROV</span>
+            </h1>
             <div class="banner__subtext subtext">
                 На нашем сайте вы можете не только купить красивый номер, но и продать свой действующий номер.
             </div>
@@ -331,32 +341,32 @@
                 <div>26000</div>
             </div>
             <div class="range-slider">
-                <div class="range-fill"></div>
-                <div class="range-dot1"></div>
-                <div class="range-dot2"></div>
-                <div class="range-dot3"></div>
-                <div class="range-dot4"></div>
-                <div class="range-dot5"></div>
+                <!--                <div class="range-fill"></div>-->
+                <!--                <div class="range-dot1"></div>-->
+                <!--                <div class="range-dot2"></div>-->
+                <!--                <div class="range-dot3"></div>-->
+                <!--                <div class="range-dot4"></div>-->
+                <!--                <div class="range-dot5"></div>-->
                 <div class="range-main">
-<!--                    <div class="slider-handle1"></div>-->
-<!--                    <div class="slider-handle2"></div>-->
+                    <!--                    <div class="slider-handle1"></div>-->
+                    <!--                    <div class="slider-handle2"></div>-->
                 </div>
-<!--                <input-->
-<!--                        type="range"-->
-<!--                        class="min-price"-->
-<!--                        value="100"-->
-<!--                        min="0"-->
-<!--                        max="26000"-->
-<!--                        step="10"-->
-<!--                />-->
-<!--                <input-->
-<!--                        type="range"-->
-<!--                        class="max-price"-->
-<!--                        value="10550"-->
-<!--                        min="0"-->
-<!--                        max="26000"-->
-<!--                        step="10"-->
-<!--                />-->
+                <!--                <input-->
+                <!--                        type="range"-->
+                <!--                        class="min-price"-->
+                <!--                        value="100"-->
+                <!--                        min="0"-->
+                <!--                        max="26000"-->
+                <!--                        step="10"-->
+                <!--                />-->
+                <!--                <input-->
+                <!--                        type="range"-->
+                <!--                        class="max-price"-->
+                <!--                        value="10550"-->
+                <!--                        min="0"-->
+                <!--                        max="26000"-->
+                <!--                        step="10"-->
+                <!--                />-->
             </div>
             <div class="select-options">
                 <div class="select-options__elem">Выберите регион</div>
@@ -375,9 +385,22 @@
                         <path d="M18.4464 11.01C18.131 11.3419 17.6375 11.3721 17.2897 11.1005L17.1901 11.01L9.52682 2.94662L1.86357 11.01C1.54818 11.3419 1.05465 11.3721 0.706867 11.1005L0.607229 11.01C0.29184 10.6781 0.263166 10.1588 0.521214 9.79285L0.607229 9.688L8.89865 0.963175C9.21404 0.631299 9.70757 0.601129 10.0554 0.872663L10.155 0.963175L18.4464 9.688C18.7933 10.0531 18.7933 10.645 18.4464 11.01Z"
                               fill="#9D9D9D"/>
                     </svg>
-
                     <div>Скрыть фильтры</div>
                 </button>
+            </div>
+            <div class="sort-filter">
+                <div class="sort-filter__text">Сортировать:</div>
+                <div class="sort-filter__elem">
+                    <div class="sort-filter__input">
+                        <div>по алфавиту</div>
+                    </div>
+                    <div class="sort-filter__list sort-filter__list_hidden">
+                        <div class="sort-filter__list-elem">от А до Я</div>
+                        <div class="sort-filter__list-elem">от Я до А</div>
+                    </div>
+                </div>
+                <div class="sort-filter__input">новые номера</div>
+                <div class="sort-filter__input">старые номера</div>
             </div>
 
             <div class="table table_title">
@@ -545,9 +568,7 @@
                 <button class="basket-mini"> В корзину</button>
             </div>
             <div class="slide">
-                <a href="./html/card-goods.html">
-                    <img class="img-adaptive" src="./assets/iphonegoods.png">
-                </a>
+                <img class="img-adaptive" src="./assets/iphonegoods.png">
                 <div class="goods__name">
                     <div><b>Заголовок</b></div>
                     <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -562,21 +583,21 @@
                     никакого.</p>
                 <div class="goods__price">
                     <div class="price">1500 Р</div>
-                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
-                              stroke-width="1.00391"
-                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <a href="./html/card-goods.html">
+                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                  stroke-width="1.00391"
+                                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                  stroke-miterlimit="10"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
                 </div>
                 <button class="basket-mini"> В корзину</button>
             </div>
             <div class="slide">
-                <a href="./html/card-goods.html">
-                    <img class="img-adaptive" src="./assets/iphonegoods.png">
-                </a>
+                <img class="img-adaptive" src="./assets/iphonegoods.png">
                 <div class="goods__name">
                     <div><b>Заголовок</b></div>
                     <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -591,21 +612,21 @@
                     никакого.</p>
                 <div class="goods__price">
                     <div class="price">1500 Р</div>
-                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
-                              stroke-width="1.00391"
-                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <a href="./html/card-goods.html">
+                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                  stroke-width="1.00391"
+                                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                  stroke-miterlimit="10"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
                 </div>
                 <button class="basket-mini"> В корзину</button>
             </div>
             <div class="slide">
-                <a href="./html/card-goods.html">
-                    <img class="img-adaptive" src="./assets/iphonegoods.png">
-                </a>
+                <img class="img-adaptive" src="./assets/iphonegoods.png">
                 <div class="goods__name">
                     <div><b>Заголовок</b></div>
                     <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -620,14 +641,45 @@
                     никакого.</p>
                 <div class="goods__price">
                     <div class="price">1500 Р</div>
-                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
-                              stroke-width="1.00391"
-                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
-                              stroke-miterlimit="10"
-                              stroke-linecap="round" stroke-linejoin="round"/>
+                    <a href="./html/card-goods.html">
+                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                  stroke-width="1.00391"
+                                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                  stroke-miterlimit="10"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <button class="basket-mini"> В корзину</button>
+            </div>
+            <div class="slide">
+                <img class="img-adaptive" src="./assets/iphonegoods.png">
+                <div class="goods__name">
+                    <div><b>Заголовок</b></div>
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                              stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
+                </div>
+                <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                    когда
+                    нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                    нести
+                    никакого.</p>
+                <div class="goods__price">
+                    <div class="price">1500 Р</div>
+                    <a href="./html/card-goods.html">
+                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                  stroke-width="1.00391"
+                                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                  stroke-miterlimit="10"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
                 </div>
                 <button class="basket-mini"> В корзину</button>
             </div>
@@ -884,31 +936,27 @@
                 Еще услуги →
             </button>
         </a>
-        <section class="statistics">
-            <div class="statistics__grid">
-                <div>
-                    <span class="number-daysone">1176</span>
-                    <div class="statistics__text">партнеров работают <br>в команде с нами</div>
-                </div>
-                <div>
-                    <span class="number-daysone">с 2010 г.</span>
-                    <div class="statistics__text">работаем на рынке <br>телекоммуникаций</div>
-                </div>
-                <div>
-                    <span class="number-daysone heading_orange">100 000+</span>
-                    <div class="statistics__text">проданных SIM-карт</div>
-                </div>
-                <div>
-                    <span class="number-daysone">60</span>
-                    <div class="statistics__text">представительств <br> в регионах РФ и СНГ</div>
-                </div>
+        <section class="statistics-company margin-very-very-big">
+            <div class="h1176">
+                <span class="number-daysone">1176</span>
+                <div class="statistics__text">партнеров работают <br>в команде с нами</div>
             </div>
-            <div class="statistics__gap">
-                <div>
-                    <span class="number-daysone">О КОМПАНИИ</span>
-                    <div class="statistics__text">Рыбатекст используется дизайнерами, <br> проектировщиками и
-                        фронтендерами
-                    </div>
+            <div class="h2010">
+                <span class="number-daysone">с 2010 г.</span>
+                <div class="statistics__text">работаем на рынке <br>телекоммуникаций</div>
+            </div>
+            <div class="h100">
+                <span class="number-daysone heading_orange">100 000+</span>
+                <div class="statistics__text">проданных SIM-карт</div>
+            </div>
+            <div class="h60">
+                <span class="number-daysone">60</span>
+                <div class="statistics__text">представительств <br> в регионах РФ и СНГ</div>
+            </div>
+            <div class="hcompany">
+                <span class="number-daysone">О КОМПАНИИ</span>
+                <div class="statistics__text statistics__text_margin">Рыбатекст используется дизайнерами, <br>
+                    проектировщиками и фронтендерами
                 </div>
                 <div class="read-more">
                     <div class="statistics__text read-more_blue">Читать <br>еще</div>
@@ -923,19 +971,21 @@
     </section>
     <!--ОТЗЫВЫ-->
     <section class="reviews">
-        <h2 class="heading2 goods__heading">Отзывы</h2>
-        <div class="arrows arrows__reviews">
-            <div class="arrows__left arrows-reviews__left">
-                <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.00043 0.841806L0.792363 4.04987L4.00043 7.25793" stroke="#4262FF"
-                          stroke-width="0.855484"/>
-                </svg>
-            </div>
-            <div class="arrows__right arrows-reviews__right">
-                <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.438293 7.25817L3.64636 4.05011L0.438293 0.842041" stroke="white"
-                          stroke-width="0.855484"/>
-                </svg>
+        <div class="reviews-head_mobile">
+            <h2 class="heading2 goods__heading">Отзывы</h2>
+            <div class="arrows arrows__reviews">
+                <div class="arrows__left arrows-reviews__left">
+                    <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.00043 0.841806L0.792363 4.04987L4.00043 7.25793" stroke="#4262FF"
+                              stroke-width="0.855484"/>
+                    </svg>
+                </div>
+                <div class="arrows__right arrows-reviews__right">
+                    <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.438293 7.25817L3.64636 4.05011L0.438293 0.842041" stroke="white"
+                              stroke-width="0.855484"/>
+                    </svg>
+                </div>
             </div>
         </div>
         <div class=" reviews__margin">
@@ -1076,5 +1126,6 @@
 <script src="js/slider.js"></script>
 <script src="../js/nouislider.min.js"></script>
 <script src="../js/range-main.js"></script>
+<script src="../js/list.js"></script>
 </body>
 </html>

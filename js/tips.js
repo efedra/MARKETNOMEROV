@@ -9,3 +9,15 @@ text.addEventListener('click', () => {
         document.getElementById('tips').style.display = 'none';
     }
 })
+
+let hideSortFilter =  document.querySelector('.hide-filter')
+let flagSortFilter = false
+
+hideSortFilter.addEventListener('click', () => {
+    flagSortFilter = !flagSortFilter;
+    if (flagSortFilter) {
+        document.querySelector('.sort-filter').style.display = 'grid';
+    } else {
+        document.querySelector('.sort-filter').style.display = 'none';
+    }
+})

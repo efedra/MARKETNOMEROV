@@ -2,6 +2,14 @@ $('.goods__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
+    responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
 });
 $('.arrows__left_goods-main-left').click(function () {
     $('.goods__slider').slick('slickPrev');
@@ -15,6 +23,14 @@ $('.slider-tarif').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
+    responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
 });
 
 $('.close-tarif__arrow-left').click(function () {
@@ -31,6 +47,14 @@ $('.uslugi__body').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
+    responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
 });
 
 $('.arrows-uslugi-left').click(function () {

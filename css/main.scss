@@ -1024,6 +1024,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   align-items: center;
   height: fit-content;
   padding: 1vh 1vw;
+  cursor: pointer;
 }
 
 .table {
@@ -1138,8 +1139,8 @@ input[type="range"]::-webkit-slider-runnable-track {
   display: flex;
 }
 
-.reviews__slide {
-  display: grid !important;
+.slick-track .reviews__slide {
+  display: grid;
 }
 
 .range-slider .noUi-horizontal {
@@ -1166,4 +1167,77 @@ input[type="range"]::-webkit-slider-runnable-track {
   top: clamp(-18px, -1.5vw ,-1px);
 }
 
+.sort-filter{
+  display: none;
+  grid-template-columns: repeat(4,1fr);
+  margin-bottom: min(19vh,165px);
+  padding: 0 min(2vw,27px);
+  gap: min(2.5vw,31px);
+  height: min(40.15px,3.1vw);
+  width: fit-content;
+}
 
+.sort-filter__text{
+  color: rgba(5, 0, 56, 1);
+  @include adaptiv-font-min(24,14);
+}
+
+.sort-filter__input{
+  color: rgba(98, 108, 119, 1);
+  @include adaptiv-font-min(24,14);
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.sort-filter__input_active{
+  padding: min(0.6vw,8px) min(2vw, 25px);
+  color: rgba(240, 78, 1, 1);
+  @include adaptiv-font-min(20,10);
+  border-radius: 9px;
+  background: rgba(230, 230, 230, 1);
+  position: relative;
+  z-index: 1;
+}
+
+
+.sort-filter__list{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  @include adaptiv-font-min(20,10);
+  border-radius: 9px;
+  background: rgba(230, 230, 230, 1);
+  padding: min(0.9vw,12px) min(0.9vw, 12px);
+  margin-top: max(-13px, -1vw);
+  box-shadow: 0px 19px 28.119998931884766px 0px rgba(0, 0, 0, 0.1);
+  gap: min(11px,1vw);
+}
+.sort-filter__list_hidden{
+  display: none;
+}
+
+.sort-filter__list-elem{
+  border-radius: 6px;
+  background: white;
+  @include adaptiv-font-min(12,1);
+  opacity: 50%;
+  height: min(33px,2.5vw);
+  padding: 0 0 0 min(13px, 1.1vw);
+  display: flex;
+  align-items: center;
+}
+
+.sort-filter__list-elem_active{
+  opacity: 100%;
+}
+.mobile-nav{
+  display: none;
+}
+.statistics__text_margin{
+  margin-bottom: min(2vw, 26px);
+}
+.statistics-company div:last-child{
+  grid-row-end: span 2;
+}
+.statistics-company{
+  padding: 0 2.8vw;
+}
