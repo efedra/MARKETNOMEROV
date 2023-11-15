@@ -1,0 +1,11 @@
+@media (max-width: 800px) {
+  .header__logo img {
+    width: 20vw;
+    height: auto;
+  }
+  .header-number__margin {
+    margin-bottom: 4vw;
+  }
+}
+
+/*# sourceMappingURL=number.css.map */
