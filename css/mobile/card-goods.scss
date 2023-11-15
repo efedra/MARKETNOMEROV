@@ -1,0 +1,7 @@
+@import "../adaptive-min";
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+}
