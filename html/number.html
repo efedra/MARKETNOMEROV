@@ -16,8 +16,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
     <link rel="stylesheet" href="../css/mobile/main.css">
     <link rel="stylesheet" href="../css/mobile/number.css">
+    <link rel="stylesheet" href="../css/mobile/modal.css">
 </head>
 <body>
+
 <section class="modal-mobile-nav">
     <div class="mobile-nav__close">
         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,15 +37,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </filter>
             </defs>
         </svg>
-
-
     </div>
     <div class="mobile-nav__ul">
-        <a href="./html/number.html"><div class="mobile-nav__li">Красивые номера</div></a>
-        <a href="./html/tarif.html"><div class="mobile-nav__li">Тарифы</div></a>
-        <a href="./html/goods.html"><div class="mobile-nav__li">магазин</div></a>
-        <a href="./html/uslugi.html"><div class="mobile-nav__li">Услуги</div></a>
-        <a href="./html/company.html"><div class="mobile-nav__li">О компании</div></a>
+        <a href="./number.html"><div class="mobile-nav__li">Красивые номера</div></a>
+        <a href="./tarif.html"><div class="mobile-nav__li">Тарифы</div></a>
+        <a href="./goods.html"><div class="mobile-nav__li">магазин</div></a>
+        <a href="./uslugi.html"><div class="mobile-nav__li">Услуги</div></a>
+        <a href="./company.html"><div class="mobile-nav__li">О компании</div></a>
     </div>
 </section>
 <div class="modal-basket">
@@ -176,7 +176,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
                 <div class="splide__list">
                     <div class="banner-number__slide splide__slide">
-                        <img class="img-adaptive" src="../assets/banner-number.png">
+                        <img class="img-adaptive banner-number-desktop" src="../assets/banner-number.png">
+                        <img class="img-adaptive banner-number-mobile" src="../assets/banner-number-mobile.png">
                         <div class="beatiful-number__main">
                             <h1 class="head-days margin__head">ТОП ТОВАРЫ <br> НА MARKETNOMEROV.RU</h1>
                             <button class="button-catalog">
@@ -193,7 +194,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </div>
                     </div>
                     <div class="banner-number__slide splide__slide">
-                        <img class="img-adaptive" src="../assets/banner-number.png">
+                        <img class="img-adaptive banner-number-desktop" src="../assets/banner-number.png">
+                        <img class="img-adaptive banner-number-mobile" src="../assets/banner-number-mobile.png">
                         <div class="beatiful-number__main">
                             <h1 class="head-days margin__head">ТОП ТОВАРЫ <br> НА MARKETNOMEROV.RU</h1>
                             <button class="button-catalog">
@@ -326,28 +328,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <div>26000</div>
         </div>
         <div class="range-slider">
-            <div class="range-fill"></div>
-            <div class="range-dot1"></div>
-            <div class="range-dot2"></div>
-            <div class="range-dot3"></div>
-            <div class="range-dot4"></div>
-            <div class="range-dot5"></div>
-            <input
-                    type="range"
-                    class="min-price"
-                    value="100"
-                    min="0"
-                    max="26000"
-                    step="10"
-            />
-            <input
-                    type="range"
-                    class="max-price"
-                    value="10550"
-                    min="0"
-                    max="26000"
-                    step="10"
-            />
+            <div class="range-main"></div>
         </div>
         <div class="select-options">
             <div class="select-options__elem">Выберите регион</div>
@@ -369,6 +350,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
                 <div>Скрыть фильтры</div>
             </button>
+        </div>
+        <div class="sort-filter">
+            <div class="sort-filter__text">Сортировать:</div>
+            <div class="sort-filter__elem">
+                <div class="sort-filter__input">
+                    <div>по алфавиту</div>
+                </div>
+                <div class="sort-filter__list sort-filter__list_hidden">
+                    <div class="sort-filter__list-elem">от А до Я</div>
+                    <div class="sort-filter__list-elem">от Я до А</div>
+                </div>
+            </div>
+            <div class="sort-filter__input">новые номера</div>
+            <div class="sort-filter__input">старые номера</div>
         </div>
     </div>
     <section class="number-list main-padding banner-number__margin">
@@ -457,6 +452,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <footer class="footer">
         <div class="footer__top">
             <div class="logo-footer">MARKETNOMEROV.RU</div>
+            <div class="logo-footer_mobile">MARKET <br>NOMEROV.RU</div>
             <ul class="footer__nav">
                 <li>Красивые номера</li>
                 <li>Тарифы</li>
@@ -467,7 +463,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <div>Отзывы</div>
             </div>
             <div class="inn">
-                ИНН 7733871435, КПП 773301001, ОГРН <br>1147746179570, ОКПО 29039632. Действует <br> с 24.02.2014
+                ИНН 7733871435, КПП 773301001, ОГРН 1147746179570, ОКПО 29039632. Действует с 24.02.2014
             </div>
         </div>
     </footer>
@@ -486,5 +482,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="../js/slider.js"></script>
 <script src="../js/mobile-nav.js"></script>
+<script src="../js/range-main.js"></script>
+<script src="../js/list.js"></script>
 </body>
 </html>

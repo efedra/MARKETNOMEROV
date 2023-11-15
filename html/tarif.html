@@ -2,15 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Тарифы</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/modal.css">
     <link rel="stylesheet" href="../css/tips.css">
     <link rel="stylesheet" href="../css/nouislider.min.css">
     <link rel="stylesheet" href="../css/number.css">
     <link rel="stylesheet" href="../css/tarif.css">
+
+    <link rel="stylesheet" href="../css/mobile/main.css">
+    <link rel="stylesheet" href="../css/mobile/number.css">
+    <link rel="stylesheet" href="../css/mobile/tarif.css">
+    <link rel="stylesheet" href="../css/mobile/modal.css">
 </head>
 <body>
+<section class="modal-mobile-nav">
+    <div class="mobile-nav__close">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_b_277_19327)">
+                <rect width="10" height="10" rx="5" fill="#F04E01"/>
+            </g>
+            <path d="M6.24957 3.75L3.74957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square"
+                  stroke-linejoin="round"/>
+            <path d="M3.74957 3.75L6.24957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square"
+                  stroke-linejoin="round"/>
+            <defs>
+                <filter id="filter0_b_277_19327" x="-15" y="-15" width="40" height="40" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.5"/>
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_277_19327"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_277_19327" result="shape"/>
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <div class="mobile-nav__ul">
+        <a href="./number.html">
+            <div class="mobile-nav__li">Красивые номера</div>
+        </a>
+        <a href="./tarif.html">
+            <div class="mobile-nav__li">Тарифы</div>
+        </a>
+        <a href="./goods.html">
+            <div class="mobile-nav__li">магазин</div>
+        </a>
+        <a href="./uslugi.html">
+            <div class="mobile-nav__li">Услуги</div>
+        </a>
+        <a href="./company.html">
+            <div class="mobile-nav__li">О компании</div>
+        </a>
+    </div>
+</section>
 <div class="modal-basket">
     <img class="triangle" src="../assets/white-triangle.svg"/>
     <div class="modal-basket__window">
@@ -62,58 +108,79 @@
         </a>
     </div>
 </div>
-<header class="header header-number__margin">
-    <a class="header__logo" href="../index.html">
-        <img src="../assets/logo.svg">
-    </a>
-    <nav class="header__nav">
-        <div class="pointer">
-            <a href="./number.html">
-                Красивые номера
-            </a>
-        </div>
-        <div class="pointer">
-            <a class="link_orange" href="./tarif.html">
-                Тарифы
-            </a>
-        </div>
-        <div class="pointer">
-            <a href="./goods.html">
-                Магазин
-            </a>
-        </div>
-        <div class="pointer">
-            <a href="./uslugi.html">
-                Услуги
-            </a>
-        </div>
-        <div class="pointer">
-            <a href="./company.html">
-                О компании
-            </a>
-        </div>
-    </nav>
-    <div class="header__contacts">
-        <img src="../assets/telega.svg">
-        <img src="../assets/whats.svg">
-    </div>
-    <div class="header__buttons">
-        <button class="recall">
-            Обратный звонок
-        </button>
-        <button class="basket">
-            <span>Корзина</span>
-            <img src="../assets/Cart.svg">
 
-        </button>
-    </div>
-</header>
 <div class="container">
+    <header class="header header-number__margin container_zero-padding">
+        <a class="header__logo" href="../index.html">
+            <img src="../assets/logo.svg">
+        </a>
+        <nav class="header__nav">
+            <div class="pointer">
+                <a href="./number.html">
+                    Красивые номера
+                </a>
+            </div>
+            <div class="pointer">
+                <a class="link_orange" href="./tarif.html">
+                    Тарифы
+                </a>
+            </div>
+            <div class="pointer">
+                <a href="./goods.html">
+                    Магазин
+                </a>
+            </div>
+            <div class="pointer">
+                <a href="./uslugi.html">
+                    Услуги
+                </a>
+            </div>
+            <div class="pointer">
+                <a href="./company.html">
+                    О компании
+                </a>
+            </div>
+        </nav>
+        <div class="header__contacts">
+            <img src="../assets/telega.svg">
+            <img src="../assets/whats.svg">
+        </div>
+        <div class="header__buttons">
+            <button class="recall">
+                Обратный звонок
+            </button>
+            <button class="basket">
+                <span>Корзина</span>
+                <img src="../assets/Cart.svg">
+            </button>
+        </div>
+        <div class="mobile-nav">
+            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.900146" width="17" height="17" rx="8.5" fill="#4262FF"/>
+                <path d="M12.3746 9.7751H9.39956H6.42456M12.3746 7.2251H9.39956H6.42456" stroke="white"
+                      stroke-width="0.6375" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </header>
     <h1 class="beatiful-number__heading">Тарифы</h1>
     <section class="t01">
         <div class="orange-number orange-number_zero-pading">01</div>
         <div class="tarif__subtext tarif__subtext_margin">
-            <div class="tarif_subtext">Выберите как подключить тариф</div>
+                <div class="tarif_subtext">Выберите как подключить тариф</div>
+                <div class="arrows">
+                    <div class="arrows__left arrows-tarif-left">
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.00043 0.841806L0.792363 4.04987L4.00043 7.25793" stroke="#4262FF"
+                                  stroke-width="0.855484"/>
+                        </svg>
+                    </div>
+                    <div class="arrows__right arrows-tarif-right">
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.438293 7.25817L3.64636 4.05011L0.438293 0.842041" stroke="white"
+                                  stroke-width="0.855484"/>
+                        </svg>
+                    </div>
+                </div>
         </div>
         <div class="tarif-grid tarif-grid__margin">
             <div class="tarif-grid__element tarif-grid__element_white">
@@ -122,6 +189,22 @@
                 <div class="tarif-grid__lenta">
                     <div class="tag tag_white">100 ГБ</div>
                     <div class="tag tag_white">кэшбек баллами</div>
+                </div>
+            </div>
+            <div class="tarif-grid__element">
+                <img src="../assets/tarif.png">
+                <div class="tarif-grid__head">Тариф Выгодный 2023</div>
+                <div class="tarif-grid__lenta">
+                    <div class="tag">100 ГБ</div>
+                    <div class="tag">кэшбек баллами</div>
+                </div>
+            </div>
+            <div class="tarif-grid__element">
+                <img src="../assets/tarif.png">
+                <div class="tarif-grid__head">Тариф Выгодный 2023</div>
+                <div class="tarif-grid__lenta">
+                    <div class="tag">100 ГБ</div>
+                    <div class="tag">кэшбек баллами</div>
                 </div>
             </div>
             <div class="tarif-grid__element">
@@ -168,13 +251,13 @@
             </div>
         </div>
     </div>
+    <div class="t02-main t02-main_margin">
+        <div class="t02-main__elem t02-main__elem_active shadow">Тариф 1.0</div>
+        <div class="t02-main__elem">Тариф 2.0</div>
+        <div class="t02-main__elem">Тариф 3.0</div>
+        <div class="t02-main__elem">Тариф 4.0</div>
+    </div>
     <div class="container">
-        <div class="t02-main t02-main_margin">
-            <div class="t02-main__elem t02-main__elem_active shadow">Тариф 1.0</div>
-            <div class="t02-main__elem">Тариф 2.0</div>
-            <div class="t02-main__elem">Тариф 3.0</div>
-            <div class="t02-main__elem">Тариф 4.0</div>
-        </div>
         <div class="t02-grid t02-grid tarif-filter_margin">
             <div class="slider-tarif__slide slide-tarif">
                 <div class="slide-tarif__up">
@@ -350,6 +433,7 @@
 <footer class="footer">
     <div class="footer__top">
         <div class="logo-footer">MARKETNOMEROV.RU</div>
+        <div class="logo-footer_mobile">MARKET <br>NOMEROV.RU</div>
         <ul class="footer__nav">
             <li>Красивые номера</li>
             <li>Тарифы</li>
@@ -360,7 +444,7 @@
             <div>Отзывы</div>
         </div>
         <div class="inn">
-            ИНН 7733871435, КПП 773301001, ОГРН <br>1147746179570, ОКПО 29039632. Действует <br> с 24.02.2014
+            ИНН 7733871435, КПП 773301001, ОГРН 1147746179570, ОКПО 29039632. Действует с 24.02.2014
         </div>
     </div>
 </footer>
@@ -370,5 +454,12 @@
     <div class="footer__text">Договор оферты</div>
 </div>
 <script src="../js/modal.js"></script>
+<script src="../js/mobile-nav.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="../js/slider.js"></script>
 </body>
 </html>

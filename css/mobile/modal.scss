@@ -1,0 +1,70 @@
+@import "../adaptive-min";
+
+@media (max-width: 800px) {
+  .modal-basket {
+    padding: 0;
+  }
+  .modal-basket__window {
+    width: 100vw;
+    top: 7.9vh;
+    max-width: unset;
+    border-radius: 16px;
+    padding: 3.2vh 2.8vw;
+    gap: 5vh;
+  }
+  .triangle {
+    width: 5.3vw;
+    height: auto;
+    right: 16.3vw;
+    top: 6.5vh;
+  }
+  .modal-basket__head-text {
+    @include adaptiv-font-min(30, 20);
+    line-height: 3vw;
+  }
+  .close {
+    width: 2.8vw;
+    height: auto;
+  }
+  .modal-basket__desc-head {
+    @include adaptiv-font-min(19, 11);
+  }
+  .modal-basket__desc-text {
+    @include adaptiv-font-min(17, 9);
+    line-height: 3vw;
+  }
+  .modal-basket__price {
+    @include adaptiv-font-min(17, 11);
+  }
+  .modal-basket__icons {
+    width: 12vw;
+
+    svg:first-child {
+      width: 3.3vw;
+      height: auto;
+    }
+
+    svg:last-child {
+      width: 3.7vw;
+      height: auto;
+    }
+  }
+  .modal-basket__picture {
+    width: 27vw;
+    height: 20vh;
+    padding: 14%;
+
+    .img-adaptive {
+      height: 100%;
+      width: auto;
+    }
+  }
+  .modal-basket__button {
+    @include adaptiv-font-min(20, 10);
+    height: 6.5vh;
+  }
+  .modal-basket__elem {
+    max-width: max(66.5vw, 340px);
+    gap: 2vw;
+  }
+}

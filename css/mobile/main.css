@@ -37,7 +37,7 @@
   .basket {
     font-size: min(7px + 5 * ((100vw - 320px) / 960), 12px);
     height: fit-content;
-    padding: min(1vw, 9px) min(2vw, 16px);
+    padding: min(1vw, 9px) min(3.6vw, 16px);
     display: flex;
     align-self: center;
     height: min(4.85vw, 29px);
@@ -513,7 +513,7 @@
   .modal-mobile-nav {
     display: none;
     position: fixed;
-    height: 46vw;
+    height: 42vw;
     width: 100vw;
     z-index: 5;
     background: white;
@@ -524,11 +524,23 @@
     height: auto;
     cursor: pointer;
   }
+  .mobile-nav__ul {
+    text-align: end;
+  }
   .mobile-nav__li {
     font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     color: rgb(5, 0, 56);
     padding: 1.5vw 0;
+  }
+  .slide-tarif__up {
+    padding: 3vw 2vw 19vw;
+    border-radius: 15px;
+  }
+  .slide-tarif__down {
+    border-radius: 15px;
+    padding: 7vw 3vw 5vw;
+    margin-top: -17vw;
   }
 }
 

@@ -16,6 +16,7 @@
 
 .container__margin {
   margin-bottom: 4vh;
+  padding: 0;
 }
 
 .banner-services {
@@ -87,6 +88,10 @@
   position: relative;
   height: 60vw;
   max-height: 840px;
+}
+
+.container_zero-padding {
+  padding: 0;
 }
 
 /*# sourceMappingURL=services.css.map */

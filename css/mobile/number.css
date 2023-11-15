@@ -6,6 +6,80 @@
   .header-number__margin {
     margin-bottom: 4vw;
   }
+  .banner-number__margin {
+    margin-bottom: 10vw;
+  }
+  .banner-number-desktop {
+    display: none;
+  }
+  .banner-number-mobile {
+    display: block;
+  }
+  .beatiful-number__main {
+    padding: 11vw 4.5vw 7vw 6.6vw;
+  }
+  .head-days {
+    font-size: min(18px + 51 * ((100vw - 320px) / 960), 69px);
+  }
+  .button-catalog {
+    gap: 1vw;
+    align-items: center;
+    padding: 1.4vw 1.6vw;
+  }
+  .button-catalog div {
+    display: flex;
+  }
+  .button-catalog div svg {
+    height: auto;
+    width: 1.5vw;
+  }
+  .button-catalog div:last-child {
+    font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
+  }
+  .beatiful-number__range {
+    grid-template-columns: 1fr 1fr;
+    height: 38vw;
+    row-gap: 5vw;
+    column-gap: 0;
+    left: 6.6vw;
+    width: 87%;
+    bottom: 3%;
+  }
+  .beatiful-number__block {
+    grid-column: 1/span 2;
+  }
+  .name-range {
+    font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
+  }
+  .noUi-connects {
+    height: 1px;
+  }
+  .noUi-horizontal {
+    height: 1px;
+  }
+  .align-self {
+    gap: 1vw;
+  }
+  .beatiful-number__button_sale {
+    font-size: min(10px + 11 * ((100vw - 320px) / 960), 21px);
+    padding: 2vw 8.5vw;
+  }
+  .arrow-beatiful-number-left, .arrow-beatiful-number-right {
+    width: 5.1vw;
+    height: 5.1vw;
+  }
+  .heading {
+    font-size: min(12px + 11 * ((100vw - 320px) / 960), 23px);
+  }
+  .beatiful-number__filter_mini {
+    margin-bottom: 5vw;
+  }
+  .all-count-number {
+    font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
+  }
+  .range-slider .noUi-horizontal, .range-slider .noUi-connects {
+    height: 3px;
+  }
 }
 
 /*# sourceMappingURL=number.css.map */

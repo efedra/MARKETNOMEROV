@@ -15,6 +15,7 @@ $blue: rgba(66, 98, 255, 1);
 .tarif__subtext {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .tarif_subtext {
@@ -32,10 +33,18 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .tarif-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 1%;
-  height: 36vh;
+  height: min(23vw,297px);
+}
+
+.slick-track {
+  height: 100%;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  padding: min(2.7vw,32px) min(1.9vw,22px);
 }
 
 .tarif-grid__element {
@@ -45,7 +54,7 @@ $blue: rgba(66, 98, 255, 1);
   justify-content: flex-end;
   border: 2px solid black;
   border-radius: 34px;
-  padding: 5% 6%;
+  //padding: 5% 6%;
   gap: 4%;
 
   img {
@@ -82,30 +91,30 @@ $blue: rgba(66, 98, 255, 1);
   z-index: 2;
 }
 
-.tarif-grid__head_white{
+.tarif-grid__head_white {
   color: white;
 }
 
-.tag_white{
+.tag_white {
   color: white;
   border: 1px solid white;
 }
 
-.tarif-grid__element_white{
+.tarif-grid__element_white {
   background-image: linear-gradient(to bottom, rgba(245, 245, 247, 0), rgba(66, 98, 255, 1));
 }
 
-.tarif-grid__margin{
+.tarif-grid__margin {
   margin-bottom: 4vh;
 }
 
-.tarif-filter{
+.tarif-filter {
   display: flex;
   flex-wrap: wrap;
   gap: 1%;
 }
 
-.tarif-filter__elem{
+.tarif-filter__elem {
   position: relative;
   border: 1px solid $orange;
   padding: 1.5% 4%;
@@ -117,31 +126,31 @@ $blue: rgba(66, 98, 255, 1);
   line-height: 20px;
 }
 
-.tarif-filter__check{
+.tarif-filter__check {
   position: absolute;
   top: 13%;
   right: 4%;
 }
 
-.tarif-filter__head{
+.tarif-filter__head {
   font-weight: 600;
-  @include adaptiv-font-min(14,7);
+  @include adaptiv-font-min(14, 7);
 }
 
-.tarif-filter__body{
-  @include adaptiv-font-min(12,5);
+.tarif-filter__body {
+  @include adaptiv-font-min(12, 5);
   color: rgba(75, 71, 111, 1);
 }
 
-.shadow{
+.shadow {
   box-shadow: 0px 3.6553399562835693px 3.6553399562835693px 0px rgba(139, 139, 139, 0.25);
 }
 
-.tarif-filter_margin{
+.tarif-filter_margin {
   margin-bottom: 16vh;
 }
 
-.img-lenta{
+.img-lenta {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -149,23 +158,23 @@ $blue: rgba(66, 98, 255, 1);
   max-width: 33%;
 }
 
-.t02{
+.t02 {
   background: url("../assets/grid.svg");
   background-size: cover;
 }
 
-.t02-main{
+.t02-main {
   background: rgba(245, 245, 247, 1);
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 3%;
   padding: 1%;
 }
 
-.t02-main__elem_active{
+.t02-main__elem_active {
   background: white;
   border-radius: 32px;
-  @include adaptiv-font-min(13,7);
+  @include adaptiv-font-min(13, 7);
   display: flex;
   justify-content: center;
   font-weight: 600;
@@ -174,8 +183,8 @@ $blue: rgba(66, 98, 255, 1);
   border: 1px solid black;
 }
 
-.t02-main__elem{
-  @include adaptiv-font-min(13,7);
+.t02-main__elem {
+  @include adaptiv-font-min(13, 7);
   display: flex;
   justify-content: center;
   font-weight: 600;
@@ -183,13 +192,21 @@ $blue: rgba(66, 98, 255, 1);
   align-items: center;
 }
 
-.t02-main_margin{
+.t02-main_margin {
   margin-bottom: 8vh;
 }
 
-.t02-grid{
+.t02-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 3%;
+}
+
+.container_zero-padding {
+  padding: 0;
+}
+
+.tarif_subtext_flex {
+  display: flex;
 }

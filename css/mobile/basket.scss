@@ -1,0 +1,120 @@
+@import "../adaptive-min";
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+  .steps-basket__head {
+    @include adaptiv-font-min(18, 8);
+  }
+  .steps-basket__number {
+    @include adaptiv-font-min(20, 10);
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 1.2vw 2.05vw;
+  }
+
+  .steps-basket-scroll {
+    overflow-x: auto;
+    margin: 0 10px;
+  }
+  .steps-basket {
+    width: 185vw;
+    padding-bottom: 3vw;
+    height: unset;
+  }
+  .steps-basket__elem:nth-child(2n) {
+    width: 10.5vw;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .steps-basket-scroll::-webkit-scrollbar {
+    height: 12px;
+  }
+
+  .steps-basket-scroll::-webkit-scrollbar-track {
+    background: rgb(237, 237, 237);
+    height: 2px;
+  }
+
+  .steps-basket-scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(65, 98, 255);
+    height: 12px;
+    border-radius: 40px;
+  }
+  .margin-very-big {
+    margin-bottom: 8vw;
+  }
+  .margin-top-mobile {
+    margin-top: 8vw;
+  }
+  .basket-grid {
+    grid-template-columns: 1fr;
+    gap: 10vw;
+  }
+  .oform-order__head {
+    @include adaptiv-font-min(26, 16);
+  }
+  .oform-order {
+    padding: 7%;
+  }
+  .goods-main__input_oform {
+    input {
+      height: 11vw;
+    }
+  }
+  .oform-order__count-sht {
+    @include adaptiv-font-min(21, 11);
+  }
+  .oform-order__price {
+    @include adaptiv-font-min(22, 12);
+  }
+  .promik__text {
+    @include adaptiv-font-min(20, 10);
+
+    svg {
+      width: 4.4vw;
+      height: auto;
+    }
+  }
+  .private__text {
+    @include adaptiv-font-min(20, 10);
+    padding-left: 6vw;
+  }
+  .private__content .private__text::before {
+    width: 3.8vw;
+    height: 3.8vw;
+    top: -37%;
+  }
+  .slide {
+    display: none;
+  }
+  .slide:first-child, .slide:nth-child(2) {
+    display: flex;
+  }
+
+  .recently-watched {
+    grid-template-columns: 1fr 1fr;
+  }
+  .modal-basket__elem {
+    grid-template-columns: 1fr 2fr;
+  }
+  .modal-basket__price_oform-desktop {
+    display: none;
+  }
+  .modal-basket__price_oform-mobile {
+    display: flex;
+    margin-bottom: 4vw;
+  }
+  .modal-basket__picture_oform {
+    width: 35.1vw;
+    padding: min(4vw, 16px) 5vw;
+    max-width: 146px;
+  }
+}

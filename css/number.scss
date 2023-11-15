@@ -173,6 +173,7 @@ $blue: rgba(66, 98, 255, 1);
   top: 50%;
   left: 0;
   z-index: 2;
+  transform: translateY(-50%);
 
   max-width: 41px;
   max-height: 41px;
@@ -190,6 +191,7 @@ $blue: rgba(66, 98, 255, 1);
   top: 50%;
   right: 0;
   z-index: 2;
+  transform: translateY(-50%);
 
   max-width: 41px;
   max-height: 41px;
@@ -207,5 +209,12 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .splide__pagination {
+  display: none;
+}
+
+.banner-number-desktop {
+  display: block;
+}
+.banner-number-mobile{
   display: none;
 }

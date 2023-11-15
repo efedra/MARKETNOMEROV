@@ -195,6 +195,10 @@ $blue: rgba(66, 98, 255, 1);
   background: rgba(139, 142, 153, 1);
 }
 
+.container_zero-padding {
+  padding: 0;
+}
+
 .noUi-target{
   background: rgba(66, 98, 255, 1);
   border-radius: 0;
@@ -298,4 +302,15 @@ $blue: rgba(66, 98, 255, 1);
 
 .goods-main_margin{
   margin-bottom: 8%;
+}
+
+.filter-mobile{
+  display: none;
+}
+.categories-filter-mobile{
+  display: none;
+}
+
+.arrows{
+  display: none;
 }

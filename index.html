@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/company.css">
 
     <link rel="stylesheet" href="./css/mobile/main.css">
+    <link rel="stylesheet" href="./css/mobile/modal.css">
 </head>
 <body>
 <!--МОДАЛКИ-->
@@ -96,10 +97,13 @@
             <g filter="url(#filter0_b_277_19327)">
                 <rect width="10" height="10" rx="5" fill="#F04E01"/>
             </g>
-            <path d="M6.24957 3.75L3.74957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="round"/>
-            <path d="M3.74957 3.75L6.24957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="round"/>
+            <path d="M6.24957 3.75L3.74957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square"
+                  stroke-linejoin="round"/>
+            <path d="M3.74957 3.75L6.24957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square"
+                  stroke-linejoin="round"/>
             <defs>
-                <filter id="filter0_b_277_19327" x="-15" y="-15" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <filter id="filter0_b_277_19327" x="-15" y="-15" width="40" height="40" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
                     <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                     <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.5"/>
                     <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_277_19327"/>
@@ -111,11 +115,21 @@
 
     </div>
     <div class="mobile-nav__ul">
-        <a href="./html/number.html"><div class="mobile-nav__li">Красивые номера</div></a>
-        <a href="./html/tarif.html"><div class="mobile-nav__li">Тарифы</div></a>
-        <a href="./html/goods.html"><div class="mobile-nav__li">магазин</div></a>
-        <a href="./html/uslugi.html"><div class="mobile-nav__li">Услуги</div></a>
-        <a href="./html/company.html"><div class="mobile-nav__li">О компании</div></a>
+        <a href="./html/number.html">
+            <div class="mobile-nav__li">Красивые номера</div>
+        </a>
+        <a href="./html/tarif.html">
+            <div class="mobile-nav__li">Тарифы</div>
+        </a>
+        <a href="./html/goods.html">
+            <div class="mobile-nav__li">магазин</div>
+        </a>
+        <a href="./html/uslugi.html">
+            <div class="mobile-nav__li">Услуги</div>
+        </a>
+        <a href="./html/company.html">
+            <div class="mobile-nav__li">О компании</div>
+        </a>
     </div>
 </section>
 <div class="modal-basket">
@@ -164,9 +178,13 @@
             </div>
             <div class="modal-basket__price">27 500 р</div>
         </div>
-        <button class="modal-basket__button">ПЕРЕЙТИ В КОРЗИНУ</button>
+        <a href="./html/basket.html">
+            <button class="modal-basket__button">ПЕРЕЙТИ В КОРЗИНУ</button>
+        </a>
     </div>
 </div>
+
+
 <div class="container container_zero-padding">
     <header class="header">
         <img class="header__logo" src="assets/logo.svg">
@@ -369,32 +387,7 @@
                 <div>26000</div>
             </div>
             <div class="range-slider">
-                <!--                <div class="range-fill"></div>-->
-                <!--                <div class="range-dot1"></div>-->
-                <!--                <div class="range-dot2"></div>-->
-                <!--                <div class="range-dot3"></div>-->
-                <!--                <div class="range-dot4"></div>-->
-                <!--                <div class="range-dot5"></div>-->
-                <div class="range-main">
-                    <!--                    <div class="slider-handle1"></div>-->
-                    <!--                    <div class="slider-handle2"></div>-->
-                </div>
-                <!--                <input-->
-                <!--                        type="range"-->
-                <!--                        class="min-price"-->
-                <!--                        value="100"-->
-                <!--                        min="0"-->
-                <!--                        max="26000"-->
-                <!--                        step="10"-->
-                <!--                />-->
-                <!--                <input-->
-                <!--                        type="range"-->
-                <!--                        class="max-price"-->
-                <!--                        value="10550"-->
-                <!--                        min="0"-->
-                <!--                        max="26000"-->
-                <!--                        step="10"-->
-                <!--                />-->
+                <div class="range-main"></div>
             </div>
             <div class="select-options">
                 <div class="select-options__elem">Выберите регион</div>
@@ -1147,9 +1140,7 @@
 
 <script src="js/modal.js"></script>
 <script src="js/tips.js"></script>
-<script
-        src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/slider.js"></script>

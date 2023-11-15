@@ -1,6 +1,5 @@
 var rangeSlider = document.querySelector(".slider-range-sum");
 
-
 noUiSlider.create(rangeSlider, {
     start: [200000],
     connect: [true, false],

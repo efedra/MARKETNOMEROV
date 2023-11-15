@@ -1,0 +1,81 @@
+@media (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+  .first-step {
+    grid-template-columns: 1fr;
+  }
+  .header-step {
+    font-size: min(15px + 10 * ((100vw - 320px) / 960), 25px);
+    margin-bottom: 1vw;
+  }
+  .text-step {
+    font-size: min(7px + 10 * ((100vw - 320px) / 960), 17px);
+  }
+  .input-oform {
+    height: 11vw;
+    width: 100%;
+    font-size: min(12px + 10 * ((100vw - 320px) / 960), 22px);
+  }
+  .input-oform::placeholder {
+    font-size: min(12px + 10 * ((100vw - 320px) / 960), 22px);
+  }
+  .adress-grid {
+    grid-template-columns: 1fr;
+  }
+  .adress-grid div:last-child {
+    width: 80%;
+  }
+  .input-3th {
+    grid-column: unset;
+  }
+  .margin-min {
+    margin-bottom: 4vw;
+  }
+  .tips-step {
+    font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
+    margin-top: 1vw;
+    line-height: 3vw;
+  }
+  .how-delivery {
+    grid-template-columns: 1fr;
+  }
+  .how-delivery__inputs {
+    flex-direction: column;
+  }
+  .radio-delivery__label {
+    font-size: min(19px + 10 * ((100vw - 320px) / 960), 29px);
+    width: 100%;
+    text-align: center;
+  }
+  .input-oform_punkt {
+    width: 80%;
+  }
+  .card {
+    width: 100%;
+    max-width: unset;
+  }
+  .radio-delivery__label_card {
+    padding-left: 16vw;
+    padding-right: 16vw;
+  }
+  .card__tips {
+    font-size: min(13px + 10 * ((100vw - 320px) / 960), 23px);
+  }
+  .grid-input__elem_card::placeholder {
+    font-size: min(13px + 10 * ((100vw - 320px) / 960), 23px);
+  }
+  .private_card {
+    font-size: min(13px + 10 * ((100vw - 320px) / 960), 23px);
+  }
+  .input-modal + label:before {
+    width: min(5vw, 17px);
+    height: min(5vw, 17px);
+    top: min(2vw, 8px);
+  }
+  .card-help {
+    font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
+  }
+}
+
+/*# sourceMappingURL=basket-final.css.map */

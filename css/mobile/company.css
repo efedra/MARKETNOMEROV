@@ -1,0 +1,119 @@
+@media (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+  .header {
+    padding: 0 10px;
+  }
+  .banner-company {
+    height: 92vw;
+    background: url("../../assets/banner-company-mobile.png");
+    background-size: cover;
+  }
+  .banner-company__text {
+    width: 97%;
+    transform: unset;
+    top: 12%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 5.2vw 9vw;
+    gap: 2vw;
+    align-items: unset;
+  }
+  .banner-company__head {
+    font-size: min(21px + 10 * ((100vw - 320px) / 960), 31px);
+  }
+  .banner-company__subtext {
+    font-size: min(8px + 10 * ((100vw - 320px) / 960), 18px);
+  }
+  .banner-company__play {
+    left: 50%;
+    bottom: 25%;
+    transform: translate(-50%, -25%);
+    cursor: pointer;
+    height: auto;
+    width: 10.7vw;
+    top: unset;
+    right: unset;
+  }
+  .margin-very-very-big {
+    margin-bottom: 14vw;
+  }
+  .about-company {
+    grid-template-columns: 1fr;
+  }
+  .about-company__left {
+    display: none;
+  }
+  .markrt-otange {
+    font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
+    letter-spacing: 1vw;
+  }
+  .about-company__list-head {
+    width: 23%;
+  }
+  .about-company__list-head svg {
+    width: auto;
+    height: 3.5vw;
+  }
+  .about-company__list-head div {
+    font-size: min(11px + 10 * ((100vw - 320px) / 960), 21px);
+  }
+  .about-company__list-text {
+    font-size: min(11px + 10 * ((100vw - 320px) / 960), 21px);
+  }
+  .sponsor__elem {
+    height: 5vw;
+  }
+  .reviews {
+    padding: 0;
+  }
+  .slick-track {
+    gap: 0;
+  }
+  .statistics-company {
+    padding: 0;
+  }
+  .goods-main__input_company div {
+    font-size: min(4px + 10 * ((100vw - 320px) / 960), 14px);
+    margin-bottom: 1vw;
+  }
+  .goods-main__input_company input {
+    width: 28%;
+  }
+  .address-elem__name {
+    font-size: min(5.4px + 10.6 * ((100vw - 320px) / 960), 16px);
+  }
+  .address-info {
+    gap: 1vw;
+  }
+  .address-info div {
+    font-size: min(4px + 10 * ((100vw - 320px) / 960), 14px);
+  }
+  .adress-elem {
+    border-top: 0.7vw solid black;
+  }
+  .adress-elem_orange {
+    border: 0.7vw solid transparent;
+  }
+  .address-elem__number {
+    position: relative;
+    top: -21%;
+    font-size: min(15.5px + 22.5 * ((100vw - 320px) / 960), 38px);
+    margin-top: unset;
+  }
+  .adress-elem__head {
+    height: 40%;
+    margin-bottom: 1.5vw;
+  }
+  .adress-elem__head_orange {
+    height: 50%;
+    margin-bottom: 3vw;
+  }
+  .goods-main__input_company {
+    max-width: unset;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=company.css.map */

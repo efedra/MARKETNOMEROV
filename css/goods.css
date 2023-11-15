@@ -180,6 +180,10 @@
   background: rgb(139, 142, 153);
 }
 
+.container_zero-padding {
+  padding: 0;
+}
+
 .noUi-target {
   background: rgb(66, 98, 255);
   border-radius: 0;
@@ -282,6 +286,18 @@
 
 .goods-main_margin {
   margin-bottom: 8%;
+}
+
+.filter-mobile {
+  display: none;
+}
+
+.categories-filter-mobile {
+  display: none;
+}
+
+.arrows {
+  display: none;
 }
 
 /*# sourceMappingURL=goods.css.map */

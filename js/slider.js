@@ -66,6 +66,29 @@ $('.arrows-uslugi-right').click(function () {
     $('.uslugi__body').slick('slickNext');
 });
 
+$('.tarif-grid').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
+});
+
+$('.arrows-tarif-left').click(function () {
+    $('.tarif-grid').slick('slickPrev');
+});
+
+// При клике на стрелку вправо
+$('.arrows-tarif-right').click(function () {
+    $('.tarif-grid').slick('slickNext');
+});
+
 
 $('.reviews__margin').slick({
     slidesToShow: 1,
@@ -77,10 +100,10 @@ $('.arrows-reviews__left').click(function () {
     $('.reviews__margin').slick('slickPrev');
 });
 
-// При клике на стрелку вправо
 $('.arrows-reviews__right').click(function () {
     $('.reviews__margin').slick('slickNext');
 });
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -99,7 +122,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (prevButton) {
             prevButton.addEventListener('click', function () {
-                console.log('sssssssss')
                 splide.go('-1'); // Переход на предыдущий слайд
             });
         }
@@ -111,13 +133,29 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
 
+        //ТОВАРЫ
+        var prevButtonGoods = document.querySelector('.arrows__left_goods-main-left');
+        var nextButtonGoods = document.querySelector('.arrows__right_goods-main-right');
 
+        if (prevButtonGoods) {
+            prevButtonGoods.addEventListener('click', function () {
+                splide.go('-1'); // Переход на предыдущий слайд
+            });
+        }
+
+
+        if (nextButtonGoods) {
+            nextButtonGoods.addEventListener('click', function () {
+                splide.go('+1'); // Переход на следующий слайд
+            });
+        }
+
+        //О КОМПАНИИ ОРАНЖЕВЫЕ СТРЕЛКИ
         var prevButtonUslugi = document.querySelector('.arrows__left_orange');
         var nextButtonUslugi = document.querySelector('.arrows__right_orange');
 
         if (prevButtonUslugi) {
             prevButtonUslugi.addEventListener('click', function () {
-                console.log('sssssssss')
                 splide.go('-1'); // Переход на предыдущий слайд
             });
         }

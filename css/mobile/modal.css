@@ -1,0 +1,67 @@
+@media (max-width: 800px) {
+  .modal-basket {
+    padding: 0;
+  }
+  .modal-basket__window {
+    width: 100vw;
+    top: 7.9vh;
+    max-width: unset;
+    border-radius: 16px;
+    padding: 3.2vh 2.8vw;
+    gap: 5vh;
+  }
+  .triangle {
+    width: 5.3vw;
+    height: auto;
+    right: 16.3vw;
+    top: 6.5vh;
+  }
+  .modal-basket__head-text {
+    font-size: min(20px + 10 * ((100vw - 320px) / 960), 30px);
+    line-height: 3vw;
+  }
+  .close {
+    width: 2.8vw;
+    height: auto;
+  }
+  .modal-basket__desc-head {
+    font-size: min(11px + 8 * ((100vw - 320px) / 960), 19px);
+  }
+  .modal-basket__desc-text {
+    font-size: min(9px + 8 * ((100vw - 320px) / 960), 17px);
+    line-height: 3vw;
+  }
+  .modal-basket__price {
+    font-size: min(11px + 6 * ((100vw - 320px) / 960), 17px);
+  }
+  .modal-basket__icons {
+    width: 12vw;
+  }
+  .modal-basket__icons svg:first-child {
+    width: 3.3vw;
+    height: auto;
+  }
+  .modal-basket__icons svg:last-child {
+    width: 3.7vw;
+    height: auto;
+  }
+  .modal-basket__picture {
+    width: 27vw;
+    height: 20vh;
+    padding: 14%;
+  }
+  .modal-basket__picture .img-adaptive {
+    height: 100%;
+    width: auto;
+  }
+  .modal-basket__button {
+    font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
+    height: 6.5vh;
+  }
+  .modal-basket__elem {
+    max-width: max(66.5vw, 340px);
+    gap: 2vw;
+  }
+}
+
+/*# sourceMappingURL=modal.css.map */

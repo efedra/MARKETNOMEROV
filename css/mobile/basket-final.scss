@@ -1,0 +1,82 @@
+@import "../adaptive-min";
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+  .first-step {
+    grid-template-columns: 1fr;
+  }
+  .header-step {
+    @include adaptiv-font-min(25, 15);
+    margin-bottom: 1vw;
+  }
+  .text-step {
+    @include adaptiv-font-min(17, 7);
+  }
+  .input-oform {
+    height: 11vw;
+    width: 100%;
+    @include adaptiv-font-min(22, 12);
+  }
+  .input-oform::placeholder {
+    @include adaptiv-font-min(22, 12);
+  }
+  .adress-grid {
+    grid-template-columns: 1fr;
+
+    div:last-child {
+      width: 80%;
+    }
+  }
+  .input-3th {
+    grid-column: unset;
+  }
+  .margin-min {
+    margin-bottom: 4vw;
+  }
+  .tips-step {
+    @include adaptiv-font-min(19, 9);
+    margin-top: 1vw;
+    line-height: 3vw;
+  }
+  .how-delivery {
+    grid-template-columns: 1fr
+  }
+  .how-delivery__inputs {
+    flex-direction: column;
+  }
+  .radio-delivery__label {
+    @include adaptiv-font-min(29, 19);
+    width: 100%;
+    text-align: center;
+  }
+  .input-oform_punkt {
+    width: 80%;
+  }
+  .card {
+    width: 100%;
+    max-width: unset;
+  }
+  .radio-delivery__label_card{
+    padding-left: 16vw;
+    padding-right: 16vw;
+  }
+  .card__tips{
+    @include adaptiv-font-min(23,13);
+  }
+  .grid-input__elem_card::placeholder{
+    @include adaptiv-font-min(23,13);
+  }
+  .private_card{
+    @include adaptiv-font-min(23,13);
+  }
+  .input-modal +label:before{
+    width: min(5vw, 17px);
+    height: min(5vw, 17px);
+    top: min(2vw,8px);
+  }
+  .card-help{
+    @include adaptiv-font-min(20,10);
+  }
+}

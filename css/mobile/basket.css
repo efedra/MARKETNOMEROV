@@ -1,0 +1,111 @@
+@media (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+  .steps-basket__head {
+    font-size: min(8px + 10 * ((100vw - 320px) / 960), 18px);
+  }
+  .steps-basket__number {
+    font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 1.2vw 2.05vw;
+  }
+  .steps-basket-scroll {
+    overflow-x: auto;
+    margin: 0 10px;
+  }
+  .steps-basket {
+    width: 185vw;
+    padding-bottom: 3vw;
+    height: unset;
+  }
+  .steps-basket__elem:nth-child(2n) {
+    width: 10.5vw;
+  }
+  .steps-basket__elem:nth-child(2n) svg {
+    width: 100%;
+    height: auto;
+  }
+  .steps-basket-scroll::-webkit-scrollbar {
+    height: 12px;
+  }
+  .steps-basket-scroll::-webkit-scrollbar-track {
+    background: rgb(237, 237, 237);
+    height: 2px;
+  }
+  .steps-basket-scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(65, 98, 255);
+    height: 12px;
+    border-radius: 40px;
+  }
+  .margin-very-big {
+    margin-bottom: 8vw;
+  }
+  .margin-top-mobile {
+    margin-top: 8vw;
+  }
+  .basket-grid {
+    grid-template-columns: 1fr;
+    gap: 10vw;
+  }
+  .oform-order__head {
+    font-size: min(16px + 10 * ((100vw - 320px) / 960), 26px);
+  }
+  .oform-order {
+    padding: 7%;
+  }
+  .goods-main__input_oform input {
+    height: 11vw;
+  }
+  .oform-order__count-sht {
+    font-size: min(11px + 10 * ((100vw - 320px) / 960), 21px);
+  }
+  .oform-order__price {
+    font-size: min(12px + 10 * ((100vw - 320px) / 960), 22px);
+  }
+  .promik__text {
+    font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
+  }
+  .promik__text svg {
+    width: 4.4vw;
+    height: auto;
+  }
+  .private__text {
+    font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
+    padding-left: 6vw;
+  }
+  .private__content .private__text::before {
+    width: 3.8vw;
+    height: 3.8vw;
+    top: -37%;
+  }
+  .slide {
+    display: none;
+  }
+  .slide:first-child, .slide:nth-child(2) {
+    display: flex;
+  }
+  .recently-watched {
+    grid-template-columns: 1fr 1fr;
+  }
+  .modal-basket__elem {
+    grid-template-columns: 1fr 2fr;
+  }
+  .modal-basket__price_oform-desktop {
+    display: none;
+  }
+  .modal-basket__price_oform-mobile {
+    display: flex;
+    margin-bottom: 4vw;
+  }
+  .modal-basket__picture_oform {
+    width: 35.1vw;
+    padding: min(4vw, 16px) 5vw;
+    max-width: 146px;
+  }
+}
+
+/*# sourceMappingURL=basket.css.map */

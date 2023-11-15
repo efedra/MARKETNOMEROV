@@ -1,0 +1,25 @@
+@media (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+  .banner-services {
+    background: url("../../assets/banner-services-mobile.png") center no-repeat;
+    background-size: cover;
+    height: 92vw;
+    justify-content: unset;
+  }
+  .img-join {
+    width: 75%;
+  }
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-gallery__margin {
+    margin-bottom: 14vw;
+  }
+  .services-gallery__elem {
+    padding: 0 min(32vw, 435px);
+  }
+}
+
+/*# sourceMappingURL=services.css.map */

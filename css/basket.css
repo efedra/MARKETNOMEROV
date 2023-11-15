@@ -58,6 +58,14 @@
   box-shadow: 0px 6.5791664124px 19.7374992371px 0px rgba(0, 0, 0, 0.05);
 }
 
+.modal-basket__price_oform-desktop {
+  display: flex;
+}
+
+.modal-basket__price_oform-mobile {
+  display: none;
+}
+
 .steps-basket__elem {
   display: flex;
   gap: 1.5vw;

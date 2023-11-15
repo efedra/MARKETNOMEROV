@@ -1,0 +1,127 @@
+@import "../adaptive-min";
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+  .header {
+    padding: 0 10px;
+  }
+  .banner-company {
+    height: 92vw;
+    background: url("../../assets/banner-company-mobile.png");
+    background-size: cover;
+  }
+  .banner-company__text {
+    width: 97%;
+    transform: unset;
+    top: 12%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 5.2vw 9vw;
+    gap: 2vw;
+    align-items: unset;
+  }
+  .banner-company__head {
+    @include adaptiv-font-min(31, 21);
+  }
+  .banner-company__subtext {
+    @include adaptiv-font-min(18, 8);
+  }
+  .banner-company__play {
+    left: 50%;
+    bottom: 25%;
+    transform: translate(-50%, -25%);
+    cursor: pointer;
+    height: auto;
+    width: 10.7vw;
+    top: unset;
+    right: unset;
+  }
+  .margin-very-very-big {
+    margin-bottom: 14vw;
+  }
+  .about-company {
+    grid-template-columns: 1fr;
+
+  }
+  .about-company__left {
+    display: none;
+  }
+  .markrt-otange {
+    @include adaptiv-font-min(20, 10);
+    letter-spacing: 1vw;
+  }
+  .about-company__list-head {
+    width: 23%;
+
+    svg {
+      width: auto;
+      height: 3.5vw;
+    }
+
+    div {
+      @include adaptiv-font-min(21, 11);
+    }
+  }
+  .about-company__list-text {
+    @include adaptiv-font-min(21, 11);
+  }
+  .sponsor__elem {
+    height: 5vw;
+  }
+  .reviews {
+    padding: 0;
+  }
+  .slick-track {
+    gap: 0
+
+  }
+  .statistics-company {
+    padding: 0;
+  }
+  .goods-main__input_company {
+    div {
+      @include adaptiv-font-min(14, 4);
+      margin-bottom: 1vw;
+    }
+
+    input {
+      width: 28%;
+    }
+  }
+  .address-elem__name {
+    @include adaptiv-font-min(16, 5.4);
+  }
+  .address-info {
+    gap: 1vw;
+
+    div {
+      @include adaptiv-font-min(14, 4);
+    }
+  }
+  .adress-elem {
+    border-top: 0.7vw solid black;
+  }
+  .adress-elem_orange {
+    border: 0.7vw solid transparent;
+  }
+  .address-elem__number {
+    position: relative;
+    top: -21%;
+    @include adaptiv-font-min(38, 15.5);
+    margin-top: unset;
+  }
+  .adress-elem__head {
+    height: 40%;
+    margin-bottom: 1.5vw;
+  }
+  .adress-elem__head_orange {
+    height: 50%;
+    margin-bottom: 3vw;
+  }
+  .goods-main__input_company {
+    max-width: unset;
+    width: 100%;
+  }
+}

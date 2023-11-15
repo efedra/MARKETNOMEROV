@@ -1,0 +1,79 @@
+@media (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+  .header {
+    padding: 0;
+  }
+  .orange-number {
+    padding: 0;
+  }
+  .tarif_subtext {
+    font-size: min(8px + 10 * ((100vw - 320px) / 960), 18px);
+  }
+  .tarif-grid {
+    height: 33vw;
+  }
+  .tarif-grid__head {
+    font-size: min(8px + 10 * ((100vw - 320px) / 960), 18px);
+  }
+  .tarif-grid__element {
+    padding: 3.5vw 2.5vw;
+    border-radius: 16px;
+    border: 1px solid black;
+  }
+  .tag {
+    font-size: min(4px + 10 * ((100vw - 320px) / 960), 14px);
+  }
+  .tarif-filter_margin {
+    margin-bottom: 20vw;
+  }
+  .tarif-filter {
+    flex-direction: column;
+    gap: 2vw;
+  }
+  .tarif-filter__head, tarif-filter__body {
+    font-size: min(5px + 10 * ((100vw - 320px) / 960), 15px);
+  }
+  .tarif-filter__elem {
+    min-width: unset;
+    width: 30vw;
+    line-height: 2.4vw;
+    border-radius: 8px;
+  }
+  .tarif-filter__check {
+    height: auto;
+    width: 2vw;
+  }
+  .img-lenta {
+    max-width: 52%;
+    bottom: 17%;
+  }
+  .t02-main__elem {
+    font-size: min(7px + 10 * ((100vw - 320px) / 960), 17px);
+    padding: 1.5vw 19vw;
+    width: max-content;
+  }
+  .t02-main {
+    overflow: auto;
+    padding: 2.6vw 1.7vw;
+    margin: 0 10px 10vw;
+  }
+  .t02-main::-webkit-scrollbar {
+    width: 2px;
+  }
+  .t02-main::-webkit-scrollbar-track {
+    background: rgb(237, 237, 237);
+    width: 2px;
+  }
+  .t02-main::-webkit-scrollbar-thumb {
+    background-color: rgb(65, 98, 255);
+    width: 12px;
+    border-radius: 40px;
+  }
+  .t02-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*# sourceMappingURL=tarif.css.map */

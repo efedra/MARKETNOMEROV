@@ -1,6 +1,6 @@
 @import "adaptive-min";
 
-.banner-company{
+.banner-company {
   background: url("../assets/banner-company.png");
   background-size: cover;
   height: 34vw;
@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.banner-company__text{
+.banner-company__text {
   background: white;
   border-bottom-right-radius: 34px;
   border-top-right-radius: 34px;
@@ -26,16 +26,16 @@
   transform: translateY(-50%);
 }
 
-.banner-company__head{
+.banner-company__head {
   font-family: Inter;
-  @include adaptiv-font-min(35,10);
+  @include adaptiv-font-min(35, 10);
 }
 
-.banner-company__subtext{
-  @include adaptiv-font-min(14,3);
+.banner-company__subtext {
+  @include adaptiv-font-min(14, 3);
 }
 
-.banner-company__play{
+.banner-company__play {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -44,113 +44,117 @@
   height: 6vw;
 }
 
-.margin-very-very-big{
-  margin-bottom: 20vh;
+.margin-very-very-big {
+  margin-bottom: 22vw;
 }
 
-.margin-very-big{
-  margin-bottom: 10vh;
-}
-.margin-big{
-  margin-bottom: 4vh;
+.margin-very-big {
+  margin-bottom: 12vw;
 }
 
-.sponsor{
+.margin-big {
+  margin-bottom: 6vw;
+}
+
+.sponsor {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 4%;
 }
 
-.sponsor__elem{
+.sponsor__elem {
   display: flex;
   justify-content: center;
   max-height: 45px;
 }
 
-.banner-company-link{
+.banner-company-link {
   display: block;
 }
-.about-company{
+
+.about-company {
   display: grid;
   gap: 10%;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.markrt-otange{
+.markrt-otange {
   color: rgba(240, 78, 1, 1);
-  @include adaptiv-font-min(19,8);
+  @include adaptiv-font-min(19, 8);
 }
 
-.about-us{
-  @include adaptiv-font-min(51,25);
+.about-us {
+  @include adaptiv-font-min(51, 25);
   font-weight: 600;
 }
 
-.about-company__list{
+.about-company__list {
   display: flex;
   flex-direction: column;
   gap: 5vh;
 }
 
-.about-company__list-head{
+.about-company__list-head {
   display: flex;
   justify-content: space-between;
   width: 25%;
   align-items: center;
-  @include adaptiv-font-min(19,7);
+  @include adaptiv-font-min(19, 7);
 }
 
-.margin-min{
-  margin-bottom: 2vh;
+.margin-min {
+  margin-bottom: 4vw;
 }
 
-.about-company__list-text{
+.about-company__list-text {
   color: rgba(175, 175, 175, 1);
-  @include adaptiv-font-min(19,7);
+  @include adaptiv-font-min(19, 7);
 }
 
-.statistics-company{
+.statistics-company {
   display: grid;
   grid-template-columns: 2fr 1fr 3fr;
   column-gap: 4vw;
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-auto-flow: column;
 }
 
-.adress-list{
+.adress-list {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2vw;
 }
 
-.adress-elem{
+.adress-elem {
   border-top: 9px solid black;
 }
-.adress-elem_orange{
+
+.adress-elem_orange {
   border: none;
 }
-.adress-elem__head{
+
+.adress-elem__head {
   display: flex;
   gap: 3%;
   height: 45%;
   max-height: 85px;
 }
-.adress-elem__head_orange{
+
+.adress-elem__head_orange {
   height: 11.5vw;
   max-height: 123px;
   gap: 4%;
 }
 
-.address-elem__number{
+.address-elem__number {
   font-family: Days;
-  @include adaptiv-font-min(57,20);
+  @include adaptiv-font-min(57, 20);
   margin-top: -6%;
 }
 
 
-
-.address-elem__name{
-  @include adaptiv-font-min(21,4);
+.address-elem__name {
+  @include adaptiv-font-min(21, 4);
   font-weight: 600;
   text-transform: uppercase;
   display: flex;
@@ -158,27 +162,29 @@
   justify-content: center;
 }
 
-.address-elem__text_orange{
+.address-elem__text_orange {
   color: rgba(240, 78, 1, 1);
 }
 
-.adress-elem_orange{
+.adress-elem_orange {
   border-top: 9px solid transparent;
 }
-.address-info{
+
+.address-info {
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  div{
+
+  div {
     font-family: Inter;
-    @include adaptiv-font-min(16,8);
+    @include adaptiv-font-min(16, 8);
   }
 }
 
-.addres-info_weight{
+.addres-info_weight {
   font-weight: 600;
 }
 
-.often-questions_zero-padding{
+.often-questions_zero-padding {
   padding: 0;
 }

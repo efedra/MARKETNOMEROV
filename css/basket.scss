@@ -13,6 +13,14 @@
 
 }
 
+.modal-basket__price_oform-desktop {
+  display: flex;
+}
+
+.modal-basket__price_oform-mobile {
+  display: none;
+}
+
 .steps-basket__elem {
   display: flex;
   gap: 1.5vw;
@@ -175,7 +183,7 @@
     border: 1px solid black;
   }
 
-  input[type='checkbox']:checked + label:before{
+  input[type='checkbox']:checked + label:before {
     background: url("../assets/black-check.svg") no-repeat center;
     background-size: 115%;
   }

@@ -1,12 +1,88 @@
-
+@import "../adaptive-min";
 @media (max-width: 800px) {
-  .header__logo{
-    img{
+  .header__logo {
+    img {
       width: 20vw;
       height: auto;
     }
   }
-  .header-number__margin{
+  .header-number__margin {
     margin-bottom: 4vw;
+  }
+  .banner-number__margin {
+    margin-bottom: 10vw;
+  }
+  .banner-number-desktop {
+    display: none;
+  }
+  .banner-number-mobile{
+    display: block;
+  }
+  .beatiful-number__main{
+    padding: 11vw 4.5vw 7vw 6.6vw;
+  }
+  .head-days{
+    @include adaptiv-font-min(69,18);
+  }
+  .button-catalog{
+    gap: 1vw;
+    align-items: center;
+    padding: 1.4vw 1.6vw;
+
+    div{
+      display: flex;
+      svg{
+        height: auto;
+        width: 1.5vw;
+      }
+    }
+    div:last-child{
+      @include adaptiv-font-min(16,6);
+    }
+  }
+  .beatiful-number__range{
+    grid-template-columns: 1fr 1fr;
+    height: 38vw;
+    row-gap: 5vw;
+    column-gap: 0;
+    left: 6.6vw;
+    width: 87%;
+    bottom: 3%;
+  }
+  .beatiful-number__block{
+    grid-column: 1 / span 2;
+  }
+  .name-range{
+    @include adaptiv-font-min(19,9);
+  }
+  .noUi-connects {
+    height: 1px;
+  }
+
+  .noUi-horizontal {
+    height: 1px;
+  }
+  .align-self{
+    gap: 1vw;
+  }
+  .beatiful-number__button_sale{
+    @include adaptiv-font-min(21,10);
+    padding: 2vw 8.5vw;
+  }
+  .arrow-beatiful-number-left, .arrow-beatiful-number-right{
+    width: 5.1vw;
+    height: 5.1vw;
+  }
+  .heading{
+    @include adaptiv-font-min(23,12);
+  }
+  .beatiful-number__filter_mini{
+    margin-bottom: 5vw;
+  }
+  .all-count-number{
+    @include adaptiv-font-min(16,6);
+  }
+  .range-slider .noUi-horizontal, .range-slider .noUi-connects {
+    height: 3px;
   }
 }
