@@ -1,5 +1,5 @@
 @import "adaptive";
-@import "adaptive-min";
+
 
 $gray: rgba(128, 128, 128, 1);
 $orange: rgba(232, 89, 10, 1);
@@ -11,7 +11,6 @@ $blue: rgba(66, 98, 255, 1);
 
 .head-days_goods {
   @include adaptiv-font-min(40, 5);
-  //font-size: 40px;
   white-space: nowrap;
 }
 
@@ -22,7 +21,6 @@ $blue: rgba(66, 98, 255, 1);
 .banner-goods-text {
   color: rgba(173, 173, 173, 1);
   @include adaptiv-font-min(12, 1);
-  //font-size: 12px;
   line-height: 14px;
   margin-bottom: auto;
 }
@@ -50,12 +48,10 @@ $blue: rgba(66, 98, 255, 1);
   padding-right: 3%;
   width: 100%;
   @include adaptiv-font-min(14, 4);
-  //font-size: 14px;
 }
 
 .search-input-goods input[type="text"]::placeholder {
   @include adaptiv-font-min(14, 3);
-  //font-size: 14px;
 }
 
 .search-input-goods input[type="submit"] {
@@ -67,7 +63,6 @@ $blue: rgba(66, 98, 255, 1);
   border-radius: 32px;
   cursor: pointer;
   @include adaptiv-font-min(11, 1);
-  //font-size: 11px;
   display: flex;
   flex-shrink: 0;
   justify-content: center;
@@ -94,7 +89,7 @@ $blue: rgba(66, 98, 255, 1);
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 2vh;
+  gap: min(2vh,15px);
 
   img {
     max-width: 120px;
@@ -164,7 +159,6 @@ $blue: rgba(66, 98, 255, 1);
   top: 4%;
   width: 5.06%;
   height: 89%;
-  //max-width: 14px;
   border: 1px solid rgba(139, 142, 153, 1);
   border-radius: 50%;
 }
@@ -218,7 +212,7 @@ $blue: rgba(66, 98, 255, 1);
   display: flex;
   gap: 4%;
   justify-content: space-between;
-  margin-bottom: 3vh;
+  margin-bottom: min(3vh,22px);
 }
 .price-filter__input-min{
   width: 45%;
@@ -246,7 +240,7 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .slider-range-price{
-  margin-bottom: 4vh;
+  margin-bottom: min(4vh,29px);
 }
 
 .goods-input{

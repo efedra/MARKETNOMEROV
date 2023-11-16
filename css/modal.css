@@ -188,8 +188,8 @@ label {
   position: absolute;
   max-width: 26px;
   max-height: 20px;
-  right: 6vw;
-  top: 8vh;
+  right: min(6vw, 77px);
+  top: min(5vw, 58px);
 }
 
 .modal-basket__window {
@@ -201,8 +201,8 @@ label {
   border-radius: 16px;
   gap: 5%;
   padding: 2%;
-  top: 10vh;
-  width: 39vw;
+  top: min(6vw, 72px);
+  width: min(39vw, 499px);
   height: fit-content;
 }
 
@@ -210,6 +210,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: min(2vw, 26px);
 }
 .modal-basket__head svg {
   cursor: pointer;
@@ -223,7 +224,8 @@ label {
 .modal-basket__elem {
   display: grid;
   grid-template-columns: 2fr 3fr 1fr;
-  gap: 1vw;
+  gap: min(1vw, 13px);
+  margin-bottom: min(2vw, 26px);
 }
 
 .modal-basket__picture {
@@ -270,7 +272,7 @@ label {
 
 .modal-basket__count-manage {
   display: flex;
-  gap: 1vw;
+  gap: min(1vw, 13px);
 }
 
 .modal-basket__icons {
@@ -294,8 +296,16 @@ label {
   border: none;
   font-size: min(3px + 10 * ((100vw - 320px) / 960), 13px);
   max-height: 46px;
-  height: 3.5vw;
+  height: min(3.5vw, 45px);
   cursor: pointer;
+}
+
+.container-modal-basket {
+  position: relative;
+  width: 1280px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
 }
 
 @media (max-width: 800px) {

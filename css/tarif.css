@@ -23,7 +23,7 @@
 }
 
 .tarif__subtext_margin {
-  margin-bottom: 4vh;
+  margin-bottom: min(4vh, 29px);
 }
 
 .tarif-grid {
@@ -96,7 +96,7 @@
 }
 
 .tarif-grid__margin {
-  margin-bottom: 4vh;
+  margin-bottom: min(4vh, 29px);
 }
 
 .tarif-filter {
@@ -138,7 +138,7 @@
 }
 
 .tarif-filter_margin {
-  margin-bottom: 16vh;
+  margin-bottom: min(16vh, 115px);
 }
 
 .img-lenta {
@@ -184,7 +184,7 @@
 }
 
 .t02-main_margin {
-  margin-bottom: 8vh;
+  margin-bottom: min(8vh, 58px);
 }
 
 .t02-grid {

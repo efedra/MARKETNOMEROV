@@ -29,7 +29,7 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .tarif__subtext_margin {
-  margin-bottom: 4vh;
+  margin-bottom: min(4vh,29px);
 }
 
 .tarif-grid {
@@ -54,7 +54,6 @@ $blue: rgba(66, 98, 255, 1);
   justify-content: flex-end;
   border: 2px solid black;
   border-radius: 34px;
-  //padding: 5% 6%;
   gap: 4%;
 
   img {
@@ -105,7 +104,7 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .tarif-grid__margin {
-  margin-bottom: 4vh;
+  margin-bottom: min(4vh,29px);
 }
 
 .tarif-filter {
@@ -147,7 +146,7 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .tarif-filter_margin {
-  margin-bottom: 16vh;
+  margin-bottom: min(16vh,115px);
 }
 
 .img-lenta {
@@ -193,7 +192,7 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .t02-main_margin {
-  margin-bottom: 8vh;
+  margin-bottom: min(8vh,58px);
 }
 
 .t02-grid {

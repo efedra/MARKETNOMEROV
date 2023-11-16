@@ -1,9 +1,9 @@
 @import "fonts.scss";
 @import "adaptive";
-@import "adaptive-min";
+
 
 .steps-basket {
-  padding: 0 5.8vw;
+  padding: 0 min(5.8vw,75px);
   height: 4.9vw;
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,7 @@
 
 .steps-basket__elem {
   display: flex;
-  gap: 1.5vw;
+  gap: min(1.5vw,19px);
   height: 100%;
   align-items: center;
 }
@@ -32,7 +32,7 @@
   font-family: Roboto;
   @include adaptiv-font-min(19, 9);
   border-radius: 8px;
-  padding: 0.5vw 1vw;
+  padding: min(0.5vw,7px) min(1vw,13px);
   background: rgba(236, 236, 236, 1);
 }
 
@@ -54,7 +54,7 @@
 .basket-grid {
   display: grid;
   grid-template-columns: 1.7fr 1fr;
-  gap: 3vw;
+  gap: min(3vw,39px);
 }
 
 .modal-basket__picture_oform {
@@ -63,9 +63,7 @@
   height: 18.5vw;
 }
 
-.modal-basket__desc_oform {
 
-}
 
 .modal-basket__desc-head_oform {
   @include adaptiv-font-min(25, 14);
@@ -93,7 +91,7 @@
 .oform-order {
   border-radius: 7px;
   border: 1px solid rgba(78, 108, 255, 1);
-  padding: 2vw 2vw 4vw;
+  padding: min(2vw,26px) min(2vw,26px) min(4vw,51px)
 }
 
 .oform-order__head {
@@ -124,7 +122,7 @@
 
 .promik {
   display: flex;
-  gap: 1vw;
+  gap: min(13px,1vw);
 }
 
 .promik__text {
@@ -150,16 +148,16 @@
 
 .private {
   display: flex;
-  gap: 2vw;
+  gap: min(2vw,26px);
 }
 
 .private__text {
   @include adaptiv-font-min(13, 3);
   color: rgba(134, 138, 142, 1);
-  padding-left: 2.5vw;
+  padding-left: min(2.5vw,32px);
   cursor: pointer;
   display: block;
-  height: 1.3vw;
+  height: min(1.3vw,17px);
 }
 
 .private__content {
@@ -175,8 +173,8 @@
     position: absolute;
     left: 0;
     top: -1%;
-    width: 1.3vw;
-    height: 1.3vw;
+    width: min(1.3vw,17px);
+    height: min(1.3vw,17px);
     max-height: 16px;
     max-width: 16px;
     border-radius: 6px;
@@ -188,4 +186,21 @@
     background-size: 115%;
   }
 }
+
+.margin-min{
+  margin-bottom: min(1.5vw, 18px);
+}
+
+.margin-big{
+  margin-bottom: min(2vw, 26px);
+}
+.margin-very-big{
+  margin-bottom: min(9.5vw, 122px);
+}
+.slide{
+  display: flex;
+  flex-direction: column;
+  gap: min(3vh, 26px);
+}
+
 

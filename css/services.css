@@ -1,6 +1,6 @@
 .t02_uslugi {
   width: 100%;
-  height: 19vh;
+  height: min(19vh, 137px);
 }
 
 .services-grid {
@@ -15,7 +15,7 @@
 }
 
 .container__margin {
-  margin-bottom: 4vh;
+  margin-bottom: min(4vh, 29px);
   padding: 0;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .services-gallery__margin {
-  margin-bottom: 25vh;
+  margin-bottom: min(25vh, 180px);
 }
 
 .wallpaper {
@@ -71,9 +71,8 @@
 
 .services-gallery__elem {
   height: 84%;
-  width: 100vw;
   max-width: 1280px;
-  padding: 0 min(34vw, 435px);
+  padding: 0 min(32vw, 410px);
 }
 
 .container_zero-padding {
@@ -86,7 +85,7 @@
 
 .splide__track {
   position: relative;
-  height: 60vw;
+  height: min(60vw, 768px);
   max-height: 840px;
 }
 

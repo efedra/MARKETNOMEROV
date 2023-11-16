@@ -8,7 +8,7 @@
     max-width: unset;
     border-radius: 16px;
     padding: 7.2vw 3.8vw;
-    gap: 5vh;
+    gap: min(3vw, 12px);
   }
   .triangle {
     width: 5.3vw;

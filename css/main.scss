@@ -1,6 +1,5 @@
 @import "fonts.css";
 @import "adaptive";
-@import "adaptive-min";
 
 * {
   padding: 0;
@@ -58,7 +57,7 @@ a {
 
 .recall {
   background: none;
-  padding: 1.2vh min(1.2vw, 18px);
+  padding: min(1.2vh,9px) min(1.2vw, 18px);
   @include adaptiv-font-min(18, 1);
   @extend %main-blue-border;
   border-radius: 34px;
@@ -73,7 +72,7 @@ a {
   @extend %main-blue-bg;
   @include adaptiv-font-min(19, 1);
   color: white;
-  padding: 1.2vh min(3.2vw, 36px);
+  padding: min(1.2vh,9px) min(3.2vw, 36px);
   box-shadow: 0px 1.9950840473175049px 3.9901680946350098px 0px rgba(165, 165, 165, 0.25);
   border-radius: 34px;
   border: none;

@@ -1,19 +1,17 @@
-@import "adaptive-min";
+@import "adaptive";
 
 $gray: rgba(128, 128, 128, 1);
 $orange: rgba(232, 89, 10, 1);
 $blue: rgba(66, 98, 255, 1);
 
-* {
-  //outline: 1px solid red;
-}
+
 
 .name-goods {
   @include adaptiv-font-min(30, 15);
 }
 
 .name-goods_margin {
-  margin-bottom: 3vh;
+  margin-bottom: min(3vh,22px);
 }
 
 .tag-list {
@@ -40,13 +38,14 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .tag-list_margin {
-  margin-bottom: 8vh;
+  margin-bottom: min(8vh,58px);
 }
 
 .goods-main {
+  max-height: 814px;
   display: grid;
   grid-template-columns: 7% 53% 1fr;
-  gap: 2vw;
+  gap: min(2vw,26px);
 }
 
 .goods-main__slider {
@@ -60,7 +59,7 @@ $blue: rgba(66, 98, 255, 1);
   border-radius: 12px;
   border: 1px solid rgba(226, 226, 232, 1);
   width: 100%;
-  height: 6.5vw;
+  height: min(6.5vw,51px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +81,7 @@ $blue: rgba(66, 98, 255, 1);
 .goods-main__select {
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  gap: min(2vw,26px);
 }
 
 .goods-main__price {
@@ -92,7 +91,7 @@ $blue: rgba(66, 98, 255, 1);
 .goods-main__radio-button {
 
   display: flex;
-  gap: 3%;
+  gap: 4%;
   flex-wrap: wrap;
 }
 
@@ -103,8 +102,8 @@ $blue: rgba(66, 98, 255, 1);
 
   label {
     position: relative;
-    width: 2.8vw;
-    height: 2.8vw;
+    width: min(2.2vw,28px);
+    height: min(2.2vw,28px);
     display: block;
   }
 
@@ -114,16 +113,17 @@ $blue: rgba(66, 98, 255, 1);
     left: 0;
     content: '';
     display: block;
-    width: 2.8vw;
-    height: 2.8vw;
-    border: 1px solid rgba(215, 217, 220, 1);
-    border-radius: 9px;
+    width: min(2.2vw,28px);
+    height: min(2.2vw,28px);
+    outline: 1px solid rgba(215, 217, 220, 1);
+    border-radius: 5px;
     background: white;
     cursor: pointer;
+    outline-offset: min(0.4vw,5px)
   }
 
   input[type="radio"]:checked + label:before {
-    border: 2px solid black;
+    outline: 2px solid black;
   }
 
   .radio-color-black:before {
@@ -159,7 +159,7 @@ $blue: rgba(66, 98, 255, 1);
 
   label {
     @include adaptiv-font-min(16, 9);
-    padding: 0.5vw 1.4vw;
+    padding: min(7px,0.5vw) min(1.4vw,18px);
     border: 1px solid rgba(215, 217, 220, 1);
     border-radius: 9px;
     white-space: nowrap;
@@ -178,7 +178,7 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .simple-text_margin {
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 
 .simple-text_margin2 {
@@ -195,7 +195,7 @@ $blue: rgba(66, 98, 255, 1);
     border-radius: 8px;
     border: 1px solid rgba(215, 217, 220, 1);
     padding-left: 3%;
-    height: 4.3vw;
+    height: min(4.3vw,54px);
     width: 85%;
   }
 }
@@ -207,7 +207,7 @@ $blue: rgba(66, 98, 255, 1);
   @include adaptiv-font-min(16, 9);
   font-weight: 600;
   width: 50%;
-  padding: 2.6vh 0;
+  padding: min(18px,2.6vh) 0;
   cursor: pointer;
 }
 
@@ -228,6 +228,7 @@ $blue: rgba(66, 98, 255, 1);
   display: flex;
   align-items: center;
   padding: 7% 7%;
+  max-height: 535px;
 }
 
 .characterisitc-title {
@@ -235,7 +236,7 @@ $blue: rgba(66, 98, 255, 1);
   border-radius: 16px;
   display: flex;
   gap: 5%;
-  height: 4vw;
+  height: min(52px,4vw);
   align-items: flex-end;
   padding: 0 4%;
   cursor: pointer;
@@ -271,7 +272,7 @@ $blue: rgba(66, 98, 255, 1);
   justify-content: space-between;
   border-bottom: 2px solid rgba(223, 224, 229, 1);
   align-items: center;
-  height: 5.7vw;
+  height: min(5.7vw,53px);
   flex-grow: 4;
 }
 
@@ -344,10 +345,10 @@ $blue: rgba(66, 98, 255, 1);
 
 .stars {
   display: flex;
-  margin-bottom: 2vw;
+  margin-bottom: min(2vw,26px);
 
   div {
-    margin-right: 2vw;
+    margin-right: min(2vw,26px);
     font-family: Roboto;
     @include adaptiv-font-min(16, 12);
   }
@@ -357,8 +358,8 @@ $blue: rgba(66, 98, 255, 1);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 50%;
-  column-gap: 3vw;
-  row-gap: 2vw;
+  column-gap: min(39px,3vw);
+  row-gap: min(2vw,26px);
 
   div div {
     @include adaptiv-font-min(16, 12);

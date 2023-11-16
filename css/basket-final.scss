@@ -1,18 +1,17 @@
 @import "fonts.scss";
 @import "adaptive";
-@import "adaptive-min";
 
 
 .first-step {
   display: grid;
   grid-template-columns: 1.6fr 1fr;
-  gap: 13vw;
+  gap: min(13vw,166px);
 }
 
 .header-step {
   @include adaptiv-font-min(30, 15);
   font-weight: 600;
-  line-height: 4vw;
+  line-height: min(4vw,51px);
 }
 
 .text-step {
@@ -25,7 +24,7 @@
   width: 47.9%;
   border-radius: 7px;
   border: 1px solid;
-  height: 4vw;
+  height: min(4vw,51px);
   max-height: 44px;
   padding-left: 6%;
   @include adaptiv-font-min(16, 6);
@@ -39,7 +38,7 @@
 .adress-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2vw;
+  column-gap: min(2vw,26px);
 }
 
 .input-3th {
@@ -54,25 +53,23 @@
   font-family: Inter;
   color: rgba(54, 50, 59, 1);
   @include adaptiv-font-min(12, 2);
-  line-height: 2vw;
+  line-height: min(2vw,26px);
 }
 
 .how-delivery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3vw;
+  gap: min(3vw,38px);
 }
 
 .how-delivery__inputs {
   display: flex;
-  gap: 2vw;
+  gap: min(2vw,26px);
 }
 
 .radio-delivery {
   display: flex;
-  //max-height: 97px;
-  //max-width: 253px;
-  //width: 100%;
+
 
   input[type="radio"] {
     display: none;
@@ -90,7 +87,7 @@
   border: 1px solid rgba(215, 217, 220, 1);
   font-family: Arial;
   @include adaptiv-font-min(20, 10);
-  padding: min(2.5vw,36px) min(2.5vw,63px);
+  padding: min(2.5vw,36px) min(2.5vw,36px);
   height: fit-content;
   white-space: nowrap;
   cursor: pointer;
@@ -102,7 +99,7 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  column-gap: 0.5vw;
+  column-gap: min(0.5vw,7px);
   max-height: 97px;
   height: auto;
 }
@@ -114,8 +111,9 @@
   max-width: 500px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 3vw;
-  gap: 3vw;
+  padding: min(3vw,38px);
+  gap: min(3vw,38px);
+  max-height: 422px;
 }
 
 .card__tips {

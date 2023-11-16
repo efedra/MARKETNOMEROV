@@ -81,7 +81,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 2vh;
+  gap: min(2vh, 15px);
 }
 .type-goods__elem img {
   max-width: 120px;
@@ -203,7 +203,7 @@
   display: flex;
   gap: 4%;
   justify-content: space-between;
-  margin-bottom: 3vh;
+  margin-bottom: min(3vh, 22px);
 }
 
 .price-filter__input-min {
@@ -232,7 +232,7 @@
 }
 
 .slider-range-price {
-  margin-bottom: 4vh;
+  margin-bottom: min(4vh, 29px);
 }
 
 .goods-input {
