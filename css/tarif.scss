@@ -5,7 +5,7 @@ $orange: rgba(232, 89, 10, 1);
 $blue: rgba(66, 98, 255, 1);
 
 .container {
-  padding: 0 2.8vw;
+  padding: 0 min(2.8vw,36px);
 }
 
 .t01 {

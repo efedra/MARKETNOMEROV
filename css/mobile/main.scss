@@ -587,22 +587,36 @@
       cursor: pointer;
     }
   }
-  .mobile-nav__ul{
+  .mobile-nav__ul {
     text-align: end;
   }
-  .mobile-nav__li{
-    @include adaptiv-font-min(19,9);
+  .mobile-nav__li {
+    @include adaptiv-font-min(19, 9);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     color: rgba(5, 0, 56, 1);
     padding: 1.5vw 0;
   }
-  .slide-tarif__up{
+  .slide-tarif__up {
     padding: 3vw 2vw 19vw;
     border-radius: 15px;
   }
-  .slide-tarif__down{
+  .slide-tarif__down {
     border-radius: 15px;
     padding: 7vw 3vw 5vw;
     margin-top: -17vw;
+  }
+
+  .header__contacts {
+    gap: 1.7vw;
+  }
+  .header{
+    justify-content: unset;
+    gap: 6.3vw;
+    max-height: 50px;
+    height: 13.5vw;
+  }
+  .header__buttons{
+    gap: 0.7vw;
+    margin-left: auto;
   }
 }

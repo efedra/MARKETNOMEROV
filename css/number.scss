@@ -10,7 +10,7 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .banner-number {
-  padding: 0 2.8vw;
+  padding: 0 min(2.8vw,36px);
 }
 
 .beatiful-number__body {
@@ -151,7 +151,7 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .main-padding {
-  padding: 0 2.8vw;
+  padding: 0 min(2.8vw,36px);
 }
 
 

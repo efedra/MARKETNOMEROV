@@ -3,7 +3,7 @@
 }
 
 .banner-number {
-  padding: 0 2.8vw;
+  padding: 0 min(2.8vw, 36px);
 }
 
 .beatiful-number__body {
@@ -142,7 +142,7 @@
 }
 
 .main-padding {
-  padding: 0 2.8vw;
+  padding: 0 min(2.8vw, 36px);
 }
 
 .all-count-number {

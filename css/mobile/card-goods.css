@@ -2,6 +2,181 @@
   .container {
     padding: 0 10px;
   }
+  .name-goods {
+    font-size: min(15px + 10 * ((100vw - 320px) / 960), 25px);
+    width: 61%;
+  }
+  .tag-free {
+    font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
+    padding: 1% 1.5%;
+  }
+  .tag-new {
+    font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
+    padding: 1% 1.5%;
+  }
+  .goods-main__big-picture {
+    display: none;
+  }
+  .goods-main {
+    flex-direction: column;
+  }
+  .goods-main__slider {
+    flex-direction: unset;
+  }
+  .active {
+    border: 1px solid rgb(226, 226, 232);
+  }
+  .splide__pagination {
+    display: flex;
+  }
+  .splide__pagination__page {
+    background: rgb(215, 217, 220);
+    height: 2px;
+    width: 12vw;
+    border-radius: unset;
+  }
+  .splide__pagination__page.is-active {
+    background: black;
+    border-radius: unset;
+    transform: unset;
+  }
+  .goods-main__price {
+    font-size: min(26px + 10 * ((100vw - 320px) / 960), 36px);
+    font-weight: 600;
+  }
+  .goods-main__img-container {
+    padding: 5% 10%;
+  }
+  .goods-main__img-container img {
+    height: 100%;
+    width: auto;
+  }
+  .simple-text {
+    font-size: min(11px + 10 * ((100vw - 320px) / 960), 21px);
+  }
+  .radio-button-color label:before {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 2px;
+    background-size: 150%;
+    outline-offset: 0.7vw;
+    border: none;
+    outline: 2px solid rgb(215, 217, 220);
+  }
+  .goods-main__radio-button {
+    gap: 6%;
+    height: 9vw;
+    margin: 0 0.5vw;
+  }
+  .radio-button-color input[type=radio]:checked + label:before {
+    border: none;
+    outline: 2px solid black;
+  }
+  .goods-main__radio-button-GB {
+    height: unset;
+    gap: 3%;
+    margin-bottom: 4vw;
+  }
+  .simple-text_margin {
+    margin-bottom: 4%;
+  }
+  .simple-text_margin2 {
+    margin-bottom: 2%;
+  }
+  .radio-button-memory label {
+    font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
+    border-radius: 5px;
+  }
+  .soon-in {
+    margin-bottom: 4vw;
+  }
+  .soon-in svg {
+    width: auto;
+    height: 5.8vw;
+  }
+  .simple-text_tips-mobile {
+    width: 66%;
+  }
+  .goods-main__input div {
+    font-size: min(11px + 10 * ((100vw - 320px) / 960), 21px);
+  }
+  .goods-main__input input {
+    width: 62%;
+    height: min(9vw, 50px);
+    border-radius: 5px;
+  }
+  .button-send_yellow {
+    width: 100%;
+    height: min(12.5vw, 60px);
+    font-size: min(14px + 10 * ((100vw - 320px) / 960), 24px);
+    padding: unset;
+    margin-top: 2vw;
+  }
+  .snoska {
+    font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
+    width: 66%;
+    line-height: 4vw;
+  }
+  .goods-main__select {
+    margin-bottom: 8vw;
+  }
+  .characterisitc-title div {
+    font-size: min(11px + 10 * ((100vw - 320px) / 960), 21px);
+  }
+  .characterisitc-title {
+    height: min(14vw, 55px);
+    border-radius: 5px;
+    justify-content: space-between;
+  }
+  .characterisitc-main-head {
+    font-size: min(20px + 10 * ((100vw - 320px) / 960), 30px);
+    margin-bottom: 4vw;
+  }
+  .characterisitc-main-body {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .characterisitc-main-body__left, .characterisitc-main-body__right {
+    font-size: min(13px + 10 * ((100vw - 320px) / 960), 23px);
+  }
+  .characterisitc-main-body__elem {
+    height: min(21vw, 62px);
+    align-items: center;
+  }
+  .left-side .characterisitc-main-body__elem:last-child {
+    border-bottom: 2px solid rgb(223, 224, 229);
+  }
+  .input-grid {
+    width: 100%;
+  }
+  .input-grid input, .input-grid textarea {
+    height: min(9vw, 50px);
+    border-radius: 5px;
+  }
+  .input-grid div:last-child textarea {
+    height: min(20vw, 61px);
+  }
+  .good-reviews-modal .button-send_yellow {
+    width: 100%;
+  }
+  .simple-text_margin {
+    margin-bottom: min(10%, 25px);
+  }
+  .good-credit-modal ol {
+    gap: 1.5vw;
+  }
+  .characterisitc-detail {
+    width: 100%;
+    align-items: baseline;
+  }
+  .subtitle-card-goods {
+    font-size: min(20px + 10 * ((100vw - 320px) / 960), 30px);
+  }
+  .characterisitc-detail-text {
+    font-size: min(15px + 10 * ((100vw - 320px) / 960), 25px);
+    width: 82%;
+    margin-bottom: 8vw;
+  }
 }
 
 /*# sourceMappingURL=card-goods.css.map */

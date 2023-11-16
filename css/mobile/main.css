@@ -542,6 +542,19 @@
     padding: 7vw 3vw 5vw;
     margin-top: -17vw;
   }
+  .header__contacts {
+    gap: 1.7vw;
+  }
+  .header {
+    justify-content: unset;
+    gap: 6.3vw;
+    max-height: 50px;
+    height: 13.5vw;
+  }
+  .header__buttons {
+    gap: 0.7vw;
+    margin-left: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

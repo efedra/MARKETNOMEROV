@@ -110,20 +110,20 @@
   border: 2px solid black;
 }
 .radio-button-color .radio-color-black:before {
-  background: url(../assets/black.svg) no-repeat center;
-  background-size: 77%;
+  background: url(../assets/black.svg);
+  background-size: 100%;
 }
 .radio-button-color .radio-color-lazure:before {
-  background: url(../assets/lazure.svg) no-repeat center;
-  background-size: 77%;
+  background: url(../assets/lazure.svg);
+  background-size: 100%;
 }
 .radio-button-color .radio-color-blue:before {
-  background: url(../assets/blue.svg) no-repeat center;
-  background-size: 77%;
+  background: url(../assets/blue.svg);
+  background-size: 100%;
 }
 .radio-button-color .radio-color-pink:before {
-  background: url(../assets/pink.svg) no-repeat center;
-  background-size: 77%;
+  background: url(../assets/pink.svg);
+  background-size: 100%;
 }
 
 .simple-text {
@@ -209,6 +209,7 @@
   height: 4vw;
   align-items: flex-end;
   padding: 0 4%;
+  cursor: pointer;
 }
 .characterisitc-title div {
   color: rgb(90, 94, 98);
@@ -218,6 +219,7 @@
 .characterisitc-title .active-title {
   color: black;
   border-bottom: 2px solid rgb(66, 98, 255);
+  cursor: default;
 }
 
 .characterisitc-main-body {
@@ -288,6 +290,77 @@
 .goods-main__input_company input {
   max-height: 50px;
   border-radius: 34px;
+}
+
+.splide__slide {
+  background: white !important;
+}
+.splide__slide img {
+  display: flex !important;
+}
+
+.good-reviews-modal, .good-price-modal, .good-credit-modal, .good-sale-modal {
+  display: none;
+}
+
+.stars {
+  display: flex;
+  margin-bottom: 2vw;
+}
+.stars div {
+  margin-right: 2vw;
+  font-family: Roboto;
+  font-size: min(12px + 4 * ((100vw - 320px) / 960), 16px);
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+  column-gap: 3vw;
+  row-gap: 2vw;
+}
+.input-grid div div {
+  font-size: min(12px + 4 * ((100vw - 320px) / 960), 16px);
+  margin-bottom: min(1vw, 10px);
+}
+.input-grid input, .input-grid textarea {
+  width: 100%;
+  height: min(3.9vw, 51px);
+  border-radius: 9px;
+  border: 1px solid rgb(215, 217, 220);
+  padding: 0 min(1vw, 13px);
+}
+.input-grid div:last-child {
+  grid-column: 1/span 2;
+}
+.input-grid div:last-child textarea {
+  height: min(8.5vw, 110px);
+  padding-top: min(1vw, 13px);
+}
+
+.modal-simple-text {
+  font-size: min(12px + 4 * ((100vw - 320px) / 960), 16px);
+  font-family: Roboto;
+}
+
+.good-price-modal ul {
+  list-style-position: inside;
+}
+
+.good-price-modal_margin {
+  margin-bottom: min(4vw, 39px);
+}
+
+.good-credit-modal ol {
+  display: flex;
+  flex-direction: column;
+  list-style-position: inside;
+  gap: min(0.5vw, 8px);
+}
+
+.good-reviews-modal .button-send_yellow {
+  width: 17%;
 }
 
 /*# sourceMappingURL=card-goods.css.map */

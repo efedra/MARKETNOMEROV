@@ -4,17 +4,17 @@
   }
   .modal-basket__window {
     width: 100vw;
-    top: 7.9vh;
+    top: min(11vw, 49px);
     max-width: unset;
     border-radius: 16px;
-    padding: 3.2vh 2.8vw;
+    padding: 7.2vw 3.8vw;
     gap: 5vh;
   }
   .triangle {
     width: 5.3vw;
     height: auto;
     right: 16.3vw;
-    top: 6.5vh;
+    top: min(8vw, 34px);
   }
   .modal-basket__head-text {
     font-size: min(20px + 10 * ((100vw - 320px) / 960), 30px);
@@ -47,7 +47,7 @@
   }
   .modal-basket__picture {
     width: 27vw;
-    height: 20vh;
+    height: 28vw;
     padding: 14%;
   }
   .modal-basket__picture .img-adaptive {
