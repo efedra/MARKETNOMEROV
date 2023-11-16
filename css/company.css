@@ -109,7 +109,7 @@
 .statistics-company {
   display: grid;
   grid-template-columns: 2fr 1fr 3fr;
-  column-gap: 4vw;
+  column-gap: min(4vw, 52px);
   grid-template-rows: repeat(2, 1fr);
   grid-auto-flow: column;
 }
