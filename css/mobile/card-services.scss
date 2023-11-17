@@ -1,0 +1,49 @@
+@import "../adaptive";
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+  .header{
+    padding: 0;
+  }
+  .goods-main {
+    grid-template-columns: 1fr;
+    margin-bottom: 15vw;
+    max-height: unset;
+  }
+  .recently-watched {
+    grid-template-columns: 1fr 1fr;
+
+    div:nth-child(3), div:nth-child(4) {
+      display: none;
+    }
+  }
+  .good-reviews-modal {
+    grid-template-columns: 1fr;
+  }
+  .goods-main__slider {
+    gap: unset;
+  }
+  .service__desc {
+    @include adaptiv-font-min(17, 7);
+  }
+  .about-company__list-text, .about-company__list-head div {
+    @include adaptiv-font-min(18, 8);
+  }
+  .service__down {
+    gap: 1.4vw;
+  }
+  .characterisitc-main-body {
+    line-height: 3.5vw;
+  }
+  .statistics-reviews {
+    grid-template-columns: 2fr 1fr;
+  }
+  .statistics-reviews__number{
+    @include adaptiv-font-min(20,10);
+  }
+  .statistics-reviews__scale, .statistics-reviews__active-scale{
+    height: 1.5vw;
+  }
+}

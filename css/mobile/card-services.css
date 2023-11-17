@@ -1,0 +1,48 @@
+@media (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+  .header {
+    padding: 0;
+  }
+  .goods-main {
+    grid-template-columns: 1fr;
+    margin-bottom: 15vw;
+    max-height: unset;
+  }
+  .recently-watched {
+    grid-template-columns: 1fr 1fr;
+  }
+  .recently-watched div:nth-child(3), .recently-watched div:nth-child(4) {
+    display: none;
+  }
+  .good-reviews-modal {
+    grid-template-columns: 1fr;
+  }
+  .goods-main__slider {
+    gap: unset;
+  }
+  .service__desc {
+    font-size: min(7px + 10 * ((100vw - 320px) / 960), 17px);
+  }
+  .about-company__list-text, .about-company__list-head div {
+    font-size: min(8px + 10 * ((100vw - 320px) / 960), 18px);
+  }
+  .service__down {
+    gap: 1.4vw;
+  }
+  .characterisitc-main-body {
+    line-height: 3.5vw;
+  }
+  .statistics-reviews {
+    grid-template-columns: 2fr 1fr;
+  }
+  .statistics-reviews__number {
+    font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
+  }
+  .statistics-reviews__scale, .statistics-reviews__active-scale {
+    height: 1.5vw;
+  }
+}
+
+/*# sourceMappingURL=card-services.css.map */

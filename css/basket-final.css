@@ -48,6 +48,11 @@
   font-weight: 400;
   src: url("../fonts/OpenSans.ttf");
 }
+@font-face {
+  font-family: Gotham Pro;
+  font-weight: 700;
+  src: url("../fonts/gotham/gothampro_bold.ttf");
+}
 .first-step {
   display: grid;
   grid-template-columns: 1.6fr 1fr;

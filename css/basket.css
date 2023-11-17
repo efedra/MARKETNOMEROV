@@ -48,6 +48,11 @@
   font-weight: 400;
   src: url("../fonts/OpenSans.ttf");
 }
+@font-face {
+  font-family: Gotham Pro;
+  font-weight: 700;
+  src: url("../fonts/gotham/gothampro_bold.ttf");
+}
 .steps-basket {
   padding: 0 min(5.8vw, 75px);
   height: 4.9vw;

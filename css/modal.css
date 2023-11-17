@@ -48,6 +48,11 @@
   font-weight: 400;
   src: url("../fonts/OpenSans.ttf");
 }
+@font-face {
+  font-family: Gotham Pro;
+  font-weight: 700;
+  src: url("../fonts/gotham/gothampro_bold.ttf");
+}
 .modal-buy-number {
   position: fixed;
   z-index: 3;
@@ -307,6 +312,126 @@ label {
   display: flex;
   justify-content: flex-end;
   margin: 0 auto;
+}
+
+.modal-delivery {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-delivery__window {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2vw;
+  background: white;
+  border-radius: 25px;
+  width: min(1081px, 84.5vw);
+  height: min(980px, 76.5vw);
+  padding: min(68px, 5.3vw) min(72px, 5.6vw);
+}
+
+.modal-delivery__head {
+  font-size: min(23px + 10 * ((100vw - 320px) / 960), 33px);
+  font-weight: 600;
+  font-family: Roboto;
+}
+
+.delivery-input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: min(26px, 2vw);
+  row-gap: min(1.8vw, 23px);
+}
+
+.modal-delivery__simple-text {
+  font-family: Roboto;
+  font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
+  color: rgb(90, 94, 98);
+}
+
+.delivery-input-grid__input {
+  display: flex;
+  flex-direction: column;
+  gap: min(0.6vw, 8px);
+  position: relative;
+}
+.delivery-input-grid__input div {
+  font-family: Roboto;
+  font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
+  color: rgb(90, 94, 98);
+}
+.delivery-input-grid__input input {
+  width: 100%;
+  height: min(67px, 5.48vw);
+  border-radius: 15px;
+  padding-left: min(2vw, 26px);
+  padding-right: min(2.8vw, 36px);
+  border: 1px solid rgb(215, 217, 220);
+  font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
+}
+
+.delivery-input-grid__input:after {
+  content: url("../assets/close-icon.svg");
+  position: absolute;
+  width: min(11px, 0.9vw);
+  height: min(11px, 0.9vw);
+  top: 57%;
+  right: min(2vw, 26px);
+  cursor: pointer;
+}
+
+.delivery-input-grid__input:first-child {
+  grid-column: 1/span 2;
+}
+
+.select-date-grid__elem input[type=radio] {
+  display: none;
+}
+.select-date-grid__elem label {
+  border-radius: 13px;
+  border: 1px solid rgb(215, 217, 220);
+  width: min(220px, 17.18vw);
+  height: min(96px, 7.5vw);
+  padding: min(16px, 1.4vw);
+  display: block;
+}
+.select-date-grid__elem label div {
+  font-family: Roboto;
+  font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
+}
+.select-date-grid__elem input[type=radio]:checked + label {
+  background: rgb(232, 89, 10);
+}
+.select-date-grid__elem input[type=radio]:checked + label div {
+  color: white;
+}
+
+.select-time {
+  height: 8.4vw;
+}
+
+.select-date-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: min(19px, 1.5vw);
+}
+
+.modal-delivery__button {
+  background: rgb(231, 232, 233);
+  color: rgb(167, 171, 176);
+  font-family: Roboto;
+  font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
+  border-radius: 32px;
+  padding: min(1vw, 13px) min(103px, 8vw);
+  cursor: pointer;
+  border: none;
+  max-width: 337px;
 }
 
 @media (max-width: 800px) {
