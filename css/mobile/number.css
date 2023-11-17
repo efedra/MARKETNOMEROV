@@ -21,6 +21,9 @@
   .head-days {
     font-size: min(18px + 51 * ((100vw - 320px) / 960), 69px);
   }
+  .table {
+    margin-bottom: 5vw;
+  }
   .button-catalog {
     gap: 1vw;
     align-items: center;

@@ -3,8 +3,8 @@
   grid-template-columns: fit-content(50%) fit-content(50%) 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-auto-flow: column;
-  gap: 1vw;
-  margin-bottom: 3vh;
+  gap: min(1vw, 13px);
+  margin-bottom: min(3vh, 22px);
 }
 
 .tips__head {

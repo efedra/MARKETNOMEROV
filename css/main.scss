@@ -57,7 +57,7 @@ a {
 
 .recall {
   background: none;
-  padding: min(1.2vh,9px) min(1.2vw, 18px);
+  padding: min(1.2vh, 9px) min(1.2vw, 18px);
   @include adaptiv-font-min(18, 1);
   @extend %main-blue-border;
   border-radius: 34px;
@@ -72,7 +72,7 @@ a {
   @extend %main-blue-bg;
   @include adaptiv-font-min(19, 1);
   color: white;
-  padding: min(1.2vh,9px) min(3.2vw, 36px);
+  padding: min(1.2vh, 9px) min(3.2vw, 36px);
   box-shadow: 0px 1.9950840473175049px 3.9901680946350098px 0px rgba(165, 165, 165, 0.25);
   border-radius: 34px;
   border: none;
@@ -333,6 +333,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: min(3vh, 26px);
+  padding: 0;
 
   img {
     border-radius: 31px;
@@ -995,18 +996,23 @@ input[type="range"] {
 }
 
 .select-options {
-  display: flex;
+  //display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: min(2vw, 26px);
   margin-bottom: min(6vh, 44px);
 }
 
 .select-options__elem {
+  position: relative;
+  z-index: 1;
   width: 100%;
   padding: min(2vh, 15px) min(2vw, 26px);
   background: white;
-  border-radius: 7px;
+  border-radius: 18px;
   border: 1px solid rgba(193, 193, 193, 1);
   text-align: center;
+  @include adaptiv-font-min(26, 8);
 }
 
 .search {
@@ -1180,12 +1186,14 @@ input[type="range"] {
 
 .sort-filter {
   display: none;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, auto);
   margin-bottom: min(19vh, 165px);
-  padding: 0 min(2vw, 27px);
   gap: min(2.5vw, 31px);
   height: min(40.15px, 3.1vw);
   width: fit-content;
+
+  align-items: baseline;
+  justify-items: center;
 }
 
 .sort-filter__text {
@@ -1193,17 +1201,19 @@ input[type="range"] {
   @include adaptiv-font-min(24, 14);
 }
 
+.sort-filter__text:first-child{
+  justify-self: left;
+}
 .sort-filter__input {
   color: rgba(98, 108, 119, 1);
   @include adaptiv-font-min(24, 14);
   cursor: pointer;
+  padding: min(0.6vw, 8px) min(2vw, 25px);
   margin: 0 auto;
 }
 
 .sort-filter__input_active {
-  padding: min(0.6vw, 8px) min(2vw, 25px);
   color: rgba(240, 78, 1, 1);
-  @include adaptiv-font-min(20, 10);
   border-radius: 9px;
   background: rgba(230, 230, 230, 1);
   position: relative;
@@ -1223,9 +1233,6 @@ input[type="range"] {
   gap: min(11px, 1vw);
 }
 
-.sort-filter__list_hidden {
-  display: none;
-}
 
 .sort-filter__list-elem {
   border-radius: 6px;
@@ -1275,3 +1282,66 @@ input[type="range"] {
 .statistics_margin {
   margin-bottom: min(100px, 5vw);
 }
+
+.select-options__list {
+  background: rgba(230, 230, 230, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 12.05312442779541px 18.079687118530273px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  box-shadow: 0px 30.1328125px 44.596561431884766px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: min(21px, 2vh);
+  margin-top: max(-26px, -2vw);
+  padding: min(52px, 4vw) min(2.4vw, 31px) min(26px, 2vw);
+  div:last-child{
+    font-family: Roboto;
+    @include adaptiv-font-min(15, 5);
+  }
+
+}
+
+.select-options__elem_active {
+  background: rgba(241, 79, 2, 1);
+  color: white;
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-bottom: min(2vw,26px);
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    line-height: min(29px,2.2vw);
+
+    li {
+      font-family: Roboto;
+      @include adaptiv-font-min(15, 5);
+    }
+
+    li:first-child {
+      margin-bottom: min(26px, 2vw);
+    }
+  }
+}
+
+.sort-filter__list_hidden {
+  display: none;
+}
+
+.goods-input__search {
+  background: white;
+  width: 100%;
+  height: min(48px, 3.7vw);
+
+  svg {
+    display: flex;
+    align-self: center;
+  }
+}
+

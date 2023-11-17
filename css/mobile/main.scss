@@ -281,16 +281,31 @@
     }
   }
   .sort-filter__input {
-    @include adaptiv-font-min(18, 8);
+    @include adaptiv-font-min(20, 10);
+    padding: min(0.6vw, 8px) min(2vw, 25px);
   }
   .sort-filter__text {
     @include adaptiv-font-min(20, 10);
   }
+  .sort-filter__text:first-child {
+    width: 100%;
+    grid-column: 1/ span 4;
+  }
   .sort-filter {
-    margin-bottom: min(14vw, 65px);
+    display: none;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 22vw;
   }
   .sort-filter__input_active {
-    @include adaptiv-font-min(16, 6);
+    @include adaptiv-font-min(20, 10);
+    border-radius: 5px;
+  }
+  .sort-filter__list {
+    border-radius: 5px;
+  }
+  .sort-filter__list-elem {
+    height: 4.7vw;
+    @include adaptiv-font-min(15,5);
   }
   .select-buttons {
     padding: 1.5vw 2vw;
@@ -610,14 +625,25 @@
   .header__contacts {
     gap: 1.7vw;
   }
-  .header{
+  .header {
     justify-content: unset;
     gap: 6.3vw;
     max-height: 50px;
     height: 13.5vw;
   }
-  .header__buttons{
+  .header__buttons {
     gap: 0.7vw;
     margin-left: auto;
+  }
+
+  .goods-input__search svg {
+    width: auto;
+    height: 2vw;
+  }
+  .select-options__elem, .select-options__list {
+    border-radius: 6px;
+  }
+  .goods-input__search input {
+    @include adaptiv-font-min(16, 6);
   }
 }

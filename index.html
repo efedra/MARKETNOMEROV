@@ -6,6 +6,7 @@
     <title>Главная</title>
     <link rel="stylesheet" href="../css/nouislider.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/goods.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/tips.css">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="css/number.css">
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/company.css">
+
 
     <link rel="stylesheet" href="./css/mobile/main.css">
     <link rel="stylesheet" href="./css/mobile/modal.css">
@@ -134,23 +136,25 @@
 </section>
 <div class="modal-basket">
     <div class="container-modal-basket">
-        <img class="triangle" src="../assets/white-triangle.svg"/>
+        <img class="triangle" src="./assets/white-triangle.svg"/>
         <div class="modal-basket__window">
             <div class="modal-basket__head margin-min">
                 <div class="modal-basket__head-text">Товары (1)</div>
                 <svg class="close" width="16" height="16" viewBox="0 0 16 16" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 15L8 8M8 8L15 1M8 8L15 15M8 8L1 1" stroke="#222222" stroke-width="2" stroke-linecap="round"
+                    <path d="M1 15L8 8M8 8L15 1M8 8L15 15M8 8L1 1" stroke="#222222" stroke-width="2"
+                          stroke-linecap="round"
                           stroke-linejoin="round"/>
                 </svg>
             </div>
             <div class="modal-basket__elem margin-big">
                 <div class="modal-basket__picture">
-                    <img class="img-adaptive" src="../assets/iphone-mini1.png">
+                    <img class="img-adaptive" src="./assets/iphone-mini1.png">
                 </div>
                 <div class="modal-basket__desc">
                     <div class="modal-basket__desc-head modal-margin">Заголовок</div>
-                    <div class="modal-basket__desc-text modal-margin">Рыбатекст используется дизайнерами, проектировщиками и
+                    <div class="modal-basket__desc-text modal-margin">Рыбатекст используется дизайнерами,
+                        проектировщиками и
                         фронтендерами
                     </div>
                     <div class="modal-basket__count">
@@ -164,13 +168,16 @@
                     <div class="modal-basket__icons">
                         <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.7328 0.974609C9.24506 0.974609 8.01884 3.42705 8.01884 3.42705C8.01884 3.42705 6.79262 0.974609 4.30493 0.974609C2.2832 0.974609 0.682217 2.66603 0.661525 4.68431C0.619373 8.87376 3.98496 11.8531 7.67397 14.3569C7.77567 14.4261 7.89583 14.4631 8.01884 14.4631C8.14185 14.4631 8.26201 14.4261 8.36371 14.3569C12.0523 11.8531 15.4179 8.87376 15.3762 4.68431C15.3555 2.66603 13.7545 0.974609 11.7328 0.974609V0.974609Z"
-                                  stroke="#232321" stroke-width="0.919665" stroke-linecap="round" stroke-linejoin="round"/>
+                                  stroke="#232321" stroke-width="0.919665" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
                         </svg>
                         <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.0968 6.42725L15.9982 16.9934C15.9631 17.2918 15.8197 17.5668 15.5952 17.7664C15.3707 17.9661 15.0808 18.0763 14.7804 18.0763H5.92519C5.62479 18.0763 5.33486 17.9661 5.11038 17.7664C4.8859 17.5668 4.74251 17.2918 4.7074 16.9934L3.6084 6.42725"
-                                  stroke="#232321" stroke-width="0.919665" stroke-linecap="round" stroke-linejoin="round"/>
+                                  stroke="#232321" stroke-width="0.919665" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
                             <path d="M18.3235 3.36157H2.38264C2.04403 3.36157 1.76953 3.63607 1.76953 3.97468V5.81401C1.76953 6.15262 2.04403 6.42712 2.38264 6.42712H18.3235C18.6621 6.42712 18.9366 6.15262 18.9366 5.81401V3.97468C18.9366 3.63607 18.6621 3.36157 18.3235 3.36157Z"
-                                  stroke="#232321" stroke-width="0.919665" stroke-linecap="round" stroke-linejoin="round"/>
+                                  stroke="#232321" stroke-width="0.919665" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
                             <path d="M12.4988 10.1057L8.20703 14.3975M12.4988 14.3975L8.20703 10.1057" stroke="#232321"
                                   stroke-width="0.919665" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -392,8 +399,56 @@
                 <div class="range-main"></div>
             </div>
             <div class="select-options">
-                <div class="select-options__elem">Выберите регион</div>
-                <div class="select-options__elem">Выберите по скидке</div>
+                <div class="select-options__full-list">
+                    <div class="select-options__elem">Выберите регион</div>
+                    <div class=" select-options__list sort-filter__list_hidden">
+                        <div class="goods-input__search sort-filter__list_hidden">
+                            <input type="text" placeholder="Выберите город...">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.8411 19.0105L14.3166 12.486C15.3291 11.1771 15.8767 9.57671 15.8767 7.89345C15.8767 5.87856 15.0904 3.98928 13.6684 2.56479C12.2464 1.14029 10.3521 0.356445 8.33974 0.356445C6.32736 0.356445 4.43306 1.14281 3.01108 2.56479C1.58658 3.98677 0.802734 5.87856 0.802734 7.89345C0.802734 9.90583 1.5891 11.8001 3.01108 13.2221C4.43306 14.6466 6.32485 15.4305 8.33974 15.4305C10.023 15.4305 11.6208 14.8828 12.9298 13.8728L19.4543 20.3948C19.4734 20.414 19.4962 20.4292 19.5212 20.4395C19.5462 20.4499 19.573 20.4552 19.6 20.4552C19.6271 20.4552 19.6539 20.4499 19.6789 20.4395C19.7039 20.4292 19.7266 20.414 19.7457 20.3948L20.8411 19.302C20.8603 19.2828 20.8754 19.2601 20.8858 19.2351C20.8962 19.2101 20.9015 19.1833 20.9015 19.1562C20.9015 19.1292 20.8962 19.1024 20.8858 19.0774C20.8754 19.0524 20.8603 19.0297 20.8411 19.0105ZM12.3193 11.873C11.254 12.9357 9.84212 13.5211 8.33974 13.5211C6.83736 13.5211 5.42543 12.9357 4.3602 11.873C3.29748 10.8078 2.71211 9.39583 2.71211 7.89345C2.71211 6.39107 3.29748 4.97663 4.3602 3.91391C5.42543 2.85119 6.83736 2.26582 8.33974 2.26582C9.84212 2.26582 11.2566 2.84868 12.3193 3.91391C13.382 4.97914 13.9674 6.39107 13.9674 7.89345C13.9674 9.39583 13.382 10.8103 12.3193 11.873Z"
+                                      fill="#8B8E99"/>
+                            </svg>
+                        </div>
+                        <div class="list-grid">
+                            <ul>
+                                <li>Волгоград</li>
+                                <li>Астрахань</li>
+                                <li>Ростов-на-Дону</li>
+                                <li>Волгодонск</li>
+                                <li>Новошахтинск</li>
+                                <li>Балаково</li>
+                                <li></li>
+                            </ul>
+                            <ul>
+                                <li>Камышин</li>
+                                <li>Саратов</li>
+                                <li class="orange">Новочеркасск</li>
+                                <li>Волгодонск</li>
+                                <li>Новошахтинск</li>
+                                <li>Балаково</li>
+                                <li></li>
+                            </ul>
+                            <ul>
+                                <li>Волгоград</li>
+                                <li>Астрахань</li>
+                                <li>Ростов-на-Дону</li>
+                                <li>Волгодонск</li>
+                                <li>Новошахтинск</li>
+                                <li>Балаково</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="">Вся Россия</div>
+                    </div>
+                </div>
+                <div class="select-options__full-list">
+                    <div class="select-options__elem">Выберите по скидке</div>
+                    <div class="select-options__list sort-filter__list_hidden">
+
+                    </div>
+                </div>
+
             </div>
             <div class="beatiful-number__button">
                 <button class="search">
@@ -422,8 +477,13 @@
                         <div class="sort-filter__list-elem">от Я до А</div>
                     </div>
                 </div>
-                <div class="sort-filter__input">новые номера</div>
-                <div class="sort-filter__input">старые номера</div>
+                <div class="sort-filter__elem">
+                    <div class="sort-filter__input">новые номера</div>
+                </div>
+                <div class="sort-filter__elem">
+                    <div class="sort-filter__input">старые номера</div>
+                </div>
+
             </div>
 
             <div class="table table_title">
@@ -898,9 +958,11 @@
                 <div class="services-card__bottom">
                     <div class="services-card__heading">Заголовок</div>
                     <div class="services-card__text">Рыбатекст используется дизайнерами</div>
-                    <button class="connect">
-                        Подробнее
-                    </button>
+                    <a href="./html/card-services.html">
+                        <button class="connect">
+                            Подробнее
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="services-card">
@@ -908,9 +970,11 @@
                 <div class="services-card__bottom">
                     <div class="services-card__heading">Заголовок</div>
                     <div class="services-card__text">Рыбатекст используется дизайнерами</div>
-                    <button class="connect">
-                        Подробнее
-                    </button>
+                    <a href="./html/card-services.html">
+                        <button class="connect">
+                            Подробнее
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="services-card">
@@ -918,9 +982,11 @@
                 <div class="services-card__bottom">
                     <div class="services-card__heading">Заголовок</div>
                     <div class="services-card__text">Рыбатекст используется дизайнерами</div>
-                    <button class="connect">
-                        Подробнее
-                    </button>
+                    <a href="./html/card-services.html">
+                        <button class="connect">
+                            Подробнее
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="services-card">
@@ -928,29 +994,11 @@
                 <div class="services-card__bottom">
                     <div class="services-card__heading">Заголовок</div>
                     <div class="services-card__text">Рыбатекст используется дизайнерами</div>
-                    <button class="connect">
-                        Подробнее
-                    </button>
-                </div>
-            </div>
-            <div class="services-card">
-                <img class="services-card__top img-adaptive" src="assets/serv2.png">
-                <div class="services-card__bottom">
-                    <div class="services-card__heading">Заголовок</div>
-                    <div class="services-card__text">Рыбатекст используется дизайнерами</div>
-                    <button class="connect">
-                        Подробнее
-                    </button>
-                </div>
-            </div>
-            <div class="services-card">
-                <img class="services-card__top img-adaptive" src="assets/serv3.png">
-                <div class="services-card__bottom">
-                    <div class="services-card__heading">Заголовок</div>
-                    <div class="services-card__text">Рыбатекст используется дизайнерами</div>
-                    <button class="connect">
-                        Подробнее
-                    </button>
+                    <a href="./html/card-services.html">
+                        <button class="connect">
+                            Подробнее
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
