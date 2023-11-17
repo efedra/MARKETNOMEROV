@@ -282,6 +282,9 @@
 
 .slide {
   padding: 4%;
+  display: flex;
+  flex-direction: column;
+  gap: min(3vh, 26px);
 }
 
 .goods-main_margin {

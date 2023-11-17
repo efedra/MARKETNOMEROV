@@ -2,7 +2,10 @@
 let buttonBuy = document.querySelector('.buy-number')
 let buttonSale = document.querySelector('.sale-number')
 let closeModal = document.querySelectorAll('.close')
-let buttonSelect = document.querySelector('.more-numbers')
+
+
+let allCurrentPhone = document.querySelectorAll('.select-buttons')
+
 let buttonComment = document.querySelector('.add-review')
 let buttonCart = document.querySelector('.basket')
 
@@ -26,9 +29,11 @@ if (buttonSale) {
     })
 }
 
-if (buttonSelect) {
-    buttonSelect.addEventListener('click', () => {
-        openModal(modalSelect)
+if (allCurrentPhone) {
+    allCurrentPhone.forEach(el=>{
+        el.addEventListener('click', () => {
+            openModal(modalSelect)
+        })
     })
 }
 
@@ -39,7 +44,7 @@ if (buttonComment) {
 }
 
 if (buttonCart) {
-    buttonCart.addEventListener('click',()=>{
+    buttonCart.addEventListener('click', () => {
         openModal(modalCart);
     })
 }
@@ -52,16 +57,16 @@ function openModal(modal) {
 
 closeModal.forEach(el => {
     el.addEventListener('click', () => {
-        if(modalBuy){
+        if (modalBuy) {
             modalBuy.style.display = 'none'
         }
-        if(modalSelect){
+        if (modalSelect) {
             modalSelect.style.display = 'none'
         }
-        if(modalComment){
+        if (modalComment) {
             modalComment.style.display = 'none'
         }
-        if(modalCart){
+        if (modalCart) {
             modalCart.style.display = 'none'
         }
 

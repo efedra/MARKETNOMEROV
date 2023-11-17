@@ -472,6 +472,7 @@ a {
   border-radius: 34px;
   width: 100%;
   padding: min(2vh, 15px) 0;
+  cursor: pointer;
 }
 
 .hr_uslugi {
@@ -539,6 +540,7 @@ a {
   display: flex;
   align-items: center;
   gap: min(2vw, 25px);
+  cursor: pointer;
 }
 
 .read-more_blue {
@@ -877,6 +879,7 @@ input[type=range] {
   border: 1px solid rgb(193, 193, 193);
   text-align: center;
   font-size: min(8px + 18 * ((100vw - 320px) / 960), 26px);
+  cursor: pointer;
 }
 
 .search {
@@ -946,6 +949,7 @@ input[type=range] {
   font-size: min(6px + 13 * ((100vw - 320px) / 960), 19px);
   padding: min(2vh, 14px) min(2vw, 26px);
   border: none;
+  cursor: pointer;
 }
 
 .table-body {
