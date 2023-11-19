@@ -6,6 +6,12 @@
   font-family: Helvetica;
 }
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -80,11 +86,7 @@ a {
   height: min(4vw, 50px);
 }
 
-.basket:hover, .recall:hover, .header__nav div:hover, .buy-number:hover, .sale-number:hover, .link-underline:hover,
-.clear:hover, .operator__card:hover, .select-options__elem:hover, .search:hover, .hide-filter:hover, .select-buttons:hover,
-.more-numbers:hover, .arrows__left:hover, .arrows__right:hover, .goods_nav div:hover, .goods__price a:hover,
-.basket-mini:hover, .more-goods:hover, .connect:hover, .read-more:hover, .add-review:hover, .often-questions__elem img:hover,
-.send-button:hover, .footer__nav li:hover, .footer__add div:hover, .footer__text:hover, .header__contacts img:hover, .goods__name svg:hover {
+.basket:hover, .recall:hover, .header__nav div:hover, .buy-number:hover, .sale-number:hover, .link-underline:hover, .clear:hover, .operator__card:hover, .select-options__elem:hover, .search:hover, .hide-filter:hover, .select-buttons:hover, .more-numbers:hover, .arrows__left:hover, .arrows__right:hover, .goods_nav div:hover, .goods__price a:hover, .basket-mini:hover, .more-goods:hover, .connect:hover, .read-more:hover, .add-review:hover, .often-questions__elem img:hover, .send-button:hover, .footer__nav li:hover, .footer__add div:hover, .footer__text:hover, .header__contacts img:hover, .goods__name svg:hover {
   opacity: 0.7;
   cursor: pointer;
 }
@@ -101,6 +103,10 @@ a {
   padding-top: min(2vw, 26px);
   width: 55%;
   max-width: 600px;
+}
+
+.container-steps {
+  max-width: 986px;
 }
 
 .heading {
@@ -177,8 +183,11 @@ a {
 
 .steps__heading {
   position: relative;
+  background: url("../assets/grid.svg");
+  background-size: contain;
   font-size: min(17px + 13 * ((100vw - 320px) / 960), 30px);
   font-weight: bold;
+  height: min(12.45vw, 162px);
 }
 .steps__heading img {
   width: 100%;
@@ -186,7 +195,7 @@ a {
 
 .figcaption {
   position: absolute;
-  top: min(5.5vw, 72px);
+  top: min(4.5vw, 58px);
   left: min(13vw, 163px);
 }
 
