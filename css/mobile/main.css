@@ -138,7 +138,7 @@
     margin-bottom: 4vw;
   }
   .beatiful-number__subheading {
-    font-size: 14px;
+    font-size: min(14px + 26 * ((100vw - 320px) / 960), 40px);
   }
   .beatiful-number__filter {
     padding: 6vw 4vw 0;
@@ -160,10 +160,15 @@
     height: 4.7vw;
     padding: 0 1.5vw;
     border-radius: 5px;
+    width: 10vw;
   }
   .input-code svg {
     width: min(1.4vw, 11px);
     height: auto;
+  }
+  .input-code__list div {
+    font-size: min(8px + 11 * ((100vw - 320px) / 960), 19px);
+    border-radius: 4px;
   }
   .input-code__number {
     font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
@@ -185,6 +190,7 @@
   }
   .input-number {
     margin-bottom: 3vw;
+    justify-content: space-between;
   }
   .link-underline {
     font-size: min(6px + 18 * ((100vw - 320px) / 960), 24px);
@@ -536,8 +542,14 @@
     padding: 0 10px;
   }
   .modal-mobile-nav {
+    background: rgba(0, 0, 0, 0.7);
     display: none;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
+    z-index: 3;
+  }
+  .modal-mobile-nav__window {
     height: 42vw;
     width: 100vw;
     z-index: 5;
@@ -605,6 +617,14 @@
     background: none;
     border: none;
     cursor: pointer;
+  }
+  .range-slider .noUi-horizontal .noUi-handle-lower {
+    background-size: 118%;
+    background-position: 50% 38%;
+  }
+  .range-slider .noUi-horizontal .noUi-handle-upper {
+    background-size: 118%;
+    background-position: 50% 59%;
   }
 }
 

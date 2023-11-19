@@ -94,44 +94,47 @@
     </div>
 </section>
 <section class="modal-mobile-nav">
-    <div class="mobile-nav__close">
-        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_b_277_19327)">
-                <rect width="10" height="10" rx="5" fill="#F04E01"/>
-            </g>
-            <path d="M6.24957 3.75L3.74957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square"
-                  stroke-linejoin="round"/>
-            <path d="M3.74957 3.75L6.24957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square"
-                  stroke-linejoin="round"/>
-            <defs>
-                <filter id="filter0_b_277_19327" x="-15" y="-15" width="40" height="40" filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.5"/>
-                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_277_19327"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_277_19327" result="shape"/>
-                </filter>
-            </defs>
-        </svg>
+    <div class="modal-mobile-nav__window">
+        <div class="mobile-nav__close">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_b_277_19327)">
+                    <rect width="10" height="10" rx="5" fill="#F04E01"/>
+                </g>
+                <path d="M6.24957 3.75L3.74957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square"
+                      stroke-linejoin="round"/>
+                <path d="M3.74957 3.75L6.24957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square"
+                      stroke-linejoin="round"/>
+                <defs>
+                    <filter id="filter0_b_277_19327" x="-15" y="-15" width="40" height="40" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_277_19327"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_277_19327"
+                                 result="shape"/>
+                    </filter>
+                </defs>
+            </svg>
 
 
-    </div>
-    <div class="mobile-nav__ul">
-        <a href="./html/number.html">
-            <div class="mobile-nav__li">Красивые номера</div>
-        </a>
-        <a href="./html/tarif.html">
-            <div class="mobile-nav__li">Тарифы</div>
-        </a>
-        <a href="./html/goods.html">
-            <div class="mobile-nav__li">магазин</div>
-        </a>
-        <a href="./html/uslugi.html">
-            <div class="mobile-nav__li">Услуги</div>
-        </a>
-        <a href="./html/company.html">
-            <div class="mobile-nav__li">О компании</div>
-        </a>
+        </div>
+        <div class="mobile-nav__ul">
+            <a href="./html/number.html">
+                <div class="mobile-nav__li">Красивые номера</div>
+            </a>
+            <a href="./html/tarif.html">
+                <div class="mobile-nav__li">Тарифы</div>
+            </a>
+            <a href="./html/goods.html">
+                <div class="mobile-nav__li">магазин</div>
+            </a>
+            <a href="./html/uslugi.html">
+                <div class="mobile-nav__li">Услуги</div>
+            </a>
+            <a href="./html/company.html">
+                <div class="mobile-nav__li">О компании</div>
+            </a>
+        </div>
     </div>
 </section>
 <div class="modal-basket">
@@ -237,7 +240,8 @@
             </button>
             <button class="bs basket-mobile">
                 <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.09583 4.021H3.56481C4.35237 4.021 5.04784 4.53465 5.27945 5.28738L8.08806 14.4154C8.31967 15.1681 9.01513 15.6818 9.80269 15.6818H16.1855C16.9426 15.6818 17.6181 15.2065 17.8739 14.4939L19.7431 9.28694C20.3725 7.53376 19.0731 5.68682 17.2104 5.68682H10.2717" stroke="#4262FF" stroke-width="1.55833" stroke-linecap="round"/>
+                    <path d="M3.09583 4.021H3.56481C4.35237 4.021 5.04784 4.53465 5.27945 5.28738L8.08806 14.4154C8.31967 15.1681 9.01513 15.6818 9.80269 15.6818H16.1855C16.9426 15.6818 17.6181 15.2065 17.8739 14.4939L19.7431 9.28694C20.3725 7.53376 19.0731 5.68682 17.2104 5.68682H10.2717"
+                          stroke="#4262FF" stroke-width="1.55833" stroke-linecap="round"/>
                     <circle cx="9.82313" cy="18.8211" r="1.34547" fill="#4262FF"/>
                     <circle cx="16.102" cy="18.8211" r="1.34547" fill="#4262FF"/>
                 </svg>
@@ -343,13 +347,21 @@
                 </button>
             </div>
             <div class="input-number">
-                <div class="input-code">
-                    <div class="input-code__number">9**</div>
-                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.14318 1.12271C1.45832 0.791087 1.95148 0.76094 2.29899 1.03227L2.39855 1.12271L10.0559 9.17992L17.7133 1.12271C18.0284 0.791087 18.5216 0.76094 18.8691 1.03227L18.9687 1.12271C19.2838 1.45433 19.3125 1.97326 19.0546 2.33894L18.9687 2.4437L10.6836 11.1618C10.3685 11.4935 9.8753 11.5236 9.52779 11.2523L9.42823 11.1618L1.14318 2.4437C0.796513 2.07892 0.796513 1.48749 1.14318 1.12271Z"
-                              fill="#F14F02"/>
-                    </svg>
+                <div class="input-code-full-list">
+                    <div class="input-code">
+                        <div class="input-code__number">9**</div>
+                        <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.14318 1.12271C1.45832 0.791087 1.95148 0.76094 2.29899 1.03227L2.39855 1.12271L10.0559 9.17992L17.7133 1.12271C18.0284 0.791087 18.5216 0.76094 18.8691 1.03227L18.9687 1.12271C19.2838 1.45433 19.3125 1.97326 19.0546 2.33894L18.9687 2.4437L10.6836 11.1618C10.3685 11.4935 9.8753 11.5236 9.52779 11.2523L9.42823 11.1618L1.14318 2.4437C0.796513 2.07892 0.796513 1.48749 1.14318 1.12271Z"
+                                  fill="#F14F02"/>
+                        </svg>
+                    </div>
+                    <div class="input-code__list sort-filter__list_hidden">
+                        <div class="sort-filter__list-elem">+7</div>
+                        <div class="sort-filter__list-elem">+3</div>
+                        <div class="sort-filter__list-elem">+9</div>
+                    </div>
                 </div>
+
                 <input class="input-one-numb" maxlength="1">
                 <input class="input-one-numb" maxlength="1">
                 <input class="input-one-numb" maxlength="1">
@@ -386,17 +398,21 @@
                 </div>
             </section>
             <div class="operator">
-                <div class="operator__card">
-                    <img src="assets/tele2.png">
+                <div>
+                    <input type="radio" value="1" name="operator" id="operator1">
+                    <label class="operator__card" for="operator1"><img src="assets/tele2.png"></label>
                 </div>
-                <div class="operator__card">
-                    <img src="assets/beeline.png">
+                <div>
+                    <input type="radio" value="2" name="operator" id="operator2">
+                    <label class="operator__card" for="operator2"><img src="assets/beeline.png"></label>
                 </div>
-                <div class="operator__card">
-                    <img src="assets/mts.png">
+                <div>
+                    <input type="radio" value="3" name="operator" id="operator3">
+                    <label class="operator__card" for="operator3"><img src="assets/mts.png"></label>
                 </div>
-                <div class="operator__card">
-                    <img class="rt-min" src="assets/rt.png">
+                <div>
+                    <input type="radio" value="4" name="operator" id="operator4">
+                    <label class="operator__card" for="operator4"><img class="rt-min" src="assets/rt.png"></label>
                 </div>
             </div>
 
@@ -1117,7 +1133,7 @@
             </div>
         </h2>
         <hr class="goods__underline hr_blue">
-        <nav class="goods_nav">
+        <nav class="goods_nav tarif-nav">
             <div data-tarif="1">БАЗОВЫЙ</div>
             <div data-tarif="2">НА МАКСИМУМ</div>
             <div data-tarif="3">БЕЗЛИМИТ</div>
@@ -1256,7 +1272,7 @@
                     <div class="slide-tarif__down">
                         <div class="slide-tarif__price">
                             <div class="tarif-ruble">Р</div>
-                            <div class="tarif-price">290</div>
+                            <div class="tarif-price">210</div>
                             <div class="tarif-month">/мес</div>
                         </div>
                         <ul class="tarif__list">
@@ -1280,7 +1296,7 @@
                     <div class="slide-tarif__down">
                         <div class="slide-tarif__price">
                             <div class="tarif-ruble">Р</div>
-                            <div class="tarif-price">290</div>
+                            <div class="tarif-price">210</div>
                             <div class="tarif-month">/мес</div>
                         </div>
                         <ul class="tarif__list">

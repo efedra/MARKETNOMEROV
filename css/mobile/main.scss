@@ -171,8 +171,7 @@
     margin-bottom: 4vw;
   }
   .beatiful-number__subheading {
-    //@include adaptiv-font-min(40, 14);
-    font-size: 14px;
+    @include adaptiv-font-min(40, 14);
   }
   .beatiful-number__filter {
     padding: 6vw 4vw 0;
@@ -181,8 +180,6 @@
     gap: 4px;
     border-radius: 7px;
     height: 18.5px;
-    //height: min(3.7vw);
-    //padding: 0 min(1.4vw, 11px);
     width: 60px;
 
     div {
@@ -198,11 +195,16 @@
     height: 4.7vw;
     padding: 0 1.5vw;
     border-radius: 5px;
+    width: 10vw;
 
     svg {
       width: min(1.4vw, 11px);
       height: auto;
     }
+  }
+  .input-code__list div{
+    @include adaptiv-font-min(19, 8);
+    border-radius: 4px;
   }
   .input-code__number {
     @include adaptiv-font-min(19, 9);
@@ -225,6 +227,7 @@
   }
   .input-number {
     margin-bottom: 3vw;
+    justify-content: space-between;
   }
   .link-underline {
     @include adaptiv-font-min(24, 6);
@@ -303,7 +306,7 @@
   }
   .sort-filter {
     display: none;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 22vw;
   }
   .sort-filter__input_active {
@@ -315,7 +318,7 @@
   }
   .sort-filter__list-elem {
     height: 4.7vw;
-    @include adaptiv-font-min(15,5);
+    @include adaptiv-font-min(15, 5);
   }
   .select-buttons {
     padding: 1.5vw 2vw;
@@ -597,13 +600,20 @@
   }
   .footer__bottom {
     align-items: center;
-    height: min(11.5vw,42px);
+    height: min(11.5vw, 42px);
     padding: 0 10px;
   }
-
   .modal-mobile-nav {
+    background: rgba(0, 0, 0, 0.7);
     display: none;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
+    z-index: 3;
+  }
+
+  .modal-mobile-nav__window {
+
     height: 42vw;
     width: 100vw;
     z-index: 5;
@@ -661,20 +671,31 @@
   .goods-input__search input {
     @include adaptiv-font-min(16, 6);
   }
-  .uslugi__heading-width{
+  .uslugi__heading-width {
     padding: 0 10px;
   }
-  .sliderContainer{
+  .sliderContainer {
     height: 84vw;
   }
-  .slider-tarif-container{
+  .slider-tarif-container {
     height: 78vw;
   }
-  .basket-mobile{
+  .basket-mobile {
     display: flex;
     background: none;
     border: none;
     cursor: pointer;
+  }
+
+  .range-slider .noUi-horizontal .noUi-handle-lower{
+
+    background-size: 118%;
+    background-position: 50% 38%;
+  }
+  .range-slider .noUi-horizontal .noUi-handle-upper{
+
+    background-size: 118%;
+    background-position: 50% 59%;
   }
 
 }
