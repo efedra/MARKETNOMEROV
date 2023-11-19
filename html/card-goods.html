@@ -30,42 +30,47 @@
 </head>
 <body>
 <section class="modal-mobile-nav">
-    <div class="mobile-nav__close">
-        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_b_277_19327)">
-                <rect width="10" height="10" rx="5" fill="#F04E01"/>
-            </g>
-            <path d="M6.24957 3.75L3.74957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square"
-                  stroke-linejoin="round"/>
-            <path d="M3.74957 3.75L6.24957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square"
-                  stroke-linejoin="round"/>
-            <defs>
-                <filter id="filter0_b_277_19327" x="-15" y="-15" width="40" height="40" filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.5"/>
-                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_277_19327"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_277_19327" result="shape"/>
-                </filter>
-            </defs>
-        </svg>
-    </div>
-    <div class="mobile-nav__ul">
-        <a href="./number.html">
-            <div class="mobile-nav__li">Красивые номера</div>
-        </a>
-        <a href="./tarif.html">
-            <div class="mobile-nav__li">Тарифы</div>
-        </a>
-        <a href="./goods.html">
-            <div class="mobile-nav__li">магазин</div>
-        </a>
-        <a href="./uslugi.html">
-            <div class="mobile-nav__li">Услуги</div>
-        </a>
-        <a href="./company.html">
-            <div class="mobile-nav__li">О компании</div>
-        </a>
+    <div class="modal-mobile-nav__window">
+        <div class="mobile-nav__close">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_b_277_19327)">
+                    <rect width="10" height="10" rx="5" fill="#F04E01"/>
+                </g>
+                <path d="M6.24957 3.75L3.74957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square"
+                      stroke-linejoin="round"/>
+                <path d="M3.74957 3.75L6.24957 6.25" stroke="white" stroke-width="0.5" stroke-linecap="square"
+                      stroke-linejoin="round"/>
+                <defs>
+                    <filter id="filter0_b_277_19327" x="-15" y="-15" width="40" height="40" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_277_19327"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_277_19327"
+                                 result="shape"/>
+                    </filter>
+                </defs>
+            </svg>
+
+
+        </div>
+        <div class="mobile-nav__ul">
+            <a href="./number.html">
+                <div class="mobile-nav__li">Красивые номера</div>
+            </a>
+            <a href="./tarif.html">
+                <div class="mobile-nav__li">Тарифы</div>
+            </a>
+            <a href="./goods.html">
+                <div class="mobile-nav__li">магазин</div>
+            </a>
+            <a href="./uslugi.html">
+                <div class="mobile-nav__li">Услуги</div>
+            </a>
+            <a href="./company.html">
+                <div class="mobile-nav__li">О компании</div>
+            </a>
+        </div>
     </div>
 </section>
 <div class="modal-basket">
@@ -121,64 +126,71 @@
         </div>
     </div>
 </div>
-<div class="container container_zero-padding">
-    <header class="header header-number__margin">
-        <a class="header__logo" href="../index.html">
-            <img src="../assets/logo.svg">
-        </a>
-        <nav class="header__nav">
-            <div class="pointer">
-                <a href="./number.html">
+<div class="header-outline header-number__margin">
+    <div class="container container_zero-padding">
+        <header class="header ">
+            <a class="header__logo" href="../index.html">
+                <img src="../assets/logo.svg">
+            </a>
+            <nav class="header__nav">
+                <div class="pointer">
                     Красивые номера
-                </a>
+                </div>
+                <div class="pointer">
+                    <a  href="./tarif.html">
+                        Тарифы
+                    </a>
+                </div>
+                <div class="pointer">
+                    <a  class="link_orange" href="./goods.html">
+                        Магазин
+                    </a>
+                </div>
+                <div class="pointer">
+                    <a href="./uslugi.html">
+                        Услуги
+                    </a>
+                </div>
+                <div class="pointer">
+                    <a href="./company.html">
+                        О компании
+                    </a>
+                </div>
+            </nav>
+            <div class="header__contacts">
+                <img src="../assets/telega.svg">
+                <img src="../assets/whats.svg">
             </div>
-            <div class="pointer">
-                <a href="./tarif.html">
-                    Тарифы
-                </a>
+            <div class="header__buttons">
+                <button class="recall">
+                    Обратный звонок
+                </button>
+                <button class="basket bs">
+                    <span>Корзина</span>
+                    <img src="../assets/Cart.svg">
+                </button>
+                <button class="bs basket-mobile">
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.09583 4.021H3.56481C4.35237 4.021 5.04784 4.53465 5.27945 5.28738L8.08806 14.4154C8.31967 15.1681 9.01513 15.6818 9.80269 15.6818H16.1855C16.9426 15.6818 17.6181 15.2065 17.8739 14.4939L19.7431 9.28694C20.3725 7.53376 19.0731 5.68682 17.2104 5.68682H10.2717"
+                              stroke="#4262FF" stroke-width="1.55833" stroke-linecap="round"/>
+                        <circle cx="9.82313" cy="18.8211" r="1.34547" fill="#4262FF"/>
+                        <circle cx="16.102" cy="18.8211" r="1.34547" fill="#4262FF"/>
+                    </svg>
+                </button>
             </div>
-            <div class="pointer">
-                <a class="link_orange" href="./goods.html">
-                    Магазин
-                </a>
+            <div class="mobile-nav">
+                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.900146" width="17" height="17" rx="8.5" fill="#4262FF"/>
+                    <path d="M12.3746 9.7751H9.39956H6.42456M12.3746 7.2251H9.39956H6.42456" stroke="white"
+                          stroke-width="0.6375" stroke-linecap="round"/>
+                </svg>
             </div>
-            <div class="pointer">
-                <a href="./uslugi.html">
-                    Услуги
-                </a>
-            </div>
-            <div class="pointer">
-                <a href="./company.html">
-                    О компании
-                </a>
-            </div>
-        </nav>
-        <div class="header__contacts">
-            <img src="../assets/telega.svg">
-            <img src="../assets/whats.svg">
-        </div>
-        <div class="header__buttons">
-            <button class="recall">
-                Обратный звонок
-            </button>
-            <button class="basket">
-                <span>Корзина</span>
-                <img src="../assets/Cart.svg">
-
-            </button>
-        </div>
-        <div class="mobile-nav">
-            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="0.900146" width="17" height="17" rx="8.5" fill="#4262FF"/>
-                <path d="M12.3746 9.7751H9.39956H6.42456M12.3746 7.2251H9.39956H6.42456" stroke="white"
-                      stroke-width="0.6375" stroke-linecap="round"/>
-            </svg>
-        </div>
-    </header>
+        </header>
+    </div>
 </div>
 
 <div class="container">
-    <h1 class="beatiful-number__heading">Товары</h1>
+    <h1 class="beatiful-number__heading beatiful-number__heading_goods-margin">Товары</h1>
     <h3 class="name-goods name-goods_margin">Смартфон Apple iPhone 15 128GB MTP03ZD/A Black</h3>
     <div class="tag-list tag-list_margin">
         <div class="tag-new"> Новинка</div>
