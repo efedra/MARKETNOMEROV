@@ -43,6 +43,24 @@
   .statistics-reviews__scale, .statistics-reviews__active-scale {
     height: 1.5vw;
   }
+  .statistics-reviews__range {
+    gap: 1.5vw;
+  }
+  .averrage-reviews__up div {
+    font-size: min(18px + 2 * ((100vw - 320px) / 960), 20px);
+    line-height: unset;
+  }
+  .statistics-reviews__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .averrage-reviews__bottom {
+    font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
+  }
+  .averrage-reviews__up svg {
+    width: 3vw;
+  }
 }
 
 /*# sourceMappingURL=card-services.css.map */

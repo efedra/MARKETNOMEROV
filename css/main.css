@@ -19,6 +19,10 @@ a {
   border: 1px solid rgb(66, 98, 255);
 }
 
+.header-outline {
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
 .header {
   padding: 0 min(2.8vw, 36px);
   display: flex;
@@ -26,7 +30,6 @@ a {
   align-items: center;
   gap: min(1vw, 27px);
   justify-content: space-between;
-  border-bottom: 1px solid rgb(240, 240, 240);
 }
 
 .header__logo {
@@ -75,6 +78,15 @@ a {
   gap: 0.5vw;
   cursor: pointer;
   height: min(4vw, 50px);
+}
+
+.basket:hover, .recall:hover, .header__nav div:hover, .buy-number:hover, .sale-number:hover, .link-underline:hover,
+.clear:hover, .operator__card:hover, .select-options__elem:hover, .search:hover, .hide-filter:hover, .select-buttons:hover,
+.more-numbers:hover, .arrows__left:hover, .arrows__right:hover, .goods_nav div:hover, .goods__price a:hover,
+.basket-mini:hover, .more-goods:hover, .connect:hover, .read-more:hover, .add-review:hover, .often-questions__elem img:hover,
+.send-button:hover, .footer__nav li:hover, .footer__add div:hover, .footer__text:hover, .header__contacts img:hover, .goods__name svg:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .banner {
@@ -127,7 +139,7 @@ a {
   border-radius: 34px;
   color: white;
   font-family: Inter;
-  padding: min(2vh, 16px) min(2vw, 130px);
+  padding: min(1.2vw, 16px) min(2vw, 130px);
   font-size: min(6px + 13 * ((100vw - 320px) / 960), 19px);
   font-weight: 300;
   cursor: pointer;
@@ -139,7 +151,7 @@ a {
   cursor: pointer;
   background: none;
   border: 1px solid rgb(155, 153, 175);
-  padding: min(2vh, 16px) min(2vw, 130px);
+  padding: min(1.2vw, 16px) min(2vw, 130px);
   font-size: min(6px + 13 * ((100vw - 320px) / 960), 19px);
   max-height: 63px;
 }

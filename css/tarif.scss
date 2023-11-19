@@ -209,3 +209,7 @@ $blue: rgba(66, 98, 255, 1);
 .tarif_subtext_flex {
   display: flex;
 }
+.tarif-filter__elem:hover,.t02-main__elem:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}

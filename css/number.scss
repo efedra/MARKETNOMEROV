@@ -10,7 +10,7 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .banner-number {
-  padding: 0 min(2.8vw,36px);
+  padding: 0 min(2.8vw, 36px);
 }
 
 .beatiful-number__body {
@@ -18,7 +18,7 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .header-number__margin {
-  margin-bottom: min(6vh,43px);
+  margin-bottom: min(6vh, 43px);
 }
 
 .container {
@@ -51,12 +51,12 @@ $blue: rgba(66, 98, 255, 1);
   display: flex;
   gap: 10px;
   @include adaptiv-font-min(12, 3);
-  padding: min(1%,12px) min(2%,23px);
+  padding: min(1%, 12px) min(2%, 23px);
   width: fit-content;
 }
 
 .margin__head {
-  margin-bottom: min(2%,23px);
+  margin-bottom: min(2%, 23px);
 }
 
 .beatiful-number__range {
@@ -142,15 +142,15 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .beatiful-number__filter_mini {
-  margin: 0 min(2.8vw,88px) min(10vh,25px);
+  margin: 0 min(2.8vw, 88px) min(10vh, 25px);
 }
 
 .banner-number__margin {
-  margin-bottom: min(15vh,108px);
+  margin-bottom: min(15vh, 108px);
 }
 
 .main-padding {
-  padding: 0 min(2.8vw,36px);
+  padding: 0 min(2.8vw, 36px);
 }
 
 
@@ -160,11 +160,11 @@ $blue: rgba(66, 98, 255, 1);
   @include adaptiv-font-min(18, 6);
   display: flex;
   justify-content: end;
-  margin-bottom: min(3.5vh,26px);
+  margin-bottom: min(3.5vh, 26px);
 }
 
 .table_beatiful-number {
-  margin-bottom: min(5vh,36px);
+  margin-bottom: min(5vh, 36px);
 }
 
 .arrow-beatiful-number-left {
@@ -176,8 +176,8 @@ $blue: rgba(66, 98, 255, 1);
 
   max-width: 41px;
   max-height: 41px;
-  width: min(3.1vw,40px);
-  height: min(3.1vw,40px);
+  width: min(3.1vw, 40px);
+  height: min(3.1vw, 40px);
 
   svg {
     width: 100%;
@@ -194,8 +194,8 @@ $blue: rgba(66, 98, 255, 1);
 
   max-width: 41px;
   max-height: 41px;
-  width: min(3.1vw,40px);
-  height: min(3.1vw,40px);
+  width: min(3.1vw, 40px);
+  height: min(3.1vw, 40px);
 
   svg {
     width: 100%;
@@ -214,6 +214,13 @@ $blue: rgba(66, 98, 255, 1);
 .banner-number-desktop {
   display: block;
 }
-.banner-number-mobile{
+
+.banner-number-mobile {
   display: none;
+}
+
+.header__logo:hover,.arrow-beatiful-number-left:hover,.arrow-beatiful-number-right:hover,.button-catalog:hover ,.beatiful-number__button_sale:hover
+{
+  opacity: 0.7;
+  cursor: pointer;
 }

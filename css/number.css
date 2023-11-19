@@ -206,4 +206,9 @@
   display: none;
 }
 
+.header__logo:hover, .arrow-beatiful-number-left:hover, .arrow-beatiful-number-right:hover, .button-catalog:hover, .beatiful-number__button_sale:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=number.css.map */

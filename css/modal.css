@@ -434,6 +434,12 @@ label {
   max-width: 337px;
 }
 
+.modal-basket__head svg:hover, .modal-basket__button:hover, .modal-basket__count-manage:first-child:hover, .modal-basket__count-manage:last-child:hover, .modal-basket__icons svg:hover, .send:hover,
+.input-modal + label:hover, .close:hover, .privacy-policy input:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
   .input-modal + label:before {
     width: min(3.8vw, 16px);

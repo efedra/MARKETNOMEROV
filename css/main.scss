@@ -21,6 +21,10 @@ a {
   border: 1px solid rgba(66, 98, 255, 1);
 }
 
+.header-outline{
+  border-bottom: 1px solid rgba(240, 240, 240, 1);
+}
+
 .header {
   padding: 0 min(2.8vw, 36px);
   display: flex;
@@ -28,7 +32,6 @@ a {
   align-items: center;
   gap: min(1vw, 27px);
   justify-content: space-between;
-  border-bottom: 1px solid rgba(240, 240, 240, 1);
 }
 
 .header__logo {
@@ -80,9 +83,16 @@ a {
   align-items: center;
   gap: 0.5vw;
   cursor: pointer;
-
   height: min(4vw, 50px);
+}
 
+.basket:hover, .recall:hover, .header__nav div:hover, .buy-number:hover, .sale-number:hover, .link-underline:hover
+,.clear:hover, .operator__card:hover , .select-options__elem:hover, .search:hover, .hide-filter:hover, .select-buttons:hover
+,.more-numbers:hover,.arrows__left:hover, .arrows__right:hover , .goods_nav div:hover,.goods__price a:hover
+,.basket-mini:hover, .more-goods:hover, .connect:hover, .read-more:hover, .add-review:hover, .often-questions__elem img:hover
+,.send-button:hover, .footer__nav li:hover, .footer__add div:hover, .footer__text:hover, .header__contacts img:hover, .goods__name svg:hover{
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .banner {
@@ -137,7 +147,7 @@ a {
   @extend %main-blue-border;
   color: white;
   font-family: Inter;
-  padding: min(2vh, 16px) min(2vw, 130px);
+  padding: min(1.2vw, 16px) min(2vw, 130px);
   @include adaptiv-font-min(19, 6);
   font-weight: 300;
   cursor: pointer;
@@ -149,7 +159,7 @@ a {
   cursor: pointer;
   background: none;
   border: 1px solid rgba(155, 153, 175, 1);
-  padding: min(2vh, 16px) min(2vw, 130px);
+  padding: min(1.2vw, 16px) min(2vw, 130px);
   @include adaptiv-font-min(19, 6);
   max-height: 63px;
 }
@@ -876,55 +886,6 @@ a {
   z-index: 1;
 }
 
-//.range-dot1 {
-//  position: absolute;
-//  height: 11px;
-//  width: 11px;
-//  z-index: 2;
-//  background: white;
-//  left: 19.5vw;
-//  border-radius: 50%;
-//}
-//
-//.range-dot2 {
-//  position: absolute;
-//  height: 11px;
-//  width: 11px;
-//  z-index: 2;
-//  background: white;
-//  left: 32.2vw;
-//  border-radius: 50%;
-//}
-//
-//.range-dot3 {
-//  position: absolute;
-//  height: 11px;
-//  width: 11px;
-//  z-index: 2;
-//  background: white;
-//  left: 45vw;
-//  border-radius: 50%;
-//}
-//
-//.range-dot4 {
-//  position: absolute;
-//  height: 11px;
-//  width: 11px;
-//  z-index: 2;
-//  background: white;
-//  left: 58.5vw;
-//  border-radius: 50%;
-//}
-//
-//.range-dot5 {
-//  position: absolute;
-//  height: 11px;
-//  width: 11px;
-//  z-index: 2;
-//  background: white;
-//  right: 15.7vw;
-//  border-radius: 50%;
-//}
 
 input[type="range"] {
   -webkit-appearance: none;

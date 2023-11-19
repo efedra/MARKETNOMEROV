@@ -303,4 +303,9 @@
   display: none;
 }
 
+.search-input-goods input[type=submit]:hover, .type-goods__elem:hover, .input-goods__label:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=goods.css.map */
