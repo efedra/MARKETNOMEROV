@@ -7,7 +7,7 @@ let closeModal = document.querySelectorAll('.close')
 let allCurrentPhone = document.querySelectorAll('.select-buttons')
 
 let buttonComment = document.querySelector('.add-review')
-let buttonCart = document.querySelector('.basket')
+let buttonCart = document.querySelectorAll('.bs')
 
 //Модалки
 let modalBuy = document.getElementById('modal-buy-number')
@@ -44,8 +44,10 @@ if (buttonComment) {
 }
 
 if (buttonCart) {
-    buttonCart.addEventListener('click', () => {
-        openModal(modalCart);
+    buttonCart.forEach(el=>{
+        el.addEventListener('click', ()=>{
+            openModal(modalCart);
+        })
     })
 }
 

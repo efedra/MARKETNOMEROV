@@ -231,10 +231,16 @@
             <button class="recall">
                 Обратный звонок
             </button>
-            <button class="basket">
+            <button class="basket bs">
                 <span>Корзина</span>
                 <img src="assets/Cart.svg">
-
+            </button>
+            <button class="bs basket-mobile">
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.09583 4.021H3.56481C4.35237 4.021 5.04784 4.53465 5.27945 5.28738L8.08806 14.4154C8.31967 15.1681 9.01513 15.6818 9.80269 15.6818H16.1855C16.9426 15.6818 17.6181 15.2065 17.8739 14.4939L19.7431 9.28694C20.3725 7.53376 19.0731 5.68682 17.2104 5.68682H10.2717" stroke="#4262FF" stroke-width="1.55833" stroke-linecap="round"/>
+                    <circle cx="9.82313" cy="18.8211" r="1.34547" fill="#4262FF"/>
+                    <circle cx="16.102" cy="18.8211" r="1.34547" fill="#4262FF"/>
+                </svg>
             </button>
         </div>
         <div class="mobile-nav">
@@ -329,7 +335,7 @@
                     <div>
                         Очистить
                     </div>
-                    <svg  width="12" height="13" viewBox="0 0 12 13" fill="none"
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.752548 11.7021L5.99411 6.46056M5.99411 6.46056L11.2357 1.21899M5.99411 6.46056L11.2357 11.7021M5.99411 6.46056L0.752548 1.21899"
                               stroke="#9D9D9D" stroke-width="1.48254" stroke-linecap="round" stroke-linejoin="round"/>
@@ -625,155 +631,466 @@
         </h2>
         <hr class="goods__underline hr_blue">
         <nav class="goods_nav">
-            <div>ЛИДЕРЫ ПРОДАЖ</div>
-            <div>ТОВАР ДНЯ</div>
-            <div>СКИДКИ</div>
+            <div data-goods="1">ЛИДЕРЫ ПРОДАЖ</div>
+            <div data-goods="2">ТОВАР ДНЯ</div>
+            <div data-goods="3">СКИДКИ</div>
         </nav>
-        <div class="goods__slider">
-            <div class="slide">
-                <img class="img-adaptive" src="./assets/iphonegoods.png">
-                <div class="goods__name">
-                    <div><b>Заголовок</b></div>
-                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
-                              stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-                <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
-                    когда
-                    нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
-                    нести
-                    никакого.</p>
-                <div class="goods__price">
-                    <div class="price">1500 Р</div>
-                    <a href="./html/card-goods.html">
-                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
-                                  stroke-width="1.00391"
-                                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
-                                  stroke-miterlimit="10"
-                                  stroke-linecap="round" stroke-linejoin="round"/>
+        <div class="sliderContainer">
+            <div data-goods="1" class="goods__slider">
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </a>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
                 </div>
-                <button class="basket-mini"> В корзину</button>
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
+                </div>
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
+                </div>
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
+                </div>
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
+                </div>
             </div>
-            <div class="slide">
-                <img class="img-adaptive" src="./assets/iphonegoods.png">
-                <div class="goods__name">
-                    <div><b>Заголовок</b></div>
-                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
-                              stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-                <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
-                    когда
-                    нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
-                    нести
-                    никакого.</p>
-                <div class="goods__price">
-                    <div class="price">1500 Р</div>
-                    <a href="./html/card-goods.html">
-                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
-                                  stroke-width="1.00391"
-                                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
-                                  stroke-miterlimit="10"
-                                  stroke-linecap="round" stroke-linejoin="round"/>
+            <div data-goods="2" class="goods__slider">
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </a>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
                 </div>
-                <button class="basket-mini"> В корзину</button>
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
+                </div>
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
+                </div>
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
+                </div>
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
+                </div>
             </div>
-            <div class="slide">
-                <img class="img-adaptive" src="./assets/iphonegoods.png">
-                <div class="goods__name">
-                    <div><b>Заголовок</b></div>
-                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
-                              stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-                <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
-                    когда
-                    нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
-                    нести
-                    никакого.</p>
-                <div class="goods__price">
-                    <div class="price">1500 Р</div>
-                    <a href="./html/card-goods.html">
-                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
-                                  stroke-width="1.00391"
-                                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
-                                  stroke-miterlimit="10"
-                                  stroke-linecap="round" stroke-linejoin="round"/>
+            <div data-goods="3" class="goods__slider">
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </a>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
                 </div>
-                <button class="basket-mini"> В корзину</button>
-            </div>
-            <div class="slide">
-                <img class="img-adaptive" src="./assets/iphonegoods.png">
-                <div class="goods__name">
-                    <div><b>Заголовок</b></div>
-                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
-                              stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-                <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
-                    когда
-                    нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
-                    нести
-                    никакого.</p>
-                <div class="goods__price">
-                    <div class="price">1500 Р</div>
-                    <a href="./html/card-goods.html">
-                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
-                                  stroke-width="1.00391"
-                                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
-                                  stroke-miterlimit="10"
-                                  stroke-linecap="round" stroke-linejoin="round"/>
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </a>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
                 </div>
-                <button class="basket-mini"> В корзину</button>
-            </div>
-            <div class="slide">
-                <img class="img-adaptive" src="./assets/iphonegoods.png">
-                <div class="goods__name">
-                    <div><b>Заголовок</b></div>
-                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
-                              stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-                <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
-                    когда
-                    нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
-                    нести
-                    никакого.</p>
-                <div class="goods__price">
-                    <div class="price">1500 Р</div>
-                    <a href="./html/card-goods.html">
-                        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
-                                  stroke-width="1.00391"
-                                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
-                                  stroke-miterlimit="10"
-                                  stroke-linecap="round" stroke-linejoin="round"/>
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </a>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
                 </div>
-                <button class="basket-mini"> В корзину</button>
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
+                </div>
+                <div class="slide">
+                    <img class="img-adaptive" src="./assets/iphonegoods.png">
+                    <div class="goods__name">
+                        <div><b>Заголовок</b></div>
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9315 1.8068C12.6175 1.47066 12.2447 1.20402 11.8344 1.0221C11.4241 0.840172 10.9843 0.746536 10.5402 0.746536C10.0961 0.746536 9.65632 0.840172 9.24602 1.0221C8.83572 1.20402 8.46294 1.47066 8.14896 1.8068L7.49736 2.50407L6.84576 1.8068C6.21156 1.12815 5.3514 0.746888 4.4545 0.746888C3.55761 0.746888 2.69745 1.12815 2.06325 1.8068C1.42904 2.48544 1.07275 3.40589 1.07275 4.36564C1.07275 5.32539 1.42904 6.24584 2.06325 6.92449L2.71485 7.62176L7.49736 12.7394L12.2799 7.62176L12.9315 6.92449C13.2456 6.58851 13.4948 6.1896 13.6648 5.75055C13.8348 5.31149 13.9223 4.84089 13.9223 4.36564C13.9223 3.89039 13.8348 3.41979 13.6648 2.98074C13.4948 2.54168 13.2456 2.14277 12.9315 1.8068Z"
+                                  stroke="black" stroke-width="1.3156" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="good-description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                        когда
+                        нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен
+                        нести
+                        никакого.</p>
+                    <div class="goods__price">
+                        <div class="price">1500 Р</div>
+                        <a href="./html/card-goods.html">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5838 0.953995L17.7011 7.37875L11.5838 13.8035" stroke="black"
+                                      stroke-width="1.00391"
+                                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.568295 7.37877H17.5296" stroke="black" stroke-width="1.00391"
+                                      stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="basket-mini"> В корзину</button>
+                </div>
             </div>
         </div>
         <a href="./html/goods.html">
@@ -801,132 +1118,379 @@
         </h2>
         <hr class="goods__underline hr_blue">
         <nav class="goods_nav">
-            <div>БАЗОВЫЙ</div>
-            <div>НА МАКСИМУМ</div>
-            <div>БЕЗЛИМИТ</div>
+            <div data-tarif="1">БАЗОВЫЙ</div>
+            <div data-tarif="2">НА МАКСИМУМ</div>
+            <div data-tarif="3">БЕЗЛИМИТ</div>
         </nav>
-        <div class="slider-tarif">
-            <div class="slider-tarif__slide slide-tarif">
-                <div class="slide-tarif__up">
-                    <div class="slide-tarif__img">
-                        <img src="assets/Frame%20224219.svg">
-                        <img src="assets/Frame%20224220.svg">
+        <div class="slider-tarif-container">
+            <div data-tarif="1" class="slider-tarif">
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
+                    </div>
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
                     </div>
                 </div>
-                <div class="slide-tarif__down">
-                    <div class="slide-tarif__price">
-                        <div class="tarif-ruble">Р</div>
-                        <div class="tarif-price">290</div>
-                        <div class="tarif-month">/мес</div>
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
                     </div>
-                    <ul class="tarif__list">
-                        <li>Безлимит Билайн;</li>
-                        <li>500 минут на все сети России;</li>
-                        <li> 10 гб интернет;</li>
-                        <li> 100 SMS по России;</li>
-                    </ul>
-                    <button class="connect">
-                        Подключить
-                    </button>
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
+                    </div>
+                </div>
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
+                    </div>
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
+                    </div>
+                </div>
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
+                    </div>
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
+                    </div>
+                </div>
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
+                    </div>
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="slider-tarif__slide slide-tarif">
-                <div class="slide-tarif__up">
-                    <div class="slide-tarif__img">
-                        <img src="assets/Frame%20224219.svg">
-                        <img src="assets/Frame%20224220.svg">
+            <div data-tarif="2" class="slider-tarif">
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
+                    </div>
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
                     </div>
                 </div>
-                <div class="slide-tarif__down">
-                    <div class="slide-tarif__price">
-                        <div class="tarif-ruble">Р</div>
-                        <div class="tarif-price">290</div>
-                        <div class="tarif-month">/мес</div>
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
                     </div>
-                    <ul class="tarif__list">
-                        <li>Безлимит Билайн;</li>
-                        <li>500 минут на все сети России;</li>
-                        <li> 10 гб интернет;</li>
-                        <li> 100 SMS по России;</li>
-                    </ul>
-                    <button class="connect">
-                        Подключить
-                    </button>
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
+                    </div>
+                </div>
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
+                    </div>
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
+                    </div>
+                </div>
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
+                    </div>
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
+                    </div>
+                </div>
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
+                    </div>
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="slider-tarif__slide slide-tarif">
-                <div class="slide-tarif__up">
-                    <div class="slide-tarif__img">
-                        <img src="assets/Frame%20224219.svg">
-                        <img src="assets/Frame%20224220.svg">
+            <div data-tarif="3" class="slider-tarif">
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
+                    </div>
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
                     </div>
                 </div>
-                <div class="slide-tarif__down">
-                    <div class="slide-tarif__price">
-                        <div class="tarif-ruble">Р</div>
-                        <div class="tarif-price">290</div>
-                        <div class="tarif-month">/мес</div>
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
                     </div>
-                    <ul class="tarif__list">
-                        <li>Безлимит Билайн;</li>
-                        <li>500 минут на все сети России;</li>
-                        <li> 10 гб интернет;</li>
-                        <li> 100 SMS по России;</li>
-                    </ul>
-                    <button class="connect">
-                        Подключить
-                    </button>
-                </div>
-            </div>
-            <div class="slider-tarif__slide slide-tarif">
-                <div class="slide-tarif__up">
-                    <div class="slide-tarif__img">
-                        <img src="assets/Frame%20224219.svg">
-                        <img src="assets/Frame%20224220.svg">
-                    </div>
-                </div>
-                <div class="slide-tarif__down">
-                    <div class="slide-tarif__price">
-                        <div class="tarif-ruble">Р</div>
-                        <div class="tarif-price">290</div>
-                        <div class="tarif-month">/мес</div>
-                    </div>
-                    <ul class="tarif__list">
-                        <li>Безлимит Билайн;</li>
-                        <li>500 минут на все сети России;</li>
-                        <li> 10 гб интернет;</li>
-                        <li> 100 SMS по России;</li>
-                    </ul>
-                    <button class="connect">
-                        Подключить
-                    </button>
-                </div>
-            </div>
-            <div class="slider-tarif__slide slide-tarif">
-                <div class="slide-tarif__up">
-                    <div class="slide-tarif__img">
-                        <img src="assets/Frame%20224219.svg">
-                        <img src="assets/Frame%20224220.svg">
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
                     </div>
                 </div>
-                <div class="slide-tarif__down">
-                    <div class="slide-tarif__price">
-                        <div class="tarif-ruble">Р</div>
-                        <div class="tarif-price">290</div>
-                        <div class="tarif-month">/мес</div>
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
                     </div>
-                    <ul class="tarif__list">
-                        <li>Безлимит Билайн;</li>
-                        <li>500 минут на все сети России;</li>
-                        <li> 10 гб интернет;</li>
-                        <li> 100 SMS по России;</li>
-                    </ul>
-                    <button class="connect">
-                        Подключить
-                    </button>
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
+                    </div>
+                </div>
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
+                    </div>
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
+                    </div>
+                </div>
+                <div class="slider-tarif__slide slide-tarif">
+                    <div class="slide-tarif__up">
+                        <div class="slide-tarif__img">
+                            <img src="assets/Frame%20224219.svg">
+                            <img src="assets/Frame%20224220.svg">
+                        </div>
+                    </div>
+                    <div class="slide-tarif__down">
+                        <div class="slide-tarif__price">
+                            <div class="tarif-ruble">Р</div>
+                            <div class="tarif-price">290</div>
+                            <div class="tarif-month">/мес</div>
+                        </div>
+                        <ul class="tarif__list">
+                            <li>Безлимит Билайн;</li>
+                            <li>500 минут на все сети России;</li>
+                            <li> 10 гб интернет;</li>
+                            <li> 100 SMS по России;</li>
+                        </ul>
+                        <button class="connect">
+                            Подключить
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+
         <a href="./html/tarif.html">
             <button class="more-goods more-goods__margin">
                 Еще тарифы →
@@ -956,9 +1520,9 @@
                 </h2>
                 <hr class="goods__underline hr_blue hr_uslugi">
                 <nav class="goods_nav">
-                    <div>РЕМОНТ</div>
-                    <div>УСТАНОВКА И НАСТРОЙКИ</div>
-                    <div>ДРУГОЕ</div>
+                    <div data-uslugi="1">РЕМОНТ</div>
+                    <div data-uslugi="2">УСТАНОВКА И НАСТРОЙКИ</div>
+                    <div data-uslugi="3">ДРУГОЕ</div>
                 </nav>
             </figcaption>
         </div>
@@ -1208,7 +1772,8 @@
         <div class="footer__text">Договор оферты</div>
     </div>
 </div>
-<!--ФУТЕР-->
+
+<script src="./js/tabs.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/tips.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="

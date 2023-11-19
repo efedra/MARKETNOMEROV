@@ -1,4 +1,4 @@
-$('.goods__slider').slick({
+$('.goods__slider[data-goods="1"]').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
@@ -11,6 +11,33 @@ $('.goods__slider').slick({
         }
     ]
 });
+$('.goods__slider[data-goods="2"]').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
+});
+$('.goods__slider[data-goods="3"]').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
+});
+
 $('.arrows__left_goods-main-left').click(function () {
     $('.goods__slider').slick('slickPrev');
 });
@@ -19,7 +46,33 @@ $('.arrows__right_goods-main-right').click(function () {
 });
 
 
-$('.slider-tarif').slick({
+$('.slider-tarif[data-tarif="1"]').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
+});
+$('.slider-tarif[data-tarif="2"]').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
+});
+$('.slider-tarif[data-tarif="3"]').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,

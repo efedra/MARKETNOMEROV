@@ -29,16 +29,19 @@
   }
   .recall {
     font-size: min(7px + 5 * ((100vw - 320px) / 960), 12px);
-    height: fit-content;
-    padding: min(1vw, 9px) min(1.4vw, 11px);
     display: flex;
     align-self: center;
+    width: 105px;
+    height: 24px;
+    justify-content: center;
+    padding: unset;
+    font-size: 10px;
   }
   .basket {
+    display: none;
     font-size: min(7px + 5 * ((100vw - 320px) / 960), 12px);
     height: fit-content;
     padding: min(1vw, 9px) min(3.6vw, 16px);
-    display: flex;
     align-self: center;
     height: min(4.85vw, 29px);
   }
@@ -135,22 +138,23 @@
     margin-bottom: 4vw;
   }
   .beatiful-number__subheading {
-    font-size: min(10px + 30 * ((100vw - 320px) / 960), 40px);
+    font-size: 14px;
   }
   .beatiful-number__filter {
     padding: 6vw 4vw 0;
   }
   .clear {
-    gap: min(0.5vw, 3px);
-    border-radius: 15px;
-    height: 3.6vw;
-    padding: 0 min(1.4vw, 11px);
+    gap: 4px;
+    border-radius: 7px;
+    height: 18.5px;
+    width: 60px;
   }
   .clear div {
-    font-size: min(6px + 9 * ((100vw - 320px) / 960), 15px);
+    font-size: 8px;
   }
   .clear svg {
-    width: min(10px, 1.5vw);
+    width: 4px;
+    height: 4px;
   }
   .input-code {
     height: 4.7vw;
@@ -573,8 +577,9 @@
     height: 13.5vw;
   }
   .header__buttons {
-    gap: 0.7vw;
+    gap: 2.7vw;
     margin-left: auto;
+    align-items: center;
   }
   .goods-input__search svg {
     width: auto;
@@ -588,6 +593,18 @@
   }
   .uslugi__heading-width {
     padding: 0 10px;
+  }
+  .sliderContainer {
+    height: 84vw;
+  }
+  .slider-tarif-container {
+    height: 78vw;
+  }
+  .basket-mobile {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 }
 
