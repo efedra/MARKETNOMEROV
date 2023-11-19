@@ -522,9 +522,14 @@
   .footer__text {
     font-size: min(7px + 10 * ((100vw - 320px) / 960), 17px);
     width: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer__bottom {
     align-items: center;
+    height: min(11.5vw, 42px);
+    padding: 0 10px;
   }
   .modal-mobile-nav {
     display: none;
@@ -580,6 +585,9 @@
   }
   .goods-input__search input {
     font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
+  }
+  .uslugi__heading-width {
+    padding: 0 10px;
   }
 }
 

@@ -581,10 +581,14 @@
   .footer__text {
     @include adaptiv-font-min(17, 7);
     width: 27%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer__bottom {
     align-items: center;
+    height: min(11.5vw,42px);
+    padding: 0 10px;
   }
 
   .modal-mobile-nav {
@@ -645,5 +649,8 @@
   }
   .goods-input__search input {
     @include adaptiv-font-min(16, 6);
+  }
+  .uslugi__heading-width{
+    padding: 0 10px;
   }
 }

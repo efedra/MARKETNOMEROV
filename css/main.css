@@ -187,7 +187,7 @@ a {
   background-size: contain;
   font-size: min(17px + 13 * ((100vw - 320px) / 960), 30px);
   font-weight: bold;
-  height: min(12.45vw, 162px);
+  height: min(19.45vw, 162px);
 }
 .steps__heading img {
   width: 100%;
@@ -313,7 +313,7 @@ a {
 }
 
 .goods__heading {
-  margin-bottom: min(2.5vh, 34px);
+  margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
   font-size: min(12px + 23 * ((100vw - 320px) / 960), 35px);
@@ -325,7 +325,6 @@ a {
   gap: min(2vw, 26px);
   font-size: min(10px + 5 * ((100vw - 320px) / 960), 15px);
   font-weight: 600;
-  margin-bottom: min(10vh, 138px);
 }
 
 .goods__slider {
@@ -501,7 +500,7 @@ a {
 }
 
 .uslugi__heading-width {
-  width: 90%;
+  padding-top: 8px;
 }
 
 .uslugi-top {
@@ -740,10 +739,13 @@ a {
 }
 
 .footer__bottom {
-  background: rgb(5, 0, 57);
   justify-content: space-around;
   display: flex;
   padding: min(3vh, 22px) min(4vw, 51px);
+}
+
+.footer-outline {
+  background: rgb(5, 0, 57);
 }
 
 .footer__text {
