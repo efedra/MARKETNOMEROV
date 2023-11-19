@@ -34,7 +34,7 @@ a {
   display: flex;
   height: min(7vw, 91px);
   align-items: center;
-  gap: min(1vw, 27px);
+  gap: min(1vw, 13px);
   justify-content: space-between;
 }
 
