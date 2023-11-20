@@ -31,7 +31,7 @@
     font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
   }
   .banner-number {
-    padding: 0;
+    padding: 0 10px;
   }
   .goods-banner-flex {
     display: flex;

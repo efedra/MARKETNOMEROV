@@ -1,4 +1,11 @@
 @media (max-width: 800px) {
+  .banner-number {
+    padding: 0 10px;
+  }
+  .t02 {
+    background: white;
+    padding: 0 10px;
+  }
   .header__logo img {
     width: 20vw;
     height: auto;
@@ -82,6 +89,13 @@
   }
   .range-slider .noUi-horizontal, .range-slider .noUi-connects {
     height: 3px;
+  }
+  .beatiful-number__filter_mini {
+    margin: 0 10px;
+    margin-bottom: 17px;
+  }
+  .main-padding {
+    padding: 0 10px;
   }
 }
 

@@ -10,6 +10,9 @@
     font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
     padding: 1% 1.5%;
   }
+  .padding-tabs-card-goods {
+    padding: unset;
+  }
   .tag-new {
     font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
     padding: 1% 1.5%;
@@ -19,6 +22,7 @@
   }
   .goods-main {
     flex-direction: column;
+    max-height: unset;
   }
   .goods-main__slider {
     flex-direction: unset;

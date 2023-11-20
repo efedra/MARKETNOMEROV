@@ -7,6 +7,7 @@
     background-size: cover;
     height: 92vw;
     justify-content: unset;
+    margin: 0 10px;
   }
   .img-join {
     width: 75%;
@@ -19,6 +20,14 @@
   }
   .services-gallery__elem {
     padding: 0 min(32vw, 435px);
+  }
+  .services-tabs {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .mobile-container-services-tabs {
+    max-width: unset;
+    padding-right: 0;
   }
 }
 

@@ -283,6 +283,10 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.padding-tabs-card-goods {
+  padding: 0 min(2.8vw, 36px);
+}
+
 .goods-main__input_company {
   max-width: 293px;
 }

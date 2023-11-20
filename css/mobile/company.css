@@ -6,6 +6,10 @@
     height: 92vw;
     background: url("../../assets/banner-company-mobile.png");
     background-size: cover;
+    aspect-ratio: unset;
+  }
+  .banner-company-link {
+    padding: 0 10px;
   }
   .banner-company__text {
     width: 97%;
