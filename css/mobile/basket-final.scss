@@ -6,6 +6,7 @@
   }
   .first-step {
     grid-template-columns: 1fr;
+    gap: 23px;
   }
   .header-step {
     @include adaptiv-font-min(25, 15);
@@ -57,31 +58,62 @@
   .card {
     width: 100%;
     max-width: unset;
+    padding: 51px 17px 38px;
+    gap: 29px;
   }
-  .radio-delivery__label_card{
+  .radio-delivery__label_card {
     padding-left: 16vw;
     padding-right: 16vw;
   }
-  .card__tips{
-    @include adaptiv-font-min(23,13);
+  .card__tips {
+    @include adaptiv-font-min(23, 13);
   }
-  .grid-input__elem_card::placeholder{
-    @include adaptiv-font-min(23,13);
+  .grid-input__elem_card::placeholder {
+    @include adaptiv-font-min(23, 13);
   }
-  .private_card{
-    @include adaptiv-font-min(23,13);
+  .private_card {
+    @include adaptiv-font-min(23, 13);
   }
-  .input-modal +label:before{
+  .input-modal + label:before {
     width: min(5vw, 17px);
     height: min(5vw, 17px);
-    top: min(2vw,8px);
+    top: min(2vw, 8px);
   }
-  .card-help{
-    @include adaptiv-font-min(20,10);
+  .card-help {
+    @include adaptiv-font-min(20, 10);
   }
   .steps-basket {
     width: 185vw;
     padding: 3vw 25px;
     height: unset;
+  }
+  .margin-final-basket-correct {
+    margin-bottom: 15px;
+  }
+  .oform-order {
+    .goods-main__input_oform {
+      max-height: 60px;
+      margin-bottom: 18px;
+
+      input {
+        max-height: 60px;
+      }
+    }
+  }
+  .card  .card-full-width.privacy-policy .private_card{
+    padding-left: 29px;
+  }
+  .private__text{
+    padding-left: 27px;
+    font-size: 11px;
+    height: unset;
+  }
+  .private__content .private__text::before {
+    width: 14px;
+    height: 14px;
+    top: -7%;
+  }
+  .margin-oform{
+    margin-bottom: 23px;
   }
 }

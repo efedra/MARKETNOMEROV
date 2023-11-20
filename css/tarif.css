@@ -102,6 +102,7 @@
 }
 
 .tarif-filter__elem {
+  cursor: pointer;
   position: relative;
   border: 1px solid rgb(232, 89, 10);
   padding: 1.5% 4%;
@@ -111,6 +112,7 @@
   flex-direction: column;
   gap: 1%;
   line-height: 20px;
+  box-shadow: 0px 3.6553399563px 3.6553399563px 0px rgba(139, 139, 139, 0.25);
 }
 
 .tarif-filter__check {
@@ -127,10 +129,6 @@
 .tarif-filter__body {
   font-size: min(5px + 7 * ((100vw - 320px) / 960), 12px);
   color: rgb(75, 71, 111);
-}
-
-.shadow {
-  box-shadow: 0px 3.6553399563px 3.6553399563px 0px rgba(139, 139, 139, 0.25);
 }
 
 .tarif-filter_margin {
@@ -201,6 +199,17 @@
 .tarif-filter__elem:hover, .t02-main__elem:hover {
   opacity: 0.7;
   cursor: pointer;
+}
+
+.tarif-filter__elem input, .tarif-filter__elem .tarif-filter__check {
+  display: none;
+}
+.tarif-filter__elem input[type=radio]:checked + label .tarif-filter__check {
+  display: block;
+}
+
+.tarif-filter__elem input:checked {
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=tarif.css.map */

@@ -6,7 +6,8 @@
   }
   .modal-basket__window {
     width: 100vw;
-    top: min(11vw, 49px);
+    //top: min(11vw, 49px);
+    top: min(12.9vw, 49px);
     max-width: unset;
     border-radius: 16px;
     padding: 7.2vw 3.8vw;
@@ -15,8 +16,10 @@
   .triangle {
     width: 5.3vw;
     height: auto;
-    right: 16.3vw;
-    top: min(8vw, 34px);
+    //right: 16.3vw;
+    //top: min(8vw, 34px);
+    right: 14.3vw;
+    top: min(10vw, 36px);
   }
   .modal-basket__head-text {
     @include adaptiv-font-min(30, 20);
@@ -61,10 +64,26 @@
   }
   .modal-basket__button {
     @include adaptiv-font-min(20, 10);
-    height: 6.5vh;
+    height: 11vw;
   }
   .modal-basket__elem {
     max-width: max(66.5vw, 340px);
     gap: 2vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .triangle{
+    right: 11.5vw;
+  }
+}
+@media (max-width: 700px) {
+  .triangle{
+    right: 12.5%;
+  }
+}
+@media (max-width: 400px) {
+  .triangle{
+    right: 13.5%;
   }
 }

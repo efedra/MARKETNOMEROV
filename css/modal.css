@@ -328,18 +328,41 @@ label {
 .modal-delivery__window {
   display: flex;
   flex-direction: column;
-  gap: 2.2vw;
+  gap: 29px;
   background: white;
   border-radius: 25px;
   width: min(1081px, 84.5vw);
-  height: min(980px, 76.5vw);
+  height: min(980px, 82.8vh);
   padding: min(68px, 5.3vw) min(72px, 5.6vw);
+}
+
+.modal-delivery__scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  gap: 27px;
+  overflow-x: hidden;
 }
 
 .modal-delivery__head {
   font-size: min(23px + 10 * ((100vw - 320px) / 960), 33px);
   font-weight: 600;
   font-family: Roboto;
+}
+
+.modal-delivery__scroll::-webkit-scrollbar {
+  width: 2px;
+  background: transparent;
+}
+
+.modal-delivery__scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-delivery__scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(241, 79, 2);
+  border-radius: 6px;
 }
 
 .delivery-input-grid {
@@ -412,8 +435,10 @@ label {
   color: white;
 }
 
-.select-time {
-  height: 8.4vw;
+.select-date-grid__elem .select-time {
+  height: min(5.8vw, 75px);
+  display: flex;
+  align-items: center;
 }
 
 .select-date-grid {
@@ -434,8 +459,7 @@ label {
   max-width: 337px;
 }
 
-.modal-basket__head svg:hover, .modal-basket__button:hover, .modal-basket__count-manage:first-child:hover, .modal-basket__count-manage:last-child:hover, .modal-basket__icons svg:hover, .send:hover,
-.input-modal + label:hover, .close:hover, .privacy-policy input:hover {
+.modal-basket__head svg:hover, .modal-basket__button:hover, .modal-basket__count-manage:first-child:hover, .modal-basket__count-manage:last-child:hover, .modal-basket__icons svg:hover, .send:hover, .close:hover {
   opacity: 0.7;
   cursor: pointer;
 }

@@ -4,7 +4,7 @@
   .container {
     padding: 0 10px;
   }
-  .header{
+  .header {
     padding: 0;
   }
   .goods-main {
@@ -38,33 +38,94 @@
     line-height: 3.5vw;
   }
   .statistics-reviews {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 5fr 1fr;
+    margin-bottom: 30px;
   }
-  .statistics-reviews__number{
-    @include adaptiv-font-min(20,10);
+  .statistics-reviews__number {
+    @include adaptiv-font-min(20, 10);
   }
-  .statistics-reviews__scale, .statistics-reviews__active-scale{
+  .statistics-reviews__scale, .statistics-reviews__active-scale {
     height: 1.5vw;
   }
-  .statistics-reviews__range{
+  .statistics-reviews__range {
     gap: 1.5vw;
   }
-  .averrage-reviews__up div{
-    @include adaptiv-font-min(20,18);
+  .averrage-reviews__up div {
+    @include adaptiv-font-min(20, 18);
     line-height: unset;
   }
-  .statistics-reviews__right{
+  .statistics-reviews__right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .averrage-reviews__bottom{
-    @include adaptiv-font-min(16,6);
+  .averrage-reviews__bottom {
+    @include adaptiv-font-min(16, 6);
   }
-  .averrage-reviews__up svg{
+  .averrage-reviews__up svg {
     width: 3vw;
   }
-  .splide{
+  .splide {
     max-height: unset;
+  }
+  .one-review {
+    gap: min(2vw, 8px);
+  }
+  .one-review__head {
+    div {
+      @include adaptiv-font-min(20, 10);
+    }
+
+    svg {
+      height: min(16px, 4.2vw);
+    }
+  }
+  .one-review__body {
+    @include adaptiv-font-min(20, 10);
+    line-height: min(17px, 4.56vw);
+  }
+  .one-review__likes {
+    svg {
+      height: min(4.55vw, 17px);
+    }
+
+    div {
+      @include adaptiv-font-min(20, 10);
+    }
+  }
+  .one-review__likes_zero-border {
+    gap: min(1vw, 26px);
+  }
+  .add-review-service {
+    padding: min(18px, 2.4vw) min(65px, 5.1vw);
+  }
+  .label-search {
+    font-size: 12px;
+  }
+  .search-reviews {
+    .label-search {
+      padding-left: min(20px, 5vw);
+    }
+
+    .label-search:before {
+      width: min(12px, 3.4vw);
+      height: min(12px, 3.4vw);
+      top: 5px;
+    }
+  }
+  .additin-search {
+    font-size: 14px;
+  }
+  .search-reviews svg{
+    height: 12px;
+  }
+  .saloon-tips{
+    font-size: 9px;
+  }
+  .saloon19{
+    font-size: 12px;
+  }
+  .select-saloon{
+    font-size: 8px;
   }
 }

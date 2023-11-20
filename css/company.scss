@@ -126,26 +126,27 @@
   gap: min(26px, 2vw);
 }
 
-.adress-elem {
-  border-top: 9px solid black;
-}
-
-.adress-elem_orange {
-  border: none;
-}
 
 .adress-elem__head {
   display: flex;
   gap: 3%;
-  height: 45%;
+  height: 77px;
   max-height: 85px;
+  border-top: 9px solid black;
 }
 
-.adress-elem__head_orange {
-  height: 11.5vw;
-  max-height: 123px;
-  gap: 4%;
+.adress-elem:hover{
+  .adress-elem__head{
+    height: 11.5vw;
+    max-height: 123px;
+    gap: 4%;
+    border-top: 9px solid transparent;
+    color: rgba(240, 78, 1, 1);
+  }
 }
+
+
+
 
 .address-elem__number {
   font-family: Days;
@@ -167,9 +168,6 @@
   color: rgba(240, 78, 1, 1);
 }
 
-.adress-elem_orange {
-  border-top: 9px solid transparent;
-}
 
 .address-info {
   display: flex;

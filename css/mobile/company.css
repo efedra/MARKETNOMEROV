@@ -91,12 +91,6 @@
   .address-info div {
     font-size: min(4px + 10 * ((100vw - 320px) / 960), 14px);
   }
-  .adress-elem {
-    border-top: 0.7vw solid black;
-  }
-  .adress-elem_orange {
-    border: 0.7vw solid transparent;
-  }
   .address-elem__number {
     position: relative;
     top: -21%;
@@ -104,16 +98,18 @@
     margin-top: unset;
   }
   .adress-elem__head {
-    height: 40%;
+    height: 7.5vw;
     margin-bottom: 1.5vw;
-  }
-  .adress-elem__head_orange {
-    height: 50%;
-    margin-bottom: 3vw;
+    border-top: 0.7vw solid black;
   }
   .goods-main__input_company {
     max-width: unset;
     width: 100%;
+  }
+  .adress-elem:hover .adress-elem__head {
+    border: 0.7vw solid transparent;
+    height: 50%;
+    margin-bottom: 3vw;
   }
 }
 

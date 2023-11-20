@@ -154,6 +154,9 @@ label {
   right: min(6vw, 77px);
   //top: min(8vh,58px);
   top: min(5vw, 58px);
+
+
+  
 }
 
 .modal-basket__window {
@@ -289,20 +292,42 @@ label {
 .modal-delivery__window {
   display: flex;
   flex-direction: column;
-  gap: 2.2vw;
+  //justify-content: space-between;
+  gap: 29px;
   background: white;
   border-radius: 25px;
   width: min(1081px, 84.5vw);
-  height: min(980px, 76.5vw);
+  //height: min(980px, 76.5vw);
+  height: min(980px, 82.8vh);
   padding: min(68px, 5.3vw) min(72px, 5.6vw);
 }
-
+.modal-delivery__scroll{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  gap: 27px;
+  overflow-x: hidden;
+}
 .modal-delivery__head {
   @include adaptiv-font-min(33, 23);
   font-weight: 600;
   font-family: Roboto;
 }
 
+.modal-delivery__scroll::-webkit-scrollbar {
+  width: 2px;
+  background: transparent;
+}
+
+.modal-delivery__scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-delivery__scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(241, 79, 2);
+  border-radius: 6px;
+}
 .delivery-input-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -384,29 +409,31 @@ label {
   }
 }
 
-.select-time{
-  height: 8.4vw;
+.select-date-grid__elem .select-time {
+  height: min(5.8vw,75px);
+  display: flex;
+  align-items: center;
 }
+
 .select-date-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: min(19px, 1.5vw);
 }
 
-.modal-delivery__button{
+.modal-delivery__button {
   background: rgba(231, 232, 233, 1);
   color: rgba(167, 171, 176, 1);
   font-family: Roboto;
-  @include adaptiv-font-min(16,6);
+  @include adaptiv-font-min(16, 6);
   border-radius: 32px;
-  padding: min(1vw,13px) min(103px,8vw);
+  padding: min(1vw, 13px) min(103px, 8vw);
   cursor: pointer;
   border: none;
   max-width: 337px;
 }
 
-.modal-basket__head svg:hover,.modal-basket__button:hover,.modal-basket__count-manage:first-child:hover,.modal-basket__count-manage:last-child:hover,.modal-basket__icons svg:hover,.send:hover
-,.input-modal + label:hover,.close:hover, .privacy-policy input:hover{
+.modal-basket__head svg:hover, .modal-basket__button:hover, .modal-basket__count-manage:first-child:hover, .modal-basket__count-manage:last-child:hover, .modal-basket__icons svg:hover, .send:hover, .close:hover {
   opacity: 0.7;
   cursor: pointer;
 }

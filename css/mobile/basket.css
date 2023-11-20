@@ -55,6 +55,7 @@
   }
   .oform-order {
     padding: 7%;
+    height: unset;
   }
   .goods-main__input_oform input {
     height: 11vw;

@@ -112,6 +112,7 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .tarif-filter__elem {
+  cursor: pointer;
   position: relative;
   border: 1px solid $orange;
   padding: 1.5% 4%;
@@ -121,6 +122,7 @@ $blue: rgba(66, 98, 255, 1);
   flex-direction: column;
   gap: 1%;
   line-height: 20px;
+  box-shadow: 0px 3.6553399562835693px 3.6553399562835693px 0px rgba(139, 139, 139, 0.25);
 }
 
 .tarif-filter__check {
@@ -139,9 +141,7 @@ $blue: rgba(66, 98, 255, 1);
   color: rgba(75, 71, 111, 1);
 }
 
-.shadow {
-  box-shadow: 0px 3.6553399562835693px 3.6553399562835693px 0px rgba(139, 139, 139, 0.25);
-}
+
 
 .tarif-filter_margin {
   margin-bottom: min(16vh,115px);
@@ -211,4 +211,17 @@ $blue: rgba(66, 98, 255, 1);
 .tarif-filter__elem:hover,.t02-main__elem:hover{
   opacity: 0.7;
   cursor: pointer;
+}
+
+.tarif-filter__elem {
+  input, .tarif-filter__check{
+    display: none;
+  }
+  input[type='radio']:checked + label .tarif-filter__check{
+    display: block;
+  }
+}
+
+.tarif-filter__elem input:checked {
+  box-shadow: none;
 }

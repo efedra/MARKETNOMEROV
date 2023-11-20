@@ -1156,8 +1156,11 @@ input[type="range"] {
 .range-slider .noUi-horizontal .noUi-handle-upper{
   background: url("../assets/arrow-left.svg")no-repeat;
   border: none;
-  background-size: 118%;
-  background-position: 50% 29%;
+  //background-size: 118%;
+  //background-position: 50% 29%;
+
+  background-size: 128%;
+  background-position: 50% 0%;
 }
 .sort-filter {
   display: none;
