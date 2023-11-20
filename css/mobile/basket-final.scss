@@ -79,4 +79,9 @@
   .card-help{
     @include adaptiv-font-min(20,10);
   }
+  .steps-basket {
+    width: 185vw;
+    padding: 3vw 25px;
+    height: unset;
+  }
 }

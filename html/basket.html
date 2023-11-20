@@ -80,12 +80,12 @@
                     Красивые номера
                 </div>
                 <div class="pointer">
-                    <a  href="./tarif.html">
+                    <a href="./tarif.html">
                         Тарифы
                     </a>
                 </div>
                 <div class="pointer">
-                    <a  class="link_orange" href="./goods.html">
+                    <a class="link_orange" href="./goods.html">
                         Магазин
                     </a>
                 </div>
@@ -131,12 +131,14 @@
         </header>
     </div>
 </div>
-<div class="container container_zero-padding">
-    <div class="container">
-        <h1 class="beatiful-number__heading margin-big">Корзина</h1>
-    </div>
+<div class="container banner-number">
+    <h1 class="beatiful-number__heading margin-big">Корзина</h1>
+</div>
+
+<div class="steps-basket-shadow margin-very-big">
     <div class="steps-basket-scroll">
-        <div class="steps-basket margin-very-big">
+        <div class="container steps-basket">
+
             <div class="steps-basket__elem">
                 <div class="steps-basket__number steps-basket__number_active">1</div>
                 <div class="steps-basket__head">Состав заказа</div>
@@ -176,7 +178,7 @@
 </div>
 
 
-<div class="container margin-top-mobile">
+<div class="container goods margin-top-mobile">
     <section class="basket-grid margin-very-big">
         <div class="modal-basket__elem">
             <div class="modal-basket__picture modal-basket__picture_oform">
@@ -196,7 +198,8 @@
                         <div class="modal-basket__desc-text modal-basket__desc-text_oform">+</div>
                     </div>
                 </div>
-                <div class="modal-basket__price modal-basket__price_oform modal-basket__price_oform-mobile">27 500 р</div>
+                <div class="modal-basket__price modal-basket__price_oform modal-basket__price_oform-mobile">27 500 р
+                </div>
                 <div class="modal-basket__icons modal-basket__icons_oform">
                     <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.7328 0.974609C9.24506 0.974609 8.01884 3.42705 8.01884 3.42705C8.01884 3.42705 6.79262 0.974609 4.30493 0.974609C2.2832 0.974609 0.682217 2.66603 0.661525 4.68431C0.619373 8.87376 3.98496 11.8531 7.67397 14.3569C7.77567 14.4261 7.89583 14.4631 8.01884 14.4631C8.14185 14.4631 8.26201 14.4261 8.36371 14.3569C12.0523 11.8531 15.4179 8.87376 15.3762 4.68431C15.3555 2.66603 13.7545 0.974609 11.7328 0.974609V0.974609Z"
@@ -377,16 +380,50 @@
     <section class="often-questions often-questions_zero-padding margin-very-big">
         <div class="often-questions__right">
             <div class="often-questions__elem">
-                <div>Почему дешевле, чем напрямую у оператора связи?</div>
-                <img src="../assets/plus_orange.svg">
+                <div class="often-questions__elem-main-part">
+                    <div>Почему дешевле, чем напрямую у оператора связи?</div>
+                    <img class="open-questions" src="../assets/plus_orange.svg">
+                </div>
+                <div class="tips-questions sort-filter__list_hidden">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit
+                    anim id est laborum.
+                </div>
+
             </div>
             <div class="often-questions__elem">
-                <div>Какие документы необходимы для оформления <br>тарифа и номера?</div>
-                <img src="../assets/plus_orange.svg">
+                <div class="often-questions__elem-main-part">
+                    <div>Какие документы необходимы для оформления тарифа и номера?</div>
+                    <img class="open-questions" src="../assets/plus_orange.svg">
+                </div>
+                <div class="tips-questions sort-filter__list_hidden">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit
+                    anim id est laborum.
+                </div>
             </div>
             <div class="often-questions__elem">
-                <div>Почему дешевле, чем напрямую у оператора связи?</div>
-                <img src="../assets/plus_orange.svg">
+                <div class="often-questions__elem-main-part">
+                    <div>Как оплачивать услуги связи?</div>
+                    <img class="open-questions" src="../assets/plus_orange.svg">
+                </div>
+                <div class="tips-questions sort-filter__list_hidden">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit
+                    anim id est laborum.
+                </div>
             </div>
         </div>
         <div class="often-questions__left">
@@ -428,5 +465,6 @@
 </div>
 
 <script src="../js/mobile-nav.js"></script>
+<script src="../js/often-questions.js"></script>
 </body>
 </html>

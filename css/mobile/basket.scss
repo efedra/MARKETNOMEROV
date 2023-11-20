@@ -18,11 +18,10 @@
 
   .steps-basket-scroll {
     overflow-x: auto;
-    margin: 0 10px;
   }
   .steps-basket {
     width: 185vw;
-    padding-bottom: 3vw;
+    padding: 3vw 25px;
     height: unset;
   }
   .steps-basket__elem:nth-child(2n) {

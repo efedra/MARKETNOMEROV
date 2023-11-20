@@ -472,7 +472,8 @@
   .often-questions__elem div {
     font-size: min(12px + 12 * ((100vw - 320px) / 960), 24px);
     line-height: 5.5vw;
-    width: 72%;
+    width: 100%;
+    gap: 30%;
   }
   .often-questions__right {
     border-top: 1px solid rgb(170, 170, 170);

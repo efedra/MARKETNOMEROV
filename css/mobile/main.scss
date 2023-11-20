@@ -532,7 +532,8 @@
     div {
       @include adaptiv-font-min(24, 12);
       line-height: 5.5vw;
-      width: 72%;
+      width: 100%;
+      gap: 30%;
     }
   }
   .often-questions__right {

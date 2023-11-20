@@ -76,6 +76,11 @@
   .card-help {
     font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
   }
+  .steps-basket {
+    width: 185vw;
+    padding: 3vw 25px;
+    height: unset;
+  }
 }
 
 /*# sourceMappingURL=basket-final.css.map */

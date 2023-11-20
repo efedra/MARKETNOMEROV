@@ -60,6 +60,9 @@
   justify-content: space-between;
   max-height: 64px;
   align-items: center;
+}
+
+.steps-basket-shadow {
   box-shadow: 0px 6.5791664124px 19.7374992371px 0px rgba(0, 0, 0, 0.05);
 }
 

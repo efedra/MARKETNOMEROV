@@ -697,15 +697,15 @@ a {
 }
 
 .often-questions__elem {
-  display: flex;
-  align-items: center;
   border-top: 2px solid rgba(170, 170, 170, 1);
   padding: min(4vh, 29px) min(1.5vw, 19px);
+}
+.often-questions__elem-main-part{
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   line-height: 35.85px;
-
 }
-
 .often-questions__elem:last-child {
   border-bottom: 2px solid rgba(170, 170, 170, 1);
 }
@@ -1243,7 +1243,8 @@ input[type="range"] {
 
 .often-questions__elem {
   div {
-    width: 90%;
+    width: 100%;
+    gap: 20%;
   }
 }
 
@@ -1380,4 +1381,9 @@ input[type='radio']:checked + .operator__card {
 }
 .sort-filter__list_hidden {
   display: none;
+}
+.tips-questions{
+  @include adaptiv-font-min(14,7);
+  color: rgba(0,0,0,0.4);
+  line-height: 20px;
 }
