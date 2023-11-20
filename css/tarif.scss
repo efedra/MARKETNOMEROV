@@ -4,9 +4,7 @@ $gray: rgba(128, 128, 128, 1);
 $orange: rgba(232, 89, 10, 1);
 $blue: rgba(66, 98, 255, 1);
 
-.container {
-  padding: 0 min(2.8vw,36px);
-}
+
 
 .t01 {
   position: relative;
@@ -159,7 +157,8 @@ $blue: rgba(66, 98, 255, 1);
 
 .t02 {
   background: url("../assets/grid.svg");
-  background-size: cover;
+  //background-size: cover;
+  background-size: contain;
 }
 
 .t02-main {

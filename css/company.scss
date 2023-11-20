@@ -3,8 +3,9 @@
 .banner-company {
   background: url("../assets/banner-company.png");
   background-size: cover;
-  height: min(34vw,436px);
+  //height: min(34vw,436px);
   position: relative;
+  aspect-ratio: 4/1;
 }
 
 .banner-company__text {
@@ -19,8 +20,11 @@
   top: 50%;
   left: 0;
   width: 50%;
-  padding: min(2.5vw,32px) 6% min(2.5vw,32px) 9%;
+  padding: min(2.5vw, 32px) min(6%, 77px) min(2.5vw, 32px) min(9%, 115px);
   transform: translateY(-50%);
+
+  max-width: 614px;
+  max-height: 183px;
 }
 
 .banner-company__head {
@@ -37,20 +41,20 @@
   top: 50%;
   transform: translateY(-50%);
   right: 33%;
-  width: min(77px,6vw);
-  height: min(77px,6vw);
+  width: min(77px, 6vw);
+  height: min(77px, 6vw);
 }
 
 .margin-very-very-big {
-  margin-bottom: min(8vw,103px);
+  margin-bottom: min(8vw, 103px);
 }
 
 .margin-very-big {
-  margin-bottom: min(12vw,154px);
+  margin-bottom: min(12vw, 154px);
 }
 
 .margin-big {
-  margin-bottom: min(6vw,76px);
+  margin-bottom: min(6vw, 76px);
 }
 
 .sponsor {
@@ -88,7 +92,7 @@
 .about-company__list {
   display: flex;
   flex-direction: column;
-  gap: min(5vh,36px);
+  gap: min(5vh, 36px);
 }
 
 .about-company__list-head {
@@ -100,7 +104,7 @@
 }
 
 .margin-min {
-  margin-bottom: min(4vw,52px);
+  margin-bottom: min(4vw, 52px);
 }
 
 .about-company__list-text {
@@ -111,7 +115,7 @@
 .statistics-company {
   display: grid;
   grid-template-columns: 2fr 1fr 3fr;
-  column-gap: min(4vw,52px);
+  column-gap: min(4vw, 52px);
   grid-template-rows: repeat(2, 1fr);
   grid-auto-flow: column;
 }
@@ -119,7 +123,7 @@
 .adress-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: min(26px,2vw);
+  gap: min(26px, 2vw);
 }
 
 .adress-elem {
@@ -170,7 +174,7 @@
 .address-info {
   display: flex;
   flex-direction: column;
-  gap: min(2vh,15px);
+  gap: min(2vh, 15px);
 
   div {
     font-family: Inter;

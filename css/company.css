@@ -1,8 +1,8 @@
 .banner-company {
   background: url("../assets/banner-company.png");
   background-size: cover;
-  height: min(34vw, 436px);
   position: relative;
+  aspect-ratio: 4/1;
 }
 
 .banner-company__text {
@@ -17,8 +17,10 @@
   top: 50%;
   left: 0;
   width: 50%;
-  padding: min(2.5vw, 32px) 6% min(2.5vw, 32px) 9%;
+  padding: min(2.5vw, 32px) min(6%, 77px) min(2.5vw, 32px) min(9%, 115px);
   transform: translateY(-50%);
+  max-width: 614px;
+  max-height: 183px;
 }
 
 .banner-company__head {

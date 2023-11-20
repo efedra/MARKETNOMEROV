@@ -280,7 +280,8 @@ a {
 
 .beatiful-number__heading {
   font-size: 33px;
-  margin-bottom: min(7vh, 97px);
+  //margin-bottom: min(7vh, 97px);
+  margin-bottom: 28px;
 }
 
 .beatiful-number__filter {
@@ -546,6 +547,7 @@ a {
 
 .uslugi__heading-width {
   padding-top: 8px;
+  padding: 0 min(2.8vw, 36px);
 }
 
 .uslugi-top {

@@ -65,7 +65,7 @@
 
 .services-gallery {
   position: relative;
-  background: url("../assets/wallpaper.png") center no-repeat;
+  background: url("../assets/wallpaper.png");
   background-size: 100%;
 }
 

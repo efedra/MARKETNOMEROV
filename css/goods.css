@@ -1,7 +1,3 @@
-.container {
-  padding: 0 min(2.8vw, 36px);
-}
-
 .head-days_goods {
   font-size: min(5px + 35 * ((100vw - 320px) / 960), 40px);
   white-space: nowrap;
@@ -303,7 +299,7 @@
   display: none;
 }
 
-.search-input-goods input[type=submit]:hover, .type-goods__elem:hover, .input-goods__label:hover {
+.search-input-goods input[type=submit]:hover, .type-goods__elem:hover, .input-goods__label:hover.beatiful-number__heading {
   opacity: 0.7;
   cursor: pointer;
 }
