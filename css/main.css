@@ -1367,4 +1367,8 @@ input[type=radio]:checked + .operator__card {
   border-radius: 40px;
 }
 
+.active-visible {
+  visibility: visible;
+}
+
 /*# sourceMappingURL=main.css.map */

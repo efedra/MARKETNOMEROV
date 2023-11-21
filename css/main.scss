@@ -365,6 +365,8 @@ a {
   top: 0;
   left: 0;
   width: 100%;
+
+
 }
 
 .slick-track .slide {
@@ -1421,4 +1423,8 @@ input[type='radio']:checked + .operator__card {
   background-color: rgb(65, 98, 255);
   width: 2px;
   border-radius: 40px;
+}
+
+.active-visible{
+  visibility: visible;
 }

@@ -21,7 +21,7 @@
     margin-bottom: 14vw;
   }
   .services-gallery__elem{
-    padding: 0 min(32vw, 435px);
+    //padding: 0 min(32vw, 435px);
   }
   .services-tabs{
     margin-left: 0;
@@ -30,5 +30,11 @@
   .mobile-container-services-tabs{
     max-width: unset;
     padding-right: 0;
+  }
+  .arrows_orange{
+    padding: 0 10px;
+  }
+  .container_zero-padding{
+    padding: 0;
   }
 }

@@ -52,6 +52,7 @@
   justify-content: space-between;
   padding: 0 2%;
   max-height: 83px;
+  transform: translateY(-50%);
 }
 
 .arrows__left_orange, .arrows__right_orange{
@@ -71,13 +72,15 @@
 .services-gallery{
   position: relative;
   background: url("../assets/wallpaper.png");
-  background-size: 100%;
+  //background-size: 100%;
+  background-size: 109%;
+
 }
 
 .services-gallery__elem{
-  height: 84%;
-  max-width: 1280px;
-  padding: 0 min(32vw,410px);
+  //height: 84%;
+  //max-width: 1280px;
+  //padding: 0 min(32vw,410px);
 }
 
 .container_zero-padding{
@@ -104,4 +107,30 @@
 }
 .t02-grid_active{
   display: grid;
+}
+.swiper-3d .swiper-slide-shadow{
+  background: none;
+}
+
+
+
+
+.Slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: min(529px, 41vw);
+  padding: 8% 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    aspect-ratio: 1.2/2;
+    height: 50vw;
+    max-height: 640px;
+  }
 }
