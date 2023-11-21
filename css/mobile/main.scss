@@ -202,7 +202,7 @@
       height: auto;
     }
   }
-  .input-code__list div{
+  .input-code__list div {
     @include adaptiv-font-min(19, 8);
     border-radius: 4px;
   }
@@ -343,6 +343,7 @@
   .goods_nav {
     @include adaptiv-font-min(19, 9);
     margin-bottom: 7vw;
+    gap: 19px;
   }
   .goods__heading {
     margin-bottom: min(2vw, 16px);
@@ -659,7 +660,7 @@
   .header__buttons {
     gap: 2.7vw;
     margin-left: auto;
-    align-items: center;
+    align-items: baseline;
   }
 
   .goods-input__search svg {
@@ -688,12 +689,12 @@
     cursor: pointer;
   }
 
-  .range-slider .noUi-horizontal .noUi-handle-lower{
+  .range-slider .noUi-horizontal .noUi-handle-lower {
 
     background-size: 118%;
     background-position: 50% 38%;
   }
-  .range-slider .noUi-horizontal .noUi-handle-upper{
+  .range-slider .noUi-horizontal .noUi-handle-upper {
 
     //background-size: 118%;
     //background-position: 50% 59%;

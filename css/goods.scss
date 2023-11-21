@@ -155,7 +155,7 @@ $blue: rgba(66, 98, 255, 1);
   position: absolute;
   left: 0;
   top: 4%;
-  width: 5.06%;
+  aspect-ratio: 1/1;
   height: 89%;
   border: 1px solid rgba(139, 142, 153, 1);
   border-radius: 50%;
@@ -170,7 +170,7 @@ $blue: rgba(66, 98, 255, 1);
 
 .input-goods__input + label {
   @include adaptiv-font-min(14, 6);
-  padding-left: 7%;
+  padding-left: 8%;
   color: rgba(139, 142, 153, 1);
 }
 .input-goods__input:checked +label{
@@ -271,10 +271,22 @@ $blue: rgba(66, 98, 255, 1);
   border: 1px solid rgba(228, 231, 233, 1);
   border-radius: 9px;
   display: flex;
+  background: white;
   align-items: center;
-  padding: 0 3%;
-  width: 25%;
-  gap: 4%;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+
+
+  padding: 0 10%;
+  width: 100%;
+  height: 100%;
+  .placeholder{
+    margin-right: min(9px,0.7vw);
+  }
+  .goods-input__select{
+    margin-right:  min(13px,1vw);
+  }
 }
 
 .placeholder{
@@ -312,4 +324,37 @@ $blue: rgba(66, 98, 255, 1);
 .search-input-goods input[type=submit]:hover,.type-goods__elem:hover,.input-goods__label:hover.beatiful-number__heading{
   opacity: 0.7;
   cursor: pointer;
+}
+.goods-input__filter-full-list{
+  width: 23%;
+  position: relative;
+}
+.goods-input__list{
+  display: none;
+  width: 100%;
+  padding: min(1.4vw, 20px) 13% min(0.8vw, 11px);
+  background: white;
+  border: 1px solid rgb(228, 231, 233);
+  border-radius: 9px;
+  position: absolute;
+  z-index: 1;
+  gap: 3px;
+  margin-top: max(-13px, -2vw);
+  div{
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(218, 221, 223, 1);
+    @include adaptiv-font-min(13,3);
+    font-family: Roboto;
+    cursor: pointer;
+  }
+  div:last-child{
+    border-bottom: none;
+  }
+}
+.flex-column{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.goods-input__galka{
+  margin-left: auto;
 }

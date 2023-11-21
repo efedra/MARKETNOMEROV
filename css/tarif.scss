@@ -115,7 +115,10 @@ $blue: rgba(66, 98, 255, 1);
   cursor: pointer;
   position: relative;
   border: 1px solid $orange;
-  padding: 1.5% 4%;
+  //padding: 1.5% 4%;
+  height: min(78px,6.09vw);
+  justify-content: center;
+
   border-radius: 20px;
   min-width: 21%;
   display: flex;
@@ -123,6 +126,10 @@ $blue: rgba(66, 98, 255, 1);
   gap: 1%;
   line-height: 20px;
   box-shadow: 0px 3.6553399562835693px 3.6553399562835693px 0px rgba(139, 139, 139, 0.25);
+
+  label{
+    padding: 0 17.5%;
+  }
 }
 
 .tarif-filter__check {
@@ -133,11 +140,11 @@ $blue: rgba(66, 98, 255, 1);
 
 .tarif-filter__head {
   font-weight: 600;
-  @include adaptiv-font-min(14, 7);
+  @include adaptiv-font-min(12, 3);
 }
 
 .tarif-filter__body {
-  @include adaptiv-font-min(12, 5);
+  @include adaptiv-font-min(12, 3);
   color: rgba(75, 71, 111, 1);
 }
 
@@ -179,6 +186,7 @@ $blue: rgba(66, 98, 255, 1);
   padding: 4%;
   align-items: center;
   border: 1px solid black;
+  box-shadow: 0px 3.6553399562835693px 3.6553399562835693px 0px rgba(139, 139, 139, 0.25);
 }
 
 .t02-main__elem {
@@ -195,7 +203,7 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .t02-grid {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 3%;
@@ -224,4 +232,7 @@ $blue: rgba(66, 98, 255, 1);
 
 .tarif-filter__elem input:checked {
   box-shadow: none;
+}
+.t02-grid_active{
+  display: grid;
 }

@@ -4,7 +4,7 @@
 }
 
 .services-grid {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -96,6 +96,10 @@
 .arrows__left_orange:hover, .arrows__right_orange:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+.t02-grid_active {
+  display: grid;
 }
 
 /*# sourceMappingURL=services.css.map */

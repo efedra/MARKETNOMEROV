@@ -283,7 +283,7 @@ label {
 
 .modal-basket__icons {
   display: flex;
-  width: 25%;
+  width: 54px;
   justify-content: space-between;
   align-items: center;
 }
@@ -295,6 +295,7 @@ label {
 }
 
 .modal-basket__button {
+  margin-top: 36px;
   width: 100%;
   border-radius: 34px;
   background: rgb(232, 89, 10);

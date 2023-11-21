@@ -296,6 +296,7 @@
   .goods_nav {
     font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
     margin-bottom: 7vw;
+    gap: 19px;
   }
   .goods__heading {
     margin-bottom: min(2vw, 16px);
@@ -592,7 +593,7 @@
   .header__buttons {
     gap: 2.7vw;
     margin-left: auto;
-    align-items: center;
+    align-items: baseline;
   }
   .goods-input__search svg {
     width: auto;

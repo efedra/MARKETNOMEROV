@@ -47,3 +47,27 @@ tabsTarif.forEach(el => {
         )
     })
 })
+
+
+let tabsUslugi = document.querySelectorAll('.uslugi-nav div')
+let allUslugiSliders = document.querySelectorAll('.uslugi__body')
+
+
+allUslugiSliders.forEach(el => {
+    if (el.getAttribute('data-uslugi') !== '1') {
+        el.style.visibility = 'hidden'
+    }
+})
+
+tabsUslugi.forEach(el => {
+    el.addEventListener('click', () => {
+        let neededSlider = document.querySelector(`.uslugi__body[data-uslugi="${el.getAttribute('data-uslugi')}"]`);
+        neededSlider.style.visibility = 'visible'
+        allUslugiSliders.forEach(e => {
+                if (e.getAttribute('data-uslugi') !== neededSlider.getAttribute('data-uslugi')) {
+                    e.style.visibility = 'hidden'
+                }
+            }
+        )
+    })
+})

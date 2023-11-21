@@ -98,7 +98,8 @@
   .goods-input {
     height: 7.1vw;
     justify-content: space-between;
-    gap: 2%;
+    gap: unset;
+    //gap: 2%;
   }
   .goods-input__search {
     width: 43%;
@@ -120,8 +121,12 @@
     height: auto;
   }
   .goods-input__filter {
-    padding: 0 2.6%;
-    width: 30%;
+    //padding: 0 2.6%;
+    padding: 0 8.6%;
+    //width: 30%;
+    .placeholder {
+      margin-right: min(9px, 2.4vw);
+    }
   }
   .all-count-number {
     display: none;
@@ -142,7 +147,7 @@
     padding-left: 4.5vw;
     padding-top: 2.5vw;
     padding-bottom: 3vw;
-    z-index: 1;
+    z-index: 3;
     display: none;
     background: rgba(245, 245, 247, 1);
   }
@@ -155,7 +160,7 @@
     margin-bottom: 4vw;
 
     div {
-      @include adaptiv-font-min(28, 18);
+      @include adaptiv-font-min(38, 18);
     }
 
     svg {
@@ -165,6 +170,7 @@
     }
   }
   .goods-main__filter_mobile {
+    padding-right: 11%;
     display: flex;
 
     .input-goods__input + label:before {
@@ -177,39 +183,54 @@
     display: none;
   }
   .input-goods__input + label {
-    @include adaptiv-font-min(26, 15);
+    @include adaptiv-font-min(36, 15);
   }
   .price-filter__head {
     @include adaptiv-font-min(28, 18);
   }
 
 
-  .noUi-connects{
+  .noUi-connects {
     height: 2px;
     background: rgba(66, 98, 255, 1);
   }
-  .noUi-connect{
+  .noUi-connect {
     height: 2px;
   }
   .arrows {
     display: flex;
   }
 
-  .slider-range-price-mobile{
+  .slider-range-price-mobile {
     margin-bottom: 8vw;
+  }
+  .goods-input__filter-full-list {
+    width: 32%;
+  }
+
+  .goods-input__list{
+    margin-top: max(-13px, -4vw);
+    padding: min(3.4vw, 20px) 13% min(0.8vw, 11px);
+    div{
+      @include adaptiv-font-min(17,7);
+      padding: 5px;
+    }
   }
 }
 
-.categories-filter-mobile{
+.categories-filter-mobile {
   overflow-y: auto;
 }
+
 .categories-filter-mobile::-webkit-scrollbar {
   width: 2px;
 }
+
 .categories-filter-mobile::-webkit-scrollbar-track {
   background: rgb(237, 237, 237);
   width: 2px;
 }
+
 .categories-filter-mobile::-webkit-scrollbar-thumb {
   background-color: rgb(65, 98, 255);
   width: 2px;

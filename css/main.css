@@ -532,6 +532,10 @@ a {
   gap: min(2vw, 25px);
   margin-bottom: min(8vh, 57px);
   justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .services-card {
@@ -1278,6 +1282,12 @@ input[type=range] {
   height: 537px;
 }
 
+.slider-uslugi-container {
+  position: relative;
+  width: 100%;
+  height: min(468px, 46vw);
+}
+
 .basket-mobile {
   display: none;
 }
@@ -1332,6 +1342,29 @@ input[type=radio]:checked + .operator__card {
   font-size: min(7px + 7 * ((100vw - 320px) / 960), 14px);
   color: rgba(0, 0, 0, 0.4);
   line-height: 20px;
+}
+
+.modal-basket__scroll {
+  max-height: min(153px, 16vw);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: min(2.8vw, 26px);
+}
+
+.modal-basket__scroll::-webkit-scrollbar {
+  width: 2px;
+}
+
+.modal-basket__scroll::-webkit-scrollbar-track {
+  background: rgb(237, 237, 237);
+  width: 2px;
+}
+
+.modal-basket__scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(65, 98, 255);
+  width: 2px;
+  border-radius: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */

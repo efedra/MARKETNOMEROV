@@ -1,6 +1,6 @@
 .goods-main {
-  grid-template-columns: fit-content(87px) fit-content(550px) fit-content(450px);
-  gap: min(64px, 5vw);
+  grid-template-columns: fit-content(94px) fit-content(550px) fit-content(450px);
+  gap: min(64px, 2.5vw);
   max-height: 420px;
   margin-bottom: min(58px, 4.5vw);
 }
@@ -393,6 +393,11 @@
   display: flex;
   flex-direction: column;
   gap: min(13px, 1vw);
+}
+
+.goods-main__img-container {
+  aspect-ratio: 1/1;
+  width: 90%;
 }
 
 /*# sourceMappingURL=card-services.css.map */

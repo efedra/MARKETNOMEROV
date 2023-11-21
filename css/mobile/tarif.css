@@ -32,14 +32,15 @@
     flex-direction: column;
     gap: 2vw;
   }
-  .tarif-filter__head, tarif-filter__body {
-    font-size: min(5px + 10 * ((100vw - 320px) / 960), 15px);
+  .tarif-filter__head, .tarif-filter__body {
+    font-size: min(5px + 13 * ((100vw - 320px) / 960), 18px);
   }
   .tarif-filter__elem {
     min-width: unset;
     width: 30vw;
     line-height: 2.4vw;
     border-radius: 8px;
+    height: 8.6vw;
   }
   .tarif-filter__check {
     height: auto;

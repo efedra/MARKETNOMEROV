@@ -62,6 +62,12 @@
     max-width: max(66.5vw, 340px);
     gap: 2vw;
   }
+  .modal-basket__scroll {
+    max-height: min(32vw, 183px);
+  }
+  .modal-margin-oform-card {
+    margin-bottom: min(6%, 13px);
+  }
 }
 @media (max-width: 800px) {
   .triangle {

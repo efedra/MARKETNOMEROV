@@ -348,6 +348,7 @@ $blue: rgba(66, 98, 255, 1);
 .stars {
   display: flex;
   margin-bottom: min(2vw,26px);
+  align-items: flex-start;
 
   div {
     margin-right: min(2vw,26px);
@@ -424,3 +425,12 @@ $blue: rgba(66, 98, 255, 1);
 .beatiful-number__heading_goods-margin{
   margin-bottom: 41px;
 }
+
+
+ .stars__container svg path.active {
+  fill: #FFC700;
+  cursor: pointer;
+}
+ .stars__container{
+   cursor: pointer;
+ }

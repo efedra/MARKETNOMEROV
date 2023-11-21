@@ -1,6 +1,6 @@
 var priceSlider = document.querySelector('.slider-range-price');
-var minPrice = document.querySelector('.price-filter__input-min')
-var maxPrice = document.querySelector('.price-filter__input-max')
+var minPrice = document.querySelector('.price-filter__input-min-desktop')
+var maxPrice = document.querySelector('.price-filter__input-max-desktop')
 let inputs = [minPrice,maxPrice];
 
     noUiSlider.create(priceSlider, {
@@ -23,9 +23,9 @@ inputs.forEach(function (input, handle) {
     });
 });
 
+
+
 //MOBILE
-
-
 var priceSliderMobile = document.querySelector('.slider-range-price-mobile');
 var minPriceMobile = document.querySelector('.price-filter__input-min-mobile')
 var maxPriceMobile = document.querySelector('.price-filter__input-max-mobile')

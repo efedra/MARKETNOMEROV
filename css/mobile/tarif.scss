@@ -36,14 +36,16 @@
     flex-direction: column;
     gap: 2vw;
   }
-  .tarif-filter__head, tarif-filter__body{
-    @include adaptiv-font-min(15, 5);
+  .tarif-filter__head, .tarif-filter__body{
+    @include adaptiv-font-min(18, 5);
   }
   .tarif-filter__elem{
     min-width: unset;
     width: 30vw;
     line-height: 2.4vw;
     border-radius: 8px;
+
+    height: 8.6vw;
   }
   .tarif-filter__check{
     height: auto;

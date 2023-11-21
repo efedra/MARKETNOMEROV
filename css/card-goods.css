@@ -313,6 +313,7 @@
 .stars {
   display: flex;
   margin-bottom: min(2vw, 26px);
+  align-items: flex-start;
 }
 .stars div {
   margin-right: min(2vw, 26px);
@@ -377,6 +378,15 @@
 
 .beatiful-number__heading_goods-margin {
   margin-bottom: 41px;
+}
+
+.stars__container svg path.active {
+  fill: #FFC700;
+  cursor: pointer;
+}
+
+.stars__container {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=card-goods.css.map */

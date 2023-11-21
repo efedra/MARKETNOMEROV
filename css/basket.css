@@ -121,12 +121,13 @@
 }
 
 .modal-basket__desc-text_oform {
-  font-size: min(6px + 15 * ((100vw - 320px) / 960), 21px);
+  font-size: min(3px + 18 * ((100vw - 320px) / 960), 21px);
   line-height: 30px;
 }
 
 .modal-basket__icons_oform {
   max-height: 33px;
+  width: 25%;
 }
 .modal-basket__icons_oform svg {
   width: 36%;
@@ -141,6 +142,7 @@
   border-radius: 7px;
   border: 1px solid rgb(78, 108, 255);
   padding: min(2vw, 26px) min(2vw, 26px) min(4vw, 51px);
+  max-height: min(37vw, 431px);
 }
 
 .oform-order__head {

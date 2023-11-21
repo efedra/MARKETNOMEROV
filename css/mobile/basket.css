@@ -56,6 +56,7 @@
   .oform-order {
     padding: 7%;
     height: unset;
+    max-height: unset;
   }
   .goods-main__input_oform input {
     height: 11vw;
@@ -99,10 +100,15 @@
   }
   .modal-basket__price_oform-mobile {
     display: flex;
-    margin-bottom: 4vw;
+    margin-bottom: min(4vw, 15px);
+  }
+  .modal-basket__count-oform-card {
+    margin-bottom: min(9%, 15px);
   }
   .modal-basket__picture_oform {
     width: 35.1vw;
+    height: 33vw;
+    max-height: 138px;
     padding: min(4vw, 16px) 5vw;
     max-width: 146px;
   }

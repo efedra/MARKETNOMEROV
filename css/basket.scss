@@ -72,12 +72,13 @@
 }
 
 .modal-basket__desc-text_oform {
-  @include adaptiv-font-min(21, 6);
+  @include adaptiv-font-min(21, 3);
   line-height: 30px;
 }
 
 .modal-basket__icons_oform {
   max-height: 33px;
+  width: 25%;
 
 
   svg {
@@ -93,7 +94,9 @@
 .oform-order {
   border-radius: 7px;
   border: 1px solid rgba(78, 108, 255, 1);
-  padding: min(2vw,26px) min(2vw,26px) min(4vw,51px)
+  padding: min(2vw,26px) min(2vw,26px) min(4vw,51px);
+  max-height: min(37vw,431px);
+
 }
 
 .oform-order__head {
