@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Услуги</title>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/modal.css">
     <link rel="stylesheet" href="../css/number.css">
@@ -543,17 +544,31 @@
         </div>
     </section>
 </div>
-<figure class="services-gallery services-gallery__margin splide">
+<!--<figure class="services-gallery services-gallery__margin splide">-->
+<!--    <div class="container">-->
+<!--        <div class="splide__track">-->
+<!--            <div class="splide__list">-->
+<!--                <img class="services-gallery__elem splide__slide" src="../assets/services-gallery1.png">-->
+<!--                <img class="services-gallery__elem splide__slide" src="../assets/services-gallery1.png">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="arrows_orange">-->
+<!--            <img class="arrows__left_orange pointer" src="../assets/arrow-orange-left.svg">-->
+<!--            <img class="arrows__right_orange pointer" src="../assets/arrow-orange-right.svg">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</figure>-->
+<figure class="services-gallery services-gallery__margin">
     <div class="container">
-        <div class="splide__track">
-            <div class="splide__list">
-                <img class="services-gallery__elem splide__slide" src="../assets/services-gallery1.png">
-                <img class="services-gallery__elem splide__slide" src="../assets/services-gallery1.png">
+        <div class="swiper Slider-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="services-gallery__elem splide__slide" src="../assets/services-gallery1.png">
+                </div>
+                <div class="swiper-slide">
+                    <img class="services-gallery__elem splide__slide" src="../assets/serv1.png">
+                </div>
             </div>
-        </div>
-        <div class="arrows_orange">
-            <img class="arrows__left_orange pointer" src="../assets/arrow-orange-left.svg">
-            <img class="arrows__right_orange pointer" src="../assets/arrow-orange-right.svg">
         </div>
     </div>
 </figure>
@@ -643,10 +658,12 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../public/js/slider.js"></script>
 <script src="../public/js/mobile-nav.js"></script>
 <script src="../public/js/often-questions.js"></script>
 <script src="../public/js/counter.js"></script>
 <script src="../public/js/tabs-scroll.js"></script>
+<script src="../public/js/card-effect.js"></script>
 </body>
 </html>
