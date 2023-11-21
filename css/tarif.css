@@ -117,6 +117,7 @@
 }
 .tarif-filter__elem label {
   padding: 0 17.5%;
+  cursor: pointer;
 }
 
 .tarif-filter__check {

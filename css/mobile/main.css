@@ -6,6 +6,13 @@
   }
   .header {
     padding: 10px;
+    gap: unset;
+  }
+  .header .header__logo {
+    margin-right: 11px;
+  }
+  .header .mobile-nav {
+    margin-left: 17px;
   }
   .header__nav {
     display: none;
@@ -69,9 +76,11 @@
   }
   .buy-number {
     font-size: min(13px + 10 * ((100vw - 320px) / 960), 23px);
+    padding: min(2.2vw, 14px) min(2vw, 130px);
   }
   .sale-number {
     font-size: min(13px + 10 * ((100vw - 320px) / 960), 23px);
+    padding: min(2.2vw, 14px) min(2vw, 130px);
   }
   .text-tips {
     font-size: min(9px + 9 * ((100vw - 320px) / 960), 18px);
@@ -586,7 +595,6 @@
   }
   .header {
     justify-content: unset;
-    gap: 6.3vw;
     max-height: 50px;
     height: 13.5vw;
   }
@@ -627,6 +635,9 @@
   .range-slider .noUi-horizontal .noUi-handle-upper {
     background-size: 118%;
     background-position: 50% 8%;
+  }
+  .link_orange {
+    color: rgb(240, 78, 1);
   }
 }
 
