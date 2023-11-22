@@ -175,4 +175,8 @@
   padding: 0;
 }
 
+.margin-big .img-container {
+  height: auto;
+}
+
 /*# sourceMappingURL=company.css.map */
