@@ -17,4 +17,14 @@
   color: rgb(98, 108, 119);
 }
 
+@media (max-width: 800px) {
+  #tips {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3vw;
+  }
+  .tips__body, .tips__head {
+    font-size: min(7px + 8 * ((100vw - 320px) / 960), 15px);
+  }
+}
+
 /*# sourceMappingURL=tips.css.map */

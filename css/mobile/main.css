@@ -21,7 +21,8 @@
     display: flex;
   }
   .mobile-nav svg {
-    width: min(35px, 5vw);
+    width: min(33px, 6.6vw);
+    aspect-ratio: 1/1;
     height: auto;
     cursor: pointer;
   }
@@ -35,14 +36,12 @@
     height: auto;
   }
   .recall {
-    font-size: min(7px + 5 * ((100vw - 320px) / 960), 12px);
+    font-size: min(7px + 7 * ((100vw - 320px) / 960), 14px);
+    height: fit-content;
+    padding: min(1.4vw, 9px) min(2.8vw, 19px);
     display: flex;
     align-self: center;
-    width: 105px;
-    height: 24px;
     justify-content: center;
-    padding: unset;
-    font-size: 10px;
   }
   .basket {
     display: none;
@@ -627,6 +626,11 @@
     background: none;
     border: none;
     cursor: pointer;
+  }
+  .basket-mobile svg {
+    width: 6.3vw;
+    height: auto;
+    max-width: 33px;
   }
   .range-slider .noUi-horizontal .noUi-handle-lower {
     background-size: 118%;

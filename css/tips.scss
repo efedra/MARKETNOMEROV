@@ -18,3 +18,12 @@
   @include adaptiv-font-min(16, 10);
   color: rgba(98, 108, 119, 1);
 }
+@media (max-width: 800px) {
+  #tips{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3vw;
+  }
+  .tips__body, .tips__head{
+    @include adaptiv-font-min(15,7);
+  }
+}
