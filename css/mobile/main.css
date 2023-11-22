@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@media (max-width: 1100px) {
+  .sliderContainer {
+    height: 598px;
+  }
+}
+@media (max-width: 950px) {
+  .sliderContainer {
+    height: 569px;
+  }
+}
 @media (max-width: 800px) {
   .container {
     max-width: 800px;
@@ -642,10 +652,10 @@
     padding: 0 10px;
   }
   .sliderContainer {
-    height: 84vw;
+    height: 76vw;
   }
   .slider-tarif-container {
-    height: 78vw;
+    height: 64vw;
   }
   .basket-mobile {
     display: flex;
@@ -670,7 +680,7 @@
     color: rgb(240, 78, 1);
   }
   .slider-uslugi-container {
-    height: min(376px, 54vw);
+    height: min(452px, 58vw);
   }
   .goods-input__search {
     height: min(48px, 5.7vw);
@@ -752,7 +762,28 @@
 }
 @media (max-width: 600px) {
   .slider-uslugi-container {
-    height: min(320px, 63vw);
+    height: min(452px, 58vw);
+  }
+  .sliderContainer {
+    height: 80vw;
+  }
+}
+@media (max-width: 480px) {
+  .slider-tarif-container {
+    height: 70vw;
+  }
+  .slider-uslugi-container {
+    height: min(452px, 64vw);
+  }
+}
+@media (max-width: 400px) {
+  .sliderContainer {
+    height: 85vw;
+  }
+}
+@media (max-width: 370px) {
+  .slider-tarif-container {
+    height: 76vw;
   }
 }
 @media (max-width: 340px) {
@@ -777,6 +808,15 @@
   }
   .good-description {
     line-height: 3.4vw;
+  }
+  .sliderContainer {
+    height: 100vw;
+  }
+  .slider-tarif-container {
+    height: 80vw;
+  }
+  .slider-uslugi-container {
+    height: min(452px, 70vw);
   }
 }
 @media (max-width: 300px) {

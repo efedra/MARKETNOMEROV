@@ -4,7 +4,7 @@ $('.goods__slider[data-goods="1"]').slick({
     infinite: true,
     responsive: [
         {
-            breakpoint: 800,
+            breakpoint: 801,
             settings: {
                 slidesToShow: 2
             }
@@ -17,7 +17,7 @@ $('.goods__slider[data-goods="2"]').slick({
     infinite: true,
     responsive: [
         {
-            breakpoint: 800,
+            breakpoint: 801,
             settings: {
                 slidesToShow: 2
             }
@@ -30,7 +30,7 @@ $('.goods__slider[data-goods="3"]').slick({
     infinite: true,
     responsive: [
         {
-            breakpoint: 800,
+            breakpoint: 801,
             settings: {
                 slidesToShow: 2
             }
@@ -52,7 +52,7 @@ $('.slider-tarif[data-tarif="1"]').slick({
     infinite: true,
     responsive: [
         {
-            breakpoint: 800,
+            breakpoint: 801,
             settings: {
                 slidesToShow: 2
             }
@@ -65,7 +65,7 @@ $('.slider-tarif[data-tarif="2"]').slick({
     infinite: true,
     responsive: [
         {
-            breakpoint: 800,
+            breakpoint: 801,
             settings: {
                 slidesToShow: 2
             }
@@ -78,7 +78,7 @@ $('.slider-tarif[data-tarif="3"]').slick({
     infinite: true,
     responsive: [
         {
-            breakpoint: 800,
+            breakpoint: 801,
             settings: {
                 slidesToShow: 2
             }
@@ -102,7 +102,7 @@ $('.uslugi__body').slick({
     infinite: true,
     responsive: [
         {
-            breakpoint: 800,
+            breakpoint: 801,
             settings: {
                 slidesToShow: 2
             }
@@ -125,7 +125,7 @@ $('.tarif-grid').slick({
     infinite: true,
     responsive: [
         {
-            breakpoint: 800,
+            breakpoint: 801,
             settings: {
                 slidesToShow: 2
             }
