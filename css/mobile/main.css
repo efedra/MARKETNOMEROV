@@ -68,7 +68,7 @@
     padding-top: min(2vw, 16px);
   }
   .heading {
-    font-size: min(29px + 11 * ((100vw - 320px) / 960), 40px);
+    font-size: min(26px + 61 * ((100vw - 320px) / 960), 87px);
   }
   .subtext {
     font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
@@ -165,43 +165,51 @@
     height: 4px;
   }
   .input-code {
-    height: 4.7vw;
+    height: 7.3vw;
     padding: 0 1.5vw;
-    border-radius: 5px;
-    width: 10vw;
+    border-radius: 7px;
+    width: 12vw;
+    gap: min(2.5vw, 13px);
   }
   .input-code svg {
-    width: min(1.4vw, 11px);
+    width: min(2vw, 11px);
     height: auto;
+  }
+  .input-code__list {
+    padding: min(4vw, 16px) min(0.9vw, 12px) min(1vw, 13px);
+    margin-top: max(-13px, -3.5vw);
   }
   .input-code__list div {
     font-size: min(8px + 11 * ((100vw - 320px) / 960), 19px);
     border-radius: 4px;
+    height: 3vw;
   }
   .input-code__number {
-    font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
+    font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
   }
   .input-one-numb {
-    height: 4.7vw;
-    width: 4.7vw;
+    height: 7.3vw;
+    width: 7.3vw;
     border-radius: 5px;
   }
   .search-number {
+    display: none;
     height: 4.7vw;
     padding: 0 1.5vw;
     border-radius: 5px;
   }
   .input-xz {
-    width: 3.6vw;
-    height: 3.6vw;
+    width: 5vw;
+    height: 5vw;
     border-radius: 5px;
+    font-size: min(8px + 10 * ((100vw - 320px) / 960), 18px);
   }
   .input-number {
     margin-bottom: 3vw;
     justify-content: space-between;
   }
   .link-underline {
-    font-size: min(6px + 18 * ((100vw - 320px) / 960), 24px);
+    font-size: min(10px + 14 * ((100vw - 320px) / 960), 24px);
     margin-bottom: 3vw;
   }
   .operator__card {
@@ -221,6 +229,15 @@
   .beatiful-number__range-number {
     margin-bottom: 3vw;
   }
+  .beatiful-number__range-number div {
+    font-size: min(8px + 10 * ((100vw - 320px) / 960), 18px);
+  }
+  .free-desk {
+    display: none;
+  }
+  .free-mobile {
+    display: block;
+  }
   .noUi-connects {
     height: 3px;
   }
@@ -231,30 +248,32 @@
     margin-bottom: 4vw;
   }
   .select-options__elem {
-    padding: 1vw 2vw;
-    font-size: min(7px + 10 * ((100vw - 320px) / 960), 17px);
+    padding: 2.2vw 2vw;
+    font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
   }
   .select-options {
     margin-bottom: 6vw;
   }
   .search {
-    padding: 1vw 4vw;
+    padding: 2vw 4vw;
+    gap: min(2vw, 12px);
   }
   .search svg {
-    width: min(2vw, 14px);
+    width: min(2.5vw, 14px);
+    height: auto;
   }
   .search div {
-    font-size: min(7px + 10 * ((100vw - 320px) / 960), 17px);
+    font-size: min(8px + 10 * ((100vw - 320px) / 960), 18px);
   }
   .hide-filter {
-    padding: 0.8vw 1.1vw;
+    padding: 1.2vw 2.3vw;
     border-radius: 5px;
   }
   .hide-filter div {
-    font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
+    font-size: min(8px + 10 * ((100vw - 320px) / 960), 18px);
   }
   .hide-filter svg {
-    width: min(1.4vw, 11px);
+    width: min(2vw, 11px);
     height: auto;
   }
   .sort-filter__input {
@@ -272,6 +291,7 @@
     display: none;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 22vw;
+    justify-items: flex-start;
   }
   .sort-filter__input_active {
     font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
@@ -560,6 +580,7 @@
     z-index: 3;
   }
   .modal-mobile-nav__window {
+    overflow-y: auto;
     height: 42vw;
     width: 100vw;
     z-index: 5;
@@ -642,6 +663,52 @@
   }
   .link_orange {
     color: rgb(240, 78, 1);
+  }
+  .slider-uslugi-container {
+    height: min(376px, 54vw);
+  }
+  .goods-input__search {
+    height: min(48px, 5.7vw);
+  }
+  .list-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .list-grid ul {
+    line-height: min(29px, 3.3vw);
+  }
+  .list-grid ul li {
+    font-size: min(7px + 10 * ((100vw - 320px) / 960), 17px);
+  }
+  .list-grid ul:last-child {
+    display: none;
+  }
+  .table__name {
+    font-size: min(9px + 11 * ((100vw - 320px) / 960), 20px);
+  }
+  .table_title {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .phone {
+    font-size: min(11px + 10 * ((100vw - 320px) / 960), 21px);
+    font-family: Roboto;
+  }
+  .number_color {
+    font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
+    font-family: Roboto;
+  }
+  .phone-price {
+    font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
+    font-family: Roboto;
+  }
+}
+@media (max-width: 600px) {
+  .slider-uslugi-container {
+    height: min(320px, 63vw);
+  }
+}
+@media (max-width: 300px) {
+  .slider-uslugi-container {
+    height: min(203px, 78vw);
   }
 }
 

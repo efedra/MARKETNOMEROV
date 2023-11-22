@@ -1352,16 +1352,16 @@ input[type=radio]:checked + .operator__card {
   gap: min(2.8vw, 26px);
 }
 
-.modal-basket__scroll::-webkit-scrollbar {
+.modal-basket__scroll::-webkit-scrollbar, .modal-mobile-nav__window::-webkit-scrollbar {
   width: 2px;
 }
 
-.modal-basket__scroll::-webkit-scrollbar-track {
+.modal-basket__scroll::-webkit-scrollbar-track, .modal-mobile-nav__window::-webkit-scrollbar {
   background: rgb(237, 237, 237);
   width: 2px;
 }
 
-.modal-basket__scroll::-webkit-scrollbar-thumb {
+.modal-basket__scroll::-webkit-scrollbar-thumb, .modal-mobile-nav__window::-webkit-scrollbar {
   background-color: rgb(65, 98, 255);
   width: 2px;
   border-radius: 40px;
@@ -1369,6 +1369,18 @@ input[type=radio]:checked + .operator__card {
 
 .active-visible {
   visibility: visible;
+}
+
+.modal-mobile__scroll {
+  overflow: auto;
+}
+
+.free-desk {
+  display: block;
+}
+
+.free-mobile {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */

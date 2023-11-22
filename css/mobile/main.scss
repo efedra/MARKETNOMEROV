@@ -11,10 +11,11 @@
     padding: 10px;
     gap: unset;
 
-    .header__logo{
+    .header__logo {
       margin-right: 11px;
     }
-    .mobile-nav{
+
+    .mobile-nav {
       margin-left: 17px;
     }
   }
@@ -81,7 +82,7 @@
 
   }
   .heading {
-    @include adaptiv-font-min(40, 29);
+    @include adaptiv-font-min(87, 26);
   }
 
   .subtext {
@@ -199,45 +200,53 @@
     }
   }
   .input-code {
-    height: 4.7vw;
+    height: 7.3vw;
     padding: 0 1.5vw;
-    border-radius: 5px;
-    width: 10vw;
+    border-radius: 7px;
+    width: 12vw;
+    gap: min(2.5vw, 13px);
 
     svg {
-      width: min(1.4vw, 11px);
+      width: min(2vw, 11px);
       height: auto;
     }
   }
-  .input-code__list div {
-    @include adaptiv-font-min(19, 8);
-    border-radius: 4px;
+  .input-code__list {
+    padding: min(4vw, 16px) min(0.9vw, 12px) min(1vw, 13px);
+    margin-top: max(-13px, -3.5vw);
+    div {
+      @include adaptiv-font-min(19, 8);
+      border-radius: 4px;
+      height: 3vw;
+    }
   }
   .input-code__number {
-    @include adaptiv-font-min(19, 9);
+    @include adaptiv-font-min(20, 10);
   }
 
   .input-one-numb {
-    height: 4.7vw;
-    width: 4.7vw;
+    height: 7.3vw;
+    width: 7.3vw;
     border-radius: 5px;
   }
   .search-number {
+    display: none;
     height: 4.7vw;
     padding: 0 1.5vw;
     border-radius: 5px;
   }
   .input-xz {
-    width: 3.6vw;
-    height: 3.6vw;
+    width: 5vw;
+    height: 5vw;
     border-radius: 5px;
+    @include adaptiv-font-min(18, 8);
   }
   .input-number {
     margin-bottom: 3vw;
     justify-content: space-between;
   }
   .link-underline {
-    @include adaptiv-font-min(24, 6);
+    @include adaptiv-font-min(24, 10);
     margin-bottom: 3vw;
   }
 
@@ -258,6 +267,16 @@
   }
   .beatiful-number__range-number {
     margin-bottom: 3vw;
+
+    div {
+      @include adaptiv-font-min(18, 8);
+    }
+  }
+  .free-desk {
+    display: none;
+  }
+  .free-mobile {
+    display: block;
   }
   .noUi-connects {
     height: 3px;
@@ -269,34 +288,36 @@
     margin-bottom: 4vw;
   }
   .select-options__elem {
-    padding: 1vw 2vw;
-    @include adaptiv-font-min(17, 7);
+    padding: 2.2vw 2vw;
+    @include adaptiv-font-min(19, 9);
   }
   .select-options {
     margin-bottom: 6vw;
   }
   .search {
-    padding: 1vw 4vw;
-
+    padding: 2vw 4vw;
+    gap: min(2vw, 12px);
     svg {
-      width: min(2vw, 14px);
+      width: min(2.5vw, 14px);
+      height: auto;
     }
 
     div {
-      @include adaptiv-font-min(17, 7);
+      @include adaptiv-font-min(18, 8);
     }
   }
 
   .hide-filter {
-    padding: 0.8vw 1.1vw;
+    padding: 1.2vw 2.3vw;
     border-radius: 5px;
 
     div {
-      @include adaptiv-font-min(16, 6);
+      @include adaptiv-font-min(18, 8);
     }
 
     svg {
-      width: min(1.4vw, 11px);
+      width: min(2vw, 11px);
+
       height: auto;
     }
   }
@@ -315,6 +336,7 @@
     display: none;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 22vw;
+    justify-items: flex-start;
   }
   .sort-filter__input_active {
     @include adaptiv-font-min(20, 10);
@@ -622,7 +644,7 @@
   }
 
   .modal-mobile-nav__window {
-
+    overflow-y: auto;
     height: 42vw;
     width: 100vw;
     z-index: 5;
@@ -695,11 +717,11 @@
     border: none;
     cursor: pointer;
 
-   svg{
-     width: 6.3vw;
-     height: auto;
-     max-width: 33px;
-   }
+    svg {
+      width: 6.3vw;
+      height: auto;
+      max-width: 33px;
+    }
   }
 
   .range-slider .noUi-horizontal .noUi-handle-lower {
@@ -710,7 +732,56 @@
     background-size: 118%;
     background-position: 50% 8%;
   }
-  .link_orange{
+  .link_orange {
     color: rgb(240, 78, 1);
+  }
+  .slider-uslugi-container {
+    height: min(376px, 54vw);
+  }
+
+  .goods-input__search {
+    height: min(48px, 5.7vw);
+  }
+  .list-grid{
+    grid-template-columns: 1fr 1fr;
+    ul{
+      line-height: min(29px, 3.3vw);
+      li{
+        @include adaptiv-font-min(17,7);
+      }
+    }
+    ul:last-child{
+      display: none;
+    }
+  }
+  .table__name{
+    @include adaptiv-font-min(20,9);
+  }
+  .table_title{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .phone{
+    @include adaptiv-font-min(21,11);
+    font-family: Roboto;
+  }
+  .number_color{
+    @include adaptiv-font-min(20,10);
+    font-family: Roboto;
+  }
+  .phone-price{
+    @include adaptiv-font-min(20,10);
+    font-family: Roboto;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider-uslugi-container {
+    height: min(320px, 63vw);
+  }
+}
+
+@media (max-width: 300px) {
+  .slider-uslugi-container {
+    height: min(203px, 78vw);
   }
 }
