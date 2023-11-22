@@ -23,7 +23,7 @@
     column-gap: 3vw;
   }
   .tips__body, .tips__head {
-    font-size: min(7px + 8 * ((100vw - 320px) / 960), 15px);
+    font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
   }
 }
 
