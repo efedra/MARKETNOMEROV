@@ -78,8 +78,9 @@
     width: 5.1vw;
     height: 5.1vw;
   }
-  .heading {
-    font-size: min(12px + 11 * ((100vw - 320px) / 960), 23px);
+  .t02 .heading {
+    font-size: min(17px + 16 * ((100vw - 320px) / 960), 33px);
+    padding-bottom: 14px;
   }
   .beatiful-number__filter_mini {
     margin-bottom: 5vw;

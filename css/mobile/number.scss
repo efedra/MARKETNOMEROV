@@ -10,7 +10,6 @@
   }
   .header__logo {
     img {
-      //width: 20vw;
       width: inherit;
       height: auto;
     }
@@ -85,8 +84,9 @@
     width: 5.1vw;
     height: 5.1vw;
   }
-  .heading{
-    @include adaptiv-font-min(23,12);
+  .t02 .heading{
+    @include adaptiv-font-min(33,17);
+    padding-bottom: 14px;
   }
   .beatiful-number__filter_mini{
     margin-bottom: 5vw;
