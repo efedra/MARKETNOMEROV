@@ -179,4 +179,10 @@
   height: auto;
 }
 
+.about-company__left .img-container {
+  aspect-ratio: 544/744;
+  height: unset;
+  max-height: unset;
+}
+
 /*# sourceMappingURL=company.css.map */
