@@ -212,4 +212,19 @@
   border-radius: 40px;
 }
 
+@media (max-width: 340px) {
+  .goods-input__filter .placeholder {
+    font-size: min(5.6px + 10.4 * ((100vw - 320px) / 960), 16px);
+  }
+  .goods-input__filter .goods-input__select {
+    font-size: min(5.6px + 10.4 * ((100vw - 320px) / 960), 16px);
+  }
+  .goods-input__filter .good-description {
+    line-height: 3.4vw;
+  }
+  .goods-input {
+    gap: 2vw;
+  }
+}
+
 /*# sourceMappingURL=goods.css.map */

@@ -53,6 +53,9 @@
   .margin-top-mobile {
     margin-top: 8vw;
   }
+  .header{
+    padding: 0;
+  }
   .basket-grid {
     grid-template-columns: 1fr;
     gap: 10vw;
@@ -130,5 +133,10 @@
   }
   .margin-big {
     margin-bottom: 7vw;
+  }
+}
+@media (max-width: 330px) {
+  .private__text{
+    @include adaptiv-font-min(19,8.8);
   }
 }

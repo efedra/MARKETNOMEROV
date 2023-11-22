@@ -26,23 +26,23 @@
     gap: unset;
   }
   .service__desc {
-    @include adaptiv-font-min(17, 7);
+    @include adaptiv-font-min(18, 8);
   }
   .about-company__list-text, .about-company__list-head div {
-    @include adaptiv-font-min(18, 8);
+    @include adaptiv-font-min(19, 9);
   }
   .service__down {
     gap: 1.4vw;
   }
   .characterisitc-main-body {
-    line-height: 3.5vw;
+    line-height: 17px;
   }
   .statistics-reviews {
     grid-template-columns: 5fr 1fr;
     margin-bottom: 30px;
   }
   .statistics-reviews__number {
-    @include adaptiv-font-min(20, 10);
+    @include adaptiv-font-min(20, 11);
   }
   .statistics-reviews__scale, .statistics-reviews__active-scale {
     height: 1.5vw;

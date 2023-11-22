@@ -994,6 +994,10 @@ input[type=range] {
   font-size: min(7px + 9 * ((100vw - 320px) / 960), 16px);
 }
 
+.cost svg {
+  display: none;
+}
+
 .phone-price {
   color: rgb(98, 108, 119);
   font-size: min(5px + 13 * ((100vw - 320px) / 960), 18px);

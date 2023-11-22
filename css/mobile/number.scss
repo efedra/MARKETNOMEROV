@@ -104,4 +104,9 @@
   .main-padding{
     padding: 0 10px;
   }
+  @media (max-width: 359px) {
+    .beatiful-number__button_sale{
+      @include adaptiv-font-min(20,8);
+    }
+  }
 }

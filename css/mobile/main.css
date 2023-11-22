@@ -278,7 +278,7 @@
   }
   .sort-filter__input {
     font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
-    padding: min(0.6vw, 8px) min(2vw, 25px);
+    padding: min(0.6vw, 8px) min(1.8vw, 25px);
   }
   .sort-filter__text {
     font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
@@ -305,7 +305,8 @@
     font-size: min(5px + 10 * ((100vw - 320px) / 960), 15px);
   }
   .select-buttons {
-    padding: 1.5vw 2vw;
+    padding: 1.6vw 6vw;
+    border: 1px solid rgb(230, 230, 230);
   }
   .beatiful-number {
     margin-bottom: 6vw;
@@ -480,6 +481,8 @@
   .reviews__first {
     font-size: min(11px + 10 * ((100vw - 320px) / 960), 21px);
     padding: 4vw 4.2vw;
+    border-radius: 18px;
+    line-height: 21px;
   }
   .reviews__margin {
     margin-bottom: 10vw;
@@ -528,6 +531,8 @@
   }
   .input-email {
     width: 100%;
+    font-size: 12px;
+    padding-left: 13px;
   }
   .newsletter__form {
     gap: 2vw;
@@ -685,10 +690,8 @@
   .table__name {
     font-size: min(9px + 11 * ((100vw - 320px) / 960), 20px);
   }
-  .table_title {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
   .phone {
+    align-items: baseline;
     font-size: min(11px + 10 * ((100vw - 320px) / 960), 21px);
     font-family: Roboto;
   }
@@ -700,10 +703,74 @@
     font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
     font-family: Roboto;
   }
+  .cost {
+    display: flex;
+    gap: 3px;
+    align-items: baseline;
+  }
+  .cost svg {
+    display: flex;
+  }
+  .table {
+    grid-template-columns: 34% 20% 24% 20%;
+    height: 4vw;
+    padding: unset;
+    justify-items: center;
+    margin-bottom: min(6vw, 39px);
+  }
+  .table div:first-child {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .img-adaptive-opearator {
+    aspect-ratio: 1/1;
+    width: 100%;
+    max-width: 3.6vw;
+  }
+  .scroll-beatiful-number {
+    padding-top: 2vw;
+  }
+  .table_title {
+    margin-bottom: unset;
+  }
+  .services-card__top {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+  }
+  .services-card {
+    border-radius: 18px;
+  }
+  .footer .container {
+    padding: 0;
+  }
 }
 @media (max-width: 600px) {
   .slider-uslugi-container {
     height: min(320px, 63vw);
+  }
+}
+@media (max-width: 340px) {
+  .phone {
+    font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
+  }
+  .number_color {
+    font-size: min(8px + 10 * ((100vw - 320px) / 960), 18px);
+  }
+  .phone-price {
+    font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
+  }
+  .select-buttons {
+    font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
+  }
+  .footer__nav, .footer__add {
+    font-size: min(7px + 11 * ((100vw - 320px) / 960), 18px);
+  }
+  .footer__top {
+    column-gap: 2.5vw;
+  }
+  .good-description {
+    line-height: 3.4vw;
   }
 }
 @media (max-width: 300px) {

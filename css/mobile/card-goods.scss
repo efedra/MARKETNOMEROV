@@ -185,5 +185,21 @@
     width: 82%;
     margin-bottom: 8vw;
   }
+  .header{
+    padding: 0;
+  }
 }
 
+@media (max-width: 340px) {
+  .name-goods{
+    width: 70%;
+  }
+  .characterisitc-title{
+    div{
+      @include adaptiv-font-min(20,9.5);
+    }
+  }
+  .characterisitc-detail-text{
+    width: 100%;
+  }
+}

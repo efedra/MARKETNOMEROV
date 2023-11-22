@@ -23,9 +23,6 @@
   .services-gallery__margin{
     margin-bottom: 14vw;
   }
-  .services-gallery__elem{
-    //padding: 0 min(32vw, 435px);
-  }
   .services-tabs{
     margin-left: 0;
     margin-right: 0;
@@ -39,5 +36,12 @@
   }
   .container_zero-padding{
     padding: 0;
+  }
+  .services-card__top {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+  }
+  .services-card {
+    border-radius: 18px;
   }
 }

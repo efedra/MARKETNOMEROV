@@ -112,5 +112,10 @@
     margin-bottom: 3vw;
   }
 }
+@media (max-width: 330px) {
+  .banner-company__head {
+    font-size: min(18px + 10 * ((100vw - 320px) / 960), 28px);
+  }
+}
 
 /*# sourceMappingURL=company.css.map */

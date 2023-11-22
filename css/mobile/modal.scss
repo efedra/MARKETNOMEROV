@@ -4,9 +4,24 @@
   .modal-basket {
     padding: 0;
   }
+  .modal-buy-number{
+    padding: 0 10px;
+  }
+  .modal-buy-number__heading{
+    @include adaptiv-font-min(26,16);
+  }
+  .grid-input__elem{
+    width: 100%;
+    @include adaptiv-font-min(22,12);
+  }
+  .grid-input__elem::placeholder{
+    @include adaptiv-font-min(22,12);
+  }
+  .modal-buy-number__window{
+    padding: min(5.5vw, 32px);
+  }
   .modal-basket__window {
     width: 100vw;
-    //top: min(11vw, 49px);
     top: min(12.9vw, 49px);
     max-width: unset;
     border-radius: 16px;
@@ -16,8 +31,6 @@
   .triangle {
     width: 5.3vw;
     height: auto;
-    //right: 16.3vw;
-    //top: min(8vw, 34px);
     right: 14.3vw;
     top: min(10vw, 36px);
   }
@@ -76,14 +89,83 @@
   .modal-margin-oform-card{
     margin-bottom: min(6%,13px);
   }
+  .input-modal + label:before {
+    width: min(3.8vw, 16px);
+    height: min(3.8vw, 16px);
+    border-radius: 5px;
+  }
+  .input-modal + label {
+    padding-left: min(6.5vw, 25px);
+    @include adaptiv-font-min(22,11);
+  }
+  label{
+    @include adaptiv-font-min(22,11);
+  }
+  .delivery-input-grid__input{
+    input{
+      height: 38px;
+    }
+  }
+  .delivery-input-grid__input{
+    gap: 6px;
+  }
+  .delivery-input-grid__input:after {
+
+    width: 10px;
+    height: 10px;
+    top: 58%;
+    right: 26px;
+    cursor: pointer;
+    zoom: 65%;
+  }
+  .modal-delivery__scroll{
+    gap: 16px;
+  }
+  .select-date-grid__elem label {
+    height: min(96px, 12.5vw);
+    padding: min(16px, 1.9vw);
+  }
+  .select-date-grid__elem .select-time {
+    width: 18vw;
+    height: 8vw;
+  }
+  .modal-delivery__button{
+    margin-top: auto;
+    @include adaptiv-font-min(25,15);
+    padding: min(2vw, 13px) min(103px, 8vw);
+    height: inherit;
+  }
+  .modal-delivery__window{
+    height: min(490px, 72vh);
+  }
 }
 
 @media (max-width: 800px) {
   .triangle{
-    right: 11.5vw;
+    right: 7.5vw;
+  }
+}
+@media (max-width: 750px) {
+  .triangle{
+    right: 8vw;
   }
 }
 @media (max-width: 700px) {
+  .triangle{
+    right: 9.5%;
+  }
+}
+@media (max-width: 600px) {
+  .triangle{
+    right: 10.5%;
+  }
+}
+@media (max-width: 550px) {
+  .triangle{
+    right: 11.5%;
+  }
+}
+@media (max-width: 500px) {
   .triangle{
     right: 12.5%;
   }
@@ -92,4 +174,24 @@
   .triangle{
     right: 13.5%;
   }
+}
+@media (max-width: 360px) {
+  .modal-basket__price{
+    @include adaptiv-font-min(20,10);
+  }
+  .select-date-grid__elem label div{
+    @include adaptiv-font-min(18,7.7);
+  }
+
+}
+@media (max-width: 340px) {
+  .triangle{
+    right: 14.5%;
+  }
+}
+@media (max-width: 340px) {
+  .triangle{
+    right: 15.7%;
+  }
+
 }

@@ -33,7 +33,7 @@
     gap: 2vw;
   }
   .tarif-filter__head, .tarif-filter__body {
-    font-size: min(5px + 13 * ((100vw - 320px) / 960), 18px);
+    font-size: min(4.5px + 13.5 * ((100vw - 320px) / 960), 18px);
   }
   .tarif-filter__elem {
     min-width: unset;
@@ -74,6 +74,14 @@
   }
   .t02-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .footer .container {
+    padding: 0;
+  }
+}
+@media (max-width: 320px) {
+  .tarif__list {
+    font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
   }
 }
 

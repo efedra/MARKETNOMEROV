@@ -35,6 +35,13 @@
   .container_zero-padding {
     padding: 0;
   }
+  .services-card__top {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+  }
+  .services-card {
+    border-radius: 18px;
+  }
 }
 
 /*# sourceMappingURL=services.css.map */

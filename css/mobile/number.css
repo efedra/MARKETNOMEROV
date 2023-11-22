@@ -99,5 +99,10 @@
     padding: 0 10px;
   }
 }
+@media (max-width: 800px) and (max-width: 359px) {
+  .beatiful-number__button_sale {
+    font-size: min(8px + 12 * ((100vw - 320px) / 960), 20px);
+  }
+}
 
 /*# sourceMappingURL=number.css.map */

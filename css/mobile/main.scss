@@ -214,6 +214,7 @@
   .input-code__list {
     padding: min(4vw, 16px) min(0.9vw, 12px) min(1vw, 13px);
     margin-top: max(-13px, -3.5vw);
+
     div {
       @include adaptiv-font-min(19, 8);
       border-radius: 4px;
@@ -297,6 +298,7 @@
   .search {
     padding: 2vw 4vw;
     gap: min(2vw, 12px);
+
     svg {
       width: min(2.5vw, 14px);
       height: auto;
@@ -323,7 +325,7 @@
   }
   .sort-filter__input {
     @include adaptiv-font-min(20, 10);
-    padding: min(0.6vw, 8px) min(2vw, 25px);
+    padding: min(0.6vw, 8px) min(1.8vw, 25px);
   }
   .sort-filter__text {
     @include adaptiv-font-min(20, 10);
@@ -350,7 +352,8 @@
     @include adaptiv-font-min(15, 5);
   }
   .select-buttons {
-    padding: 1.5vw 2vw;
+    padding: 1.6vw 6vw;
+    border: 1px solid rgba(230, 230, 230, 1);
   }
 
   .beatiful-number {
@@ -540,7 +543,9 @@
   }
   .reviews__first {
     @include adaptiv-font-min(21, 11);
-    padding: 4vw 4.2vw
+    padding: 4vw 4.2vw;
+    border-radius: 18px;
+    line-height: 21px;
   }
   .reviews__margin {
     margin-bottom: 10vw;
@@ -590,6 +595,8 @@
   }
   .input-email {
     width: 100%;
+    font-size: 12px;
+    padding-left: 13px;
   }
   .newsletter__form {
     gap: 2vw;
@@ -682,7 +689,6 @@
   }
   .header {
     justify-content: unset;
-    //gap: 6.3vw;
     max-height: 50px;
     height: 13.5vw;
   }
@@ -742,35 +748,83 @@
   .goods-input__search {
     height: min(48px, 5.7vw);
   }
-  .list-grid{
+  .list-grid {
     grid-template-columns: 1fr 1fr;
-    ul{
+
+    ul {
       line-height: min(29px, 3.3vw);
-      li{
-        @include adaptiv-font-min(17,7);
+
+      li {
+        @include adaptiv-font-min(17, 7);
       }
     }
-    ul:last-child{
+
+    ul:last-child {
       display: none;
     }
   }
-  .table__name{
-    @include adaptiv-font-min(20,9);
+  .table__name {
+    @include adaptiv-font-min(20, 9);
   }
-  .table_title{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .phone{
-    @include adaptiv-font-min(21,11);
+
+  .phone {
+    align-items: baseline;
+    @include adaptiv-font-min(21, 11);
     font-family: Roboto;
   }
-  .number_color{
-    @include adaptiv-font-min(20,10);
+  .number_color {
+    @include adaptiv-font-min(20, 10);
     font-family: Roboto;
   }
-  .phone-price{
-    @include adaptiv-font-min(20,10);
+  .phone-price {
+    @include adaptiv-font-min(20, 10);
     font-family: Roboto;
+  }
+  .cost {
+    display: flex;
+    gap: 3px;
+    align-items: baseline;
+
+    svg {
+      display: flex;
+    }
+  }
+  .table {
+    grid-template-columns: 34% 20% 24% 20%;
+    height: 4vw;
+    padding: unset;
+    justify-items: center;
+    margin-bottom: min(6vw, 39px);
+
+    div:first-child {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+    }
+
+  }
+  .img-adaptive-opearator {
+    aspect-ratio: 1/1;
+    width: 100%;
+    max-width: 3.6vw;
+  }
+  .scroll-beatiful-number {
+    padding-top: 2vw;
+  }
+  .table_title {
+    margin-bottom: unset;
+  }
+  .services-card__top {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+  }
+  .services-card {
+    border-radius: 18px;
+  }
+  .footer{
+    .container{
+      padding: 0;
+    }
   }
 }
 
@@ -780,8 +834,33 @@
   }
 }
 
+@media (max-width: 340px) {
+  .phone{
+    @include adaptiv-font-min(19,9);
+  }
+  .number_color{
+    @include adaptiv-font-min(18,8);
+  }
+  .phone-price{
+    @include adaptiv-font-min(19,9);
+  }
+  .select-buttons{
+    @include adaptiv-font-min(16,6);
+  }
+  .footer__nav, .footer__add{
+    @include adaptiv-font-min(18,7);
+  }
+  .footer__top{
+    column-gap: 2.5vw;
+  }
+  .good-description{
+    line-height: 3.4vw;
+  }
+}
+
 @media (max-width: 300px) {
   .slider-uslugi-container {
     height: min(203px, 78vw);
   }
+  
 }

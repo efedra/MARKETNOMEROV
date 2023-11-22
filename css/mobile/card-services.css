@@ -23,23 +23,23 @@
     gap: unset;
   }
   .service__desc {
-    font-size: min(7px + 10 * ((100vw - 320px) / 960), 17px);
+    font-size: min(8px + 10 * ((100vw - 320px) / 960), 18px);
   }
   .about-company__list-text, .about-company__list-head div {
-    font-size: min(8px + 10 * ((100vw - 320px) / 960), 18px);
+    font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
   }
   .service__down {
     gap: 1.4vw;
   }
   .characterisitc-main-body {
-    line-height: 3.5vw;
+    line-height: 17px;
   }
   .statistics-reviews {
     grid-template-columns: 5fr 1fr;
     margin-bottom: 30px;
   }
   .statistics-reviews__number {
-    font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
+    font-size: min(11px + 9 * ((100vw - 320px) / 960), 20px);
   }
   .statistics-reviews__scale, .statistics-reviews__active-scale {
     height: 1.5vw;
