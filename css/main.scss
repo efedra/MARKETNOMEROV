@@ -1046,6 +1046,10 @@ input[type="range"] {
 .phone-price {
   color: rgba(98, 108, 119, 1);
   @include adaptiv-font-min(18, 5);
+  padding-left: 7px
+}
+.phone-operator{
+  padding-left: min(30px,2.5vw);
 }
 
 .select-buttons {

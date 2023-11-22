@@ -780,6 +780,9 @@
     @include adaptiv-font-min(20, 10);
     font-family: Roboto;
   }
+  .phone-operator{
+    padding-left: 0;
+  }
   .cost {
     display: flex;
     gap: 3px;
@@ -787,6 +790,8 @@
 
     svg {
       display: flex;
+      width: 2.5vw;
+      height: auto;
     }
   }
   .table {
@@ -843,6 +848,7 @@
   }
   .phone-price{
     @include adaptiv-font-min(19,9);
+    padding: 0;
   }
   .select-buttons{
     @include adaptiv-font-min(16,6);

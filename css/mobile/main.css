@@ -703,6 +703,9 @@
     font-size: min(10px + 10 * ((100vw - 320px) / 960), 20px);
     font-family: Roboto;
   }
+  .phone-operator {
+    padding-left: 0;
+  }
   .cost {
     display: flex;
     gap: 3px;
@@ -710,6 +713,8 @@
   }
   .cost svg {
     display: flex;
+    width: 2.5vw;
+    height: auto;
   }
   .table {
     grid-template-columns: 34% 20% 24% 20%;
@@ -759,6 +764,7 @@
   }
   .phone-price {
     font-size: min(9px + 10 * ((100vw - 320px) / 960), 19px);
+    padding: 0;
   }
   .select-buttons {
     font-size: min(6px + 10 * ((100vw - 320px) / 960), 16px);
