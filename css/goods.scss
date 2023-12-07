@@ -144,7 +144,7 @@ $blue: rgba(66, 98, 255, 1);
 .input-goods__input + label {
   position: relative;
   cursor: pointer;
-  @include adaptiv-font-min(14, 6);
+  font-size: 13.4px;
   padding-left: 7%;
   color: rgba(139, 142, 153, 1);
   width: 100%;
@@ -169,8 +169,8 @@ $blue: rgba(66, 98, 255, 1);
 }
 
 .input-goods__input + label {
-  @include adaptiv-font-min(14, 6);
-  padding-left: 8%;
+  @include adaptiv-font-min(13.4, 10);
+  padding-left: 9.5%;
   color: rgba(139, 142, 153, 1);
 }
 .input-goods__input:checked +label{
@@ -211,6 +211,7 @@ $blue: rgba(66, 98, 255, 1);
   gap: 4%;
   justify-content: space-between;
   margin-bottom: min(3vh,22px);
+
 }
 .price-filter__input-min{
   width: 45%;
@@ -220,6 +221,8 @@ $blue: rgba(66, 98, 255, 1);
   padding-left: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
+  font-size: 15px;
+  font-family: Roboto;
 }
 
 .price-filter__input-max{
@@ -230,6 +233,8 @@ $blue: rgba(66, 98, 255, 1);
   padding-left: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
+  font-size: 15px;
+  font-family: Roboto;
 }
 
 .goods-grid{

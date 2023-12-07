@@ -163,10 +163,13 @@
     display: none;
   }
   .input-goods__input + label {
-    font-size: min(15px + 21 * ((100vw - 320px) / 960), 36px);
+    font-size: min(16px + 20 * ((100vw - 320px) / 960), 36px);
   }
   .price-filter__head {
     font-size: min(18px + 10 * ((100vw - 320px) / 960), 28px);
+  }
+  .price-filter__input-max, .price-filter__input-min {
+    font-size: min(17.5px + 20.5 * ((100vw - 320px) / 960), 38px);
   }
   .noUi-connects {
     height: 2px;

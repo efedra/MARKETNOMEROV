@@ -132,7 +132,7 @@
 .input-goods__input + label {
   position: relative;
   cursor: pointer;
-  font-size: min(6px + 8 * ((100vw - 320px) / 960), 14px);
+  font-size: 13.4px;
   padding-left: 7%;
   color: rgb(139, 142, 153);
   width: 100%;
@@ -157,8 +157,8 @@
 }
 
 .input-goods__input + label {
-  font-size: min(6px + 8 * ((100vw - 320px) / 960), 14px);
-  padding-left: 8%;
+  font-size: min(10px + 3.4 * ((100vw - 320px) / 960), 13.4px);
+  padding-left: 9.5%;
   color: rgb(139, 142, 153);
 }
 
@@ -210,6 +210,8 @@
   padding-left: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
+  font-size: 15px;
+  font-family: Roboto;
 }
 
 .price-filter__input-max {
@@ -220,6 +222,8 @@
   padding-left: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
+  font-size: 15px;
+  font-family: Roboto;
 }
 
 .goods-grid {

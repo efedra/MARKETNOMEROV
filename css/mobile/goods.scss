@@ -183,12 +183,16 @@
     display: none;
   }
   .input-goods__input + label {
-    @include adaptiv-font-min(36, 15);
+    @include adaptiv-font-min(36, 16);
+
   }
   .price-filter__head {
     @include adaptiv-font-min(28, 18);
   }
 
+  .price-filter__input-max, .price-filter__input-min {
+    @include adaptiv-font-min(38,17.5);
+  }
 
   .noUi-connects {
     height: 2px;
@@ -241,17 +245,18 @@
 @media (max-width: 340px) {
   .goods-input__filter {
     .placeholder {
-      @include adaptiv-font-min(16,5.6);
+      @include adaptiv-font-min(16, 5.6);
     }
 
     .goods-input__select {
-      @include adaptiv-font-min(16,5.6);
+      @include adaptiv-font-min(16, 5.6);
     }
-    .good-description{
+
+    .good-description {
       line-height: 3.4vw;
     }
   }
-  .goods-input{
+  .goods-input {
     gap: 2vw;
   }
 }
